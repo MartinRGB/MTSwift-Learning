@@ -13,5 +13,7 @@ A 30 Day/Project Swift Learning Plan.Wanna be learn more about code,not only ani
 What I Learned:
 
 1.How to use Scrollview
+
 2.Simple Modal/Push Transition
+
 3.Simple Hamburger menu animation
