@@ -4,7 +4,7 @@ As a Designer,I begin to learn swift,try to make some simple project here
 
 # Goal
 
-A 30 Day Swift Learning Plan.Wanna be learn more about code,not only animat
+A 30 Day Swift Learning Plan.Wanna be learn more about code,not only animation
 
 ##Day1:Ink
 
