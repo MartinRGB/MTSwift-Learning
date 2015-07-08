@@ -54,5 +54,7 @@ What I Learned(Mainly from MengTo's DesignCode):
 
 3.Pan Gesture State
 
+4.Dictionary & Data & Loop
+
 To be contiuned...
 
