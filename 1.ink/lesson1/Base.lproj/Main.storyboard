@@ -1,57 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gO7-cX-1Go">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gO7-cX-1Go">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Photo-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-SL-v2f">
-                                <rect key="frame" x="0.0" y="63" width="375" height="604"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scrollimg" translatesAutoresizingMaskIntoConstraints="NO" id="Hlz-fT-UWc">
-                                        <rect key="frame" x="16" y="19" width="342" height="2514"/>
+                                        <rect key="frame" x="15" y="69" width="290" height="2137"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-Du-XJ2" userLabel="Imgbtn">
+                                        <rect key="frame" x="15" y="434" width="290" height="213"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="imgbtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JGq-vc-Xx4"/>
+                                            <segue destination="5Ce-pR-BXL" kind="push" id="BVM-nA-O7H"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="PhotoNav" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-A8-MNP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="A5T-A8-MNP" secondAttribute="height" multiplier="375:64" id="RI8-4v-r0K"/>
-                                    <constraint firstAttribute="width" constant="375" id="f1k-f2-DPt"/>
-                                    <constraint firstAttribute="height" constant="64" id="rNU-S0-1K6"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PhotoNav" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-A8-MNP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Photo" image="PhotoGraphy" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="lMU-k5-HTT"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="nav" destination="A5T-A8-MNP" id="uD2-hR-Mhk"/>
                         <outlet property="scrollimg" destination="Hlz-fT-UWc" id="8Fa-yI-Lsj"/>
                         <outlet property="scrollview" destination="x2a-SL-v2f" id="qPw-g8-JNv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="931.5" y="-472.5"/>
+            <point key="canvasLocation" x="1197" y="-815"/>
         </scene>
-        <!--Item-->
+        <!--Photo Detail View Controller-->
+        <scene sceneID="EwC-jZ-YB0">
+            <objects>
+                <viewController id="5Ce-pR-BXL" customClass="PhotoDetailViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02e-MZ-ibB"/>
+                        <viewControllerLayoutGuide type="bottom" id="4wM-zt-MQ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9KX-y5-ATX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DetailBG + Detailimg" translatesAutoresizingMaskIntoConstraints="NO" id="oDz-e9-24R">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-wX-WWA">
+                                <rect key="frame" x="16" y="15" width="51" height="40"/>
+                                <state key="normal" image="Back Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backbtn:" destination="5Ce-pR-BXL" eventType="touchUpInside" id="O6M-hm-aQE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iWo-vg-5ci"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDe-gO-BMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="-815"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="nzP-1N-xxy">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="rQ0-fI-DAz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photo" image="Icon1" id="Bvw-lv-5ds">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KwU-Fj-dfL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="1c1-5k-0Sn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAK-P5-Km9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="-815"/>
+        </scene>
+        <!--Article-->
         <scene sceneID="dfg-Iq-iUE">
             <objects>
                 <navigationController navigationBarHidden="YES" id="vCU-Db-Ioc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pWh-rG-QaR"/>
+                    <tabBarItem key="tabBarItem" title="Article" image="Icon2" id="pWh-rG-QaR">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TWa-si-DAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,51 +124,40 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtW-Af-e2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319.5" y="923.5"/>
+            <point key="canvasLocation" x="761" y="-45"/>
         </scene>
         <!--Article-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArticleNav" translatesAutoresizingMaskIntoConstraints="NO" id="eMv-YO-RHY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgR-9S-ZUg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Article List" translatesAutoresizingMaskIntoConstraints="NO" id="tmG-3W-pMd">
-                                        <rect key="frame" x="15" y="19" width="344" height="1334"/>
+                                        <rect key="frame" x="16" y="69" width="290" height="1127"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-zE-rdR" userLabel="Detailbtn">
-                                        <rect key="frame" x="15" y="287" width="344" height="256"/>
+                                        <rect key="frame" x="15" y="296" width="290" height="216"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="detailbutton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IXD-NY-eSH"/>
                                             <segue destination="fUj-0B-7rJ" kind="push" id="i29-5C-PwY"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-uU-7mg" userLabel="Hamburger">
-                                <rect key="frame" x="16" y="29" width="20" height="22"/>
-                                <state key="normal" image="SectionButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pullout:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FqF-9C-HZi"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJu-Oe-mu3" userLabel="BackButton">
-                                <rect key="frame" x="250" y="0.0" width="200" height="667"/>
+                                <rect key="frame" x="400" y="0.0" width="140" height="568"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -114,9 +165,21 @@
                                     <action selector="pushback:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="M5e-5g-P8b"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sidebar" translatesAutoresizingMaskIntoConstraints="NO" id="ZW4-er-Aeq">
-                                <rect key="frame" x="-327" y="0.0" width="327" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArticleNav" translatesAutoresizingMaskIntoConstraints="NO" id="eMv-YO-RHY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sidebar" translatesAutoresizingMaskIntoConstraints="NO" id="ZW4-er-Aeq">
+                                <rect key="frame" x="-327" y="0.0" width="278" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-uU-7mg" userLabel="Hamburger">
+                                <rect key="frame" x="14" y="14" width="30" height="40"/>
+                                <state key="normal" image="SectionButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pullout:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="FqF-9C-HZi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -126,39 +189,211 @@
                         <outlet property="articlelist" destination="tmG-3W-pMd" id="tLR-DF-yE8"/>
                         <outlet property="backbtn" destination="GJu-Oe-mu3" id="OjY-0n-0yD"/>
                         <outlet property="detailbtn" destination="1nb-zE-rdR" id="God-Rp-lmS"/>
+                        <outlet property="hambtn" destination="MAu-uU-7mg" id="zal-gt-wih"/>
+                        <outlet property="nav" destination="eMv-YO-RHY" id="zT1-Ri-x6h"/>
                         <outlet property="scrollview" destination="GgR-9S-ZUg" id="ORN-4b-roE"/>
                         <outlet property="sidebar" destination="ZW4-er-Aeq" id="KaJ-9T-EqD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951.5" y="923.5"/>
+            <point key="canvasLocation" x="1197" y="-51"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Ink-->
+        <scene sceneID="qLR-hm-P6t">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="SH7-AG-iOO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ink" image="Icon3" id="NSa-Hj-ktL">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhX-JW-Bes">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MpX-df-ZAr" kind="relationship" relationship="rootViewController" id="DLx-d2-HHq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uGN-rh-Wwe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="631"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="wIR-31-9gI">
+            <objects>
+                <viewController id="MpX-df-ZAr" customClass="CardViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E8g-om-uhJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXS-hv-Rzc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DuQ-5y-l0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ink1 BG" translatesAutoresizingMaskIntoConstraints="NO" id="lfX-dI-Q6N">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0M-iM-osv" userLabel="Reload">
+                                <rect key="frame" x="62" y="432" width="26" height="26"/>
+                                <state key="normal" image="Reload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPX-iy-vwX" userLabel="Ink">
+                                <rect key="frame" x="171" y="425" width="41" height="41"/>
+                                <state key="normal" image="Inkicon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="like:" destination="MpX-df-ZAr" eventType="touchUpInside" id="eGP-lD-UMH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FI-IT-qf1" userLabel="Share">
+                                <rect key="frame" x="232" y="432" width="26" height="26"/>
+                                <state key="normal" image="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mad-o7-coc">
+                                <rect key="frame" x="39" y="64" width="242" height="311"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Card1" translatesAutoresizingMaskIntoConstraints="NO" id="3Jh-aJ-fGa">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="311"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj0-C6-yHk" userLabel="Imagebutton">
+                                        <rect key="frame" x="4" y="2" width="234" height="178"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="imagebutton:" destination="MpX-df-ZAr" eventType="touchUpInside" id="ajw-9D-aWl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vsq-KY-QsY" appends="YES" id="xuj-mB-hOl"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="C1Img" translatesAutoresizingMaskIntoConstraints="NO" id="6IG-KG-Wdk">
+                                <rect key="frame" x="0.0" y="-240" width="320" height="240"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="C1DetailText" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-Rb-vzg" userLabel="C1Detailtext">
+                                <rect key="frame" x="0.0" y="568" width="320" height="679"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILM-R8-5iz" userLabel="Dismiss">
+                                <rect key="frame" x="110" y="425" width="41" height="41"/>
+                                <state key="normal" image="DIsmiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="unlike:" destination="MpX-df-ZAr" eventType="touchUpInside" id="ChF-YL-2Yh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Xa-TE-pwB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Cardview" destination="Mad-o7-coc" id="YJH-93-DSl"/>
+                        <outlet property="Imagebtn" destination="Pj0-C6-yHk" id="bZO-wm-gCe"/>
+                        <outlet property="PanRecognizer" destination="Vsq-KY-QsY" id="xij-FJ-sN8"/>
+                        <outlet property="b1" destination="C0M-iM-osv" id="Fa2-8F-c3n"/>
+                        <outlet property="b2" destination="ILM-R8-5iz" id="Jmv-fS-qvu"/>
+                        <outlet property="b3" destination="lPX-iy-vwX" id="pe0-Wm-ftt"/>
+                        <outlet property="b4" destination="3FI-IT-qf1" id="Qix-K4-5S2"/>
+                        <outlet property="c1detailtxt" destination="zbS-Rb-vzg" id="fv6-U4-nvQ"/>
+                        <outlet property="c1img" destination="6IG-KG-Wdk" id="7EV-x4-REf"/>
+                        <outlet property="card1" destination="3Jh-aJ-fGa" id="erm-SX-Hxr"/>
+                        <outlet property="ink1bg" destination="lfX-dI-Q6N" id="gDi-wp-WOn"/>
+                        <segue destination="pAI-G8-eo0" kind="modal" identifier="cardtodeatil" modalTransitionStyle="crossDissolve" animates="NO" id="vqa-mb-zbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yuk-fg-Wjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Vsq-KY-QsY">
+                    <connections>
+                        <action selector="HandleGesture:" destination="MpX-df-ZAr" id="YL7-Xr-5Vy"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1197" y="631"/>
+        </scene>
+        <!--Card Deatil View Controller-->
+        <scene sceneID="0nJ-qr-KKA">
+            <objects>
+                <viewController id="pAI-G8-eo0" customClass="CardDeatilViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1E-En-DTs"/>
+                        <viewControllerLayoutGuide type="bottom" id="bEv-yn-iUc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QfL-sw-R2j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-Oc-boJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="C1Img" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-st-wdH">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="C1DetailText" translatesAutoresizingMaskIntoConstraints="NO" id="pla-Hb-BnG">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="679"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgm-be-irr">
+                                <rect key="frame" x="-50" y="8" width="60" height="60"/>
+                                <state key="normal" image="DBackBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backbtn:" destination="pAI-G8-eo0" eventType="touchUpInside" id="ni7-sk-LMY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WpG-Gd-wGK"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bckbtn" destination="tgm-be-irr" id="eNY-3k-13V"/>
+                        <outlet property="c1detailtext" destination="pla-Hb-BnG" id="DsS-jc-OSU"/>
+                        <outlet property="c1img" destination="3Sc-st-wdH" id="pWy-Wh-364"/>
+                        <outlet property="scrollview" destination="mhc-Oc-boJ" id="Mxn-5C-kx4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQg-Fa-8aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="631"/>
+        </scene>
+        <!--Article Detail View Controller-->
         <scene sceneID="cKZ-1Y-t2p">
             <objects>
-                <viewController id="fUj-0B-7rJ" customClass="DetailViewController" customModule="lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fUj-0B-7rJ" customClass="ArticleDetailViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pfu-We-dTv"/>
                         <viewControllerLayoutGuide type="bottom" id="raf-HO-RVi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JbO-I7-GQX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArticleNav" translatesAutoresizingMaskIntoConstraints="NO" id="gNW-UL-hOv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-59-jFs">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="ptA-ZT-nYq">
-                                        <rect key="frame" x="0.0" y="19" width="375" height="1777"/>
+                                        <rect key="frame" x="0.0" y="73" width="320" height="1520"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArticleNav" translatesAutoresizingMaskIntoConstraints="NO" id="gNW-UL-hOv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os4-cx-HvJ">
-                                <rect key="frame" x="16" y="29" width="51" height="22"/>
+                                <rect key="frame" x="16" y="15" width="51" height="40"/>
                                 <state key="normal" image="Back Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -170,42 +405,43 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="za4-Eq-4u7"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btn" destination="Os4-cx-HvJ" id="aO5-is-XmS"/>
+                        <outlet property="nav" destination="gNW-UL-hOv" id="gAV-ME-IbR"/>
                         <outlet property="scrollview" destination="Jk3-59-jFs" id="L9a-a3-244"/>
                         <outlet property="text" destination="ptA-ZT-nYq" id="2Ct-aC-Zre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLy-6t-oqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1537.5" y="923.5"/>
+            <point key="canvasLocation" x="1667" y="-51"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="0Ei-by-juG">
             <objects>
-                <viewController id="gO7-cX-1Go" customClass="IntroViewController" customModule="lesson1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gO7-cX-1Go" customClass="IntroViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wBT-kS-jFn"/>
                         <viewControllerLayoutGuide type="bottom" id="YlZ-1h-BrN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qVi-US-fFe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro Page" translatesAutoresizingMaskIntoConstraints="NO" id="a7o-vh-bRH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="4lB-d1-PPd"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="Kpp-d9-fpq"/>
-                                    <constraint firstAttribute="height" constant="667" id="RMv-Vu-ZeG"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro BG" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-yg-g0U">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYH-yh-z4d">
-                                <rect key="frame" x="45" y="576" width="284" height="58"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xYH-yh-z4d" secondAttribute="height" multiplier="142:29" id="zww-ZT-MUk"/>
-                                </constraints>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQc-5t-NiN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro" translatesAutoresizingMaskIntoConstraints="NO" id="a7o-vh-bRH">
+                                        <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYH-yh-z4d">
+                                <rect key="frame" x="45" y="692" width="231" height="47"/>
                                 <state key="normal" image="Intro Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -215,29 +451,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="YlZ-1h-BrN" firstAttribute="top" secondItem="xYH-yh-z4d" secondAttribute="bottom" constant="33" id="0X1-M3-dRB"/>
-                            <constraint firstItem="a7o-vh-bRH" firstAttribute="leading" secondItem="xYH-yh-z4d" secondAttribute="leading" constant="-45" id="4Jl-aZ-Sxr"/>
-                            <constraint firstItem="a7o-vh-bRH" firstAttribute="leading" secondItem="qVi-US-fFe" secondAttribute="leadingMargin" constant="-16" id="7BG-zU-nmu"/>
-                            <constraint firstItem="YlZ-1h-BrN" firstAttribute="top" secondItem="a7o-vh-bRH" secondAttribute="bottom" id="Bah-1f-4q8"/>
-                            <constraint firstItem="xYH-yh-z4d" firstAttribute="leading" secondItem="qVi-US-fFe" secondAttribute="leadingMargin" constant="29" id="Dpo-hZ-QhD"/>
-                            <constraint firstItem="a7o-vh-bRH" firstAttribute="bottom" secondItem="xYH-yh-z4d" secondAttribute="bottom" constant="33" id="EHb-g4-eZl"/>
-                            <constraint firstItem="a7o-vh-bRH" firstAttribute="top" secondItem="wBT-kS-jFn" secondAttribute="bottom" id="K2w-3C-0gK"/>
-                            <constraint firstItem="a7o-vh-bRH" firstAttribute="trailing" secondItem="xYH-yh-z4d" secondAttribute="trailing" constant="46" id="PKj-hI-k1U"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a7o-vh-bRH" secondAttribute="trailing" constant="-16" id="SaU-hj-tWe"/>
-                            <constraint firstAttribute="centerY" secondItem="a7o-vh-bRH" secondAttribute="centerY" id="mFW-1d-u93"/>
-                            <constraint firstAttribute="centerX" secondItem="a7o-vh-bRH" secondAttribute="centerX" id="oN2-sY-UmA"/>
-                            <constraint firstAttribute="centerX" secondItem="xYH-yh-z4d" secondAttribute="centerX" id="sac-2w-fvH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xYH-yh-z4d" secondAttribute="trailing" constant="30" id="utj-Mc-CCD"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bic-cT-JfA"/>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="introbtn" destination="xYH-yh-z4d" id="1AC-mr-syr"/>
+                        <outlet property="scrollView" destination="CQc-5t-NiN" id="SoD-yo-Rtf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7P-PW-XQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-160.5" y="-44.5"/>
+            <point key="canvasLocation" x="-161" y="-45"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -245,34 +470,281 @@
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="N9B-Yd-gO4"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="rQ0-fI-DAz" kind="relationship" relationship="viewControllers" id="rMz-EP-ix8"/>
                         <segue destination="vCU-Db-Ioc" kind="relationship" relationship="viewControllers" id="Hh1-K0-AGi"/>
+                        <segue destination="SH7-AG-iOO" kind="relationship" relationship="viewControllers" id="mzB-aa-z0Y"/>
+                        <segue destination="g0Q-2N-y6H" kind="relationship" relationship="viewControllers" id="bOq-ml-1G5"/>
+                        <segue destination="gK1-jI-lrI" kind="relationship" relationship="viewControllers" id="Ysj-UX-dpM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319.5" y="-44.5"/>
+            <point key="canvasLocation" x="307" y="-45"/>
+        </scene>
+        <!--Dribbble-->
+        <scene sceneID="hgH-bn-TXv">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="g0Q-2N-y6H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dribbble" image="Icon4" id="Yif-sM-KSl">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dSP-xT-gC5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bgS-Cc-i1l" kind="relationship" relationship="rootViewController" id="Hdo-iH-tCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNS-zT-B7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="1287"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="QUI-V4-JlX">
+            <objects>
+                <viewController id="bgS-Cc-i1l" customClass="ThirdViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2SY-2D-cRP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kua-jQ-TAj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kQo-OH-qtm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fae-IQ-EJW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dribbbleview" translatesAutoresizingMaskIntoConstraints="NO" id="xpw-hE-8gE">
+                                        <rect key="frame" x="15" y="69" width="290" height="1207"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-Ni-nUe">
+                                        <rect key="frame" x="15" y="795" width="290" height="215"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="detailbtn:" destination="bgS-Cc-i1l" eventType="touchUpInside" id="vmd-Xy-R9R"/>
+                                            <segue destination="Lcf-Rn-PIM" kind="push" id="kcN-OW-2Lt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DribbbleNav" translatesAutoresizingMaskIntoConstraints="NO" id="QFc-Ht-sQt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vco-x9-S7u"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="nav" destination="QFc-Ht-sQt" id="uA9-MJ-i9d"/>
+                        <outlet property="scrollimg" destination="xpw-hE-8gE" id="7hl-WK-gUZ"/>
+                        <outlet property="scrollview" destination="Fae-IQ-EJW" id="dc8-Ta-hso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wYR-bJ-j1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="1287"/>
+        </scene>
+        <!--Dribbble Detail View Controller-->
+        <scene sceneID="h51-Xm-VQz">
+            <objects>
+                <viewController id="Lcf-Rn-PIM" customClass="DribbbleDetailViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k3Z-R5-Ajx"/>
+                        <viewControllerLayoutGuide type="bottom" id="doP-Zc-j8F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="97X-yE-Uap">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DribbbleImg" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-08-HgP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K29-Px-aGG">
+                                <rect key="frame" x="16" y="15" width="51" height="40"/>
+                                <state key="normal" image="Back Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bckbtn:" destination="Lcf-Rn-PIM" eventType="touchUpInside" id="Ca1-cZ-Uur"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="o2J-SZ-fFv"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tag-Rn-3FX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="1287"/>
+        </scene>
+        <!--Product-->
+        <scene sceneID="9rq-gd-l9G">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="gK1-jI-lrI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Product" image="Icon5" id="iud-6X-Eir">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S7K-np-Ecf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nnz-kD-Zr9" kind="relationship" relationship="rootViewController" id="IDR-zw-oak"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5W-NN-PBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="1939"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="kKM-JK-q14">
+            <objects>
+                <viewController id="nnz-kD-Zr9" customClass="FourthViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8oa-nM-xnl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Exp-F1-EJ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6of-yd-cYA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C7m-Na-RQQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JF0-Kc-YXS" userLabel="HorizentalScrollview">
+                                        <rect key="frame" x="0.0" y="53" width="320" height="187"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3 + 2 + 1" translatesAutoresizingMaskIntoConstraints="NO" id="zbQ-7D-LvJ">
+                                                <rect key="frame" x="0.0" y="19" width="960" height="149"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlO-pP-uz1">
+                                        <rect key="frame" x="19" y="378" width="283" height="40"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="websitebtn:" destination="nnz-kD-Zr9" eventType="touchUpInside" id="DZ5-SA-nTO"/>
+                                            <segue destination="YIc-sU-8Qx" kind="push" id="gyN-AH-5A0"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-ps-94R">
+                                        <rect key="frame" x="19" y="243" width="283" height="548"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProductNav" translatesAutoresizingMaskIntoConstraints="NO" id="swg-EY-R5y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cY6-6t-ZaH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="horizentalscrollview" destination="JF0-Kc-YXS" id="Jhc-5w-LnL"/>
+                        <outlet property="nav" destination="swg-EY-R5y" id="Gh9-4T-Zku"/>
+                        <outlet property="scrollview" destination="C7m-Na-RQQ" id="vh1-27-APo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDZ-DR-X5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="1939"/>
+        </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="KEe-3F-mRJ">
+            <objects>
+                <viewController id="YIc-sU-8Qx" customClass="ProductDetailViewController" customModule="Ink" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ma3-gu-ffs"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGz-Rk-bbL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VRt-Eu-dfR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Vg-pG-CCt">
+                                <rect key="frame" x="0.0" y="53" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProductNav" translatesAutoresizingMaskIntoConstraints="NO" id="SFh-TF-NfV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-DR-jA1">
+                                <rect key="frame" x="16" y="15" width="51" height="40"/>
+                                <state key="normal" image="Back Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backbtn:" destination="YIc-sU-8Qx" eventType="touchUpInside" id="6WQ-ex-4cu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PSE-1m-lPl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btn" destination="QFe-DR-jA1" id="DTK-zY-VRW"/>
+                        <outlet property="nav" destination="SFh-TF-NfV" id="WKE-9F-Hhh"/>
+                        <outlet property="webview" destination="6Vg-pG-CCt" id="u11-7v-xb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vj2-XG-Qra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="1939"/>
         </scene>
     </scenes>
     <resources>
+        <image name="3 + 2 + 1" width="1125" height="175"/>
         <image name="Article" width="28" height="28"/>
         <image name="Article List" width="344" height="1334"/>
         <image name="ArticleNav" width="375" height="64"/>
         <image name="Back Button" width="51" height="15"/>
+        <image name="C1DetailText" width="320" height="679"/>
+        <image name="C1Img" width="320" height="241"/>
+        <image name="Card1" width="250" height="319"/>
+        <image name="Cell" width="332" height="619"/>
+        <image name="DBackBtn" width="30" height="30"/>
+        <image name="DIsmiss" width="41" height="41"/>
+        <image name="DetailBG + Detailimg" width="375" height="667"/>
+        <image name="DribbbleImg" width="375" height="667"/>
+        <image name="DribbbleNav" width="375" height="64"/>
+        <image name="Dribbbleview" width="343" height="1428"/>
+        <image name="Icon1" width="26" height="24"/>
+        <image name="Icon2" width="17" height="26"/>
+        <image name="Icon3" width="16" height="24"/>
+        <image name="Icon4" width="24" height="24"/>
+        <image name="Icon5" width="24" height="24"/>
+        <image name="Ink1 BG" width="320" height="568"/>
+        <image name="Inkicon" width="41" height="41"/>
+        <image name="Intro" width="960" height="568"/>
+        <image name="Intro BG" width="960" height="568"/>
         <image name="Intro Button" width="284" height="58"/>
-        <image name="Intro Page" width="375" height="667"/>
         <image name="PhotoGraphy" width="28" height="28"/>
         <image name="PhotoNav" width="375" height="64"/>
+        <image name="ProductNav" width="375" height="64"/>
+        <image name="Reload" width="26" height="26"/>
         <image name="Scrollimg" width="342" height="2514"/>
-        <image name="SectionButton" width="20" height="16"/>
+        <image name="SectionButton" width="18" height="16"/>
+        <image name="Share" width="26" height="26"/>
         <image name="Sidebar" width="327" height="667"/>
         <image name="Text" width="375" height="1777"/>
     </resources>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
 </document>
