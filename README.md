@@ -61,7 +61,7 @@ What I Learned(Mainly from MengTo's DesignCode):
 #Day5:Dribbble News Digest
 ![DND](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Portfolio/2.Portfolio.gif?raw=true)
 
-What I Learned(Mainly from MengTo's DesignCode):
+What I Learned:
 
 1.Simple If/Condition
 
