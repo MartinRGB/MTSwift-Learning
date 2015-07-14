@@ -58,5 +58,15 @@ What I Learned(Mainly from MengTo's DesignCode):
 
 4.Dictionary & Data & Loop
 
+#Day5:Dribbble News Digest
+![DND](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Portfolio/2.Portfolio.gif?raw=true)
+
+What I Learned(Mainly from MengTo's DesignCode):
+
+1.Simple If/Condition
+
+2.How to use simple iOS blur effect
+
+
 To be contiuned...
 
