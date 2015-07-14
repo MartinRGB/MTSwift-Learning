@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EDAEBF81B5044B200C1EE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEBF71B5044B200C1EE09 /* AppDelegate.swift */; };
+		2EDAEBFA1B5044B200C1EE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEBF91B5044B200C1EE09 /* ViewController.swift */; };
+		2EDAEBFD1B5044B200C1EE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAEBFB1B5044B200C1EE09 /* Main.storyboard */; };
+		2EDAEBFF1B5044B200C1EE09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAEBFE1B5044B200C1EE09 /* Images.xcassets */; };
+		2EDAEC021B5044B200C1EE09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDAEC001B5044B200C1EE09 /* LaunchScreen.xib */; };
+		2EDAEC0E1B5044B200C1EE09 /* PortofiloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEC0D1B5044B200C1EE09 /* PortofiloTests.swift */; };
+		2EDAEC221B5060BF00C1EE09 /* P1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEC1F1B5060BF00C1EE09 /* P1ViewController.swift */; };
+		2EDAEC231B5060BF00C1EE09 /* P2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEC201B5060BF00C1EE09 /* P2ViewController.swift */; };
+		2EDAEC241B5060BF00C1EE09 /* P3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDAEC211B5060BF00C1EE09 /* P3ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EDAEC081B5044B200C1EE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EDAEBEA1B5044B200C1EE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EDAEBF11B5044B200C1EE09;
+			remoteInfo = Portofilo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EDAEBF21B5044B200C1EE09 /* Portofilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portofilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDAEBF61B5044B200C1EE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDAEBF71B5044B200C1EE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EDAEBF91B5044B200C1EE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EDAEBFC1B5044B200C1EE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EDAEBFE1B5044B200C1EE09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2EDAEC011B5044B200C1EE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2EDAEC071B5044B200C1EE09 /* PortofiloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PortofiloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EDAEC0C1B5044B200C1EE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EDAEC0D1B5044B200C1EE09 /* PortofiloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortofiloTests.swift; sourceTree = "<group>"; };
+		2EDAEC1F1B5060BF00C1EE09 /* P1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ViewController.swift; sourceTree = "<group>"; };
+		2EDAEC201B5060BF00C1EE09 /* P2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2ViewController.swift; sourceTree = "<group>"; };
+		2EDAEC211B5060BF00C1EE09 /* P3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P3ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EDAEBEF1B5044B200C1EE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EDAEC041B5044B200C1EE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EDAEBE91B5044B200C1EE09 = {
+			isa = PBXGroup;
+			children = (
+				2EDAEBF41B5044B200C1EE09 /* Portofilo */,
+				2EDAEC0A1B5044B200C1EE09 /* PortofiloTests */,
+				2EDAEBF31B5044B200C1EE09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EDAEBF31B5044B200C1EE09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAEBF21B5044B200C1EE09 /* Portofilo.app */,
+				2EDAEC071B5044B200C1EE09 /* PortofiloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EDAEBF41B5044B200C1EE09 /* Portofilo */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAEBF71B5044B200C1EE09 /* AppDelegate.swift */,
+				2EDAEBF91B5044B200C1EE09 /* ViewController.swift */,
+				2EDAEC1F1B5060BF00C1EE09 /* P1ViewController.swift */,
+				2EDAEC201B5060BF00C1EE09 /* P2ViewController.swift */,
+				2EDAEC211B5060BF00C1EE09 /* P3ViewController.swift */,
+				2EDAEBFB1B5044B200C1EE09 /* Main.storyboard */,
+				2EDAEBFE1B5044B200C1EE09 /* Images.xcassets */,
+				2EDAEC001B5044B200C1EE09 /* LaunchScreen.xib */,
+				2EDAEBF51B5044B200C1EE09 /* Supporting Files */,
+			);
+			path = Portofilo;
+			sourceTree = "<group>";
+		};
+		2EDAEBF51B5044B200C1EE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAEBF61B5044B200C1EE09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EDAEC0A1B5044B200C1EE09 /* PortofiloTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAEC0D1B5044B200C1EE09 /* PortofiloTests.swift */,
+				2EDAEC0B1B5044B200C1EE09 /* Supporting Files */,
+			);
+			path = PortofiloTests;
+			sourceTree = "<group>";
+		};
+		2EDAEC0B1B5044B200C1EE09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EDAEC0C1B5044B200C1EE09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EDAEBF11B5044B200C1EE09 /* Portofilo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EDAEC111B5044B200C1EE09 /* Build configuration list for PBXNativeTarget "Portofilo" */;
+			buildPhases = (
+				2EDAEBEE1B5044B200C1EE09 /* Sources */,
+				2EDAEBEF1B5044B200C1EE09 /* Frameworks */,
+				2EDAEBF01B5044B200C1EE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Portofilo;
+			productName = Portofilo;
+			productReference = 2EDAEBF21B5044B200C1EE09 /* Portofilo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EDAEC061B5044B200C1EE09 /* PortofiloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EDAEC141B5044B200C1EE09 /* Build configuration list for PBXNativeTarget "PortofiloTests" */;
+			buildPhases = (
+				2EDAEC031B5044B200C1EE09 /* Sources */,
+				2EDAEC041B5044B200C1EE09 /* Frameworks */,
+				2EDAEC051B5044B200C1EE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EDAEC091B5044B200C1EE09 /* PBXTargetDependency */,
+			);
+			name = PortofiloTests;
+			productName = PortofiloTests;
+			productReference = 2EDAEC071B5044B200C1EE09 /* PortofiloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EDAEBEA1B5044B200C1EE09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Martin;
+				TargetAttributes = {
+					2EDAEBF11B5044B200C1EE09 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					2EDAEC061B5044B200C1EE09 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2EDAEBF11B5044B200C1EE09;
+					};
+				};
+			};
+			buildConfigurationList = 2EDAEBED1B5044B200C1EE09 /* Build configuration list for PBXProject "Portofilo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EDAEBE91B5044B200C1EE09;
+			productRefGroup = 2EDAEBF31B5044B200C1EE09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EDAEBF11B5044B200C1EE09 /* Portofilo */,
+				2EDAEC061B5044B200C1EE09 /* PortofiloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EDAEBF01B5044B200C1EE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDAEBFD1B5044B200C1EE09 /* Main.storyboard in Resources */,
+				2EDAEC021B5044B200C1EE09 /* LaunchScreen.xib in Resources */,
+				2EDAEBFF1B5044B200C1EE09 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EDAEC051B5044B200C1EE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EDAEBEE1B5044B200C1EE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDAEBFA1B5044B200C1EE09 /* ViewController.swift in Sources */,
+				2EDAEBF81B5044B200C1EE09 /* AppDelegate.swift in Sources */,
+				2EDAEC241B5060BF00C1EE09 /* P3ViewController.swift in Sources */,
+				2EDAEC231B5060BF00C1EE09 /* P2ViewController.swift in Sources */,
+				2EDAEC221B5060BF00C1EE09 /* P1ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EDAEC031B5044B200C1EE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDAEC0E1B5044B200C1EE09 /* PortofiloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EDAEC091B5044B200C1EE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EDAEBF11B5044B200C1EE09 /* Portofilo */;
+			targetProxy = 2EDAEC081B5044B200C1EE09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EDAEBFB1B5044B200C1EE09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EDAEBFC1B5044B200C1EE09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EDAEC001B5044B200C1EE09 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EDAEC011B5044B200C1EE09 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EDAEC0F1B5044B200C1EE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EDAEC101B5044B200C1EE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EDAEC121B5044B200C1EE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				INFOPLIST_FILE = Portofilo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EDAEC131B5044B200C1EE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				INFOPLIST_FILE = Portofilo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2EDAEC151B5044B200C1EE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PortofiloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portofilo.app/Portofilo";
+			};
+			name = Debug;
+		};
+		2EDAEC161B5044B200C1EE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PortofiloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Portofilo.app/Portofilo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EDAEBED1B5044B200C1EE09 /* Build configuration list for PBXProject "Portofilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDAEC0F1B5044B200C1EE09 /* Debug */,
+				2EDAEC101B5044B200C1EE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EDAEC111B5044B200C1EE09 /* Build configuration list for PBXNativeTarget "Portofilo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDAEC121B5044B200C1EE09 /* Debug */,
+				2EDAEC131B5044B200C1EE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EDAEC141B5044B200C1EE09 /* Build configuration list for PBXNativeTarget "PortofiloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EDAEC151B5044B200C1EE09 /* Debug */,
+				2EDAEC161B5044B200C1EE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EDAEBEA1B5044B200C1EE09 /* Project object */;
+}

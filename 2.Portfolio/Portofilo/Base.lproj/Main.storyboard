@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WPV-Bw-OqY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Portofilo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zp8-Rj-Rvf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hero2" translatesAutoresizingMaskIntoConstraints="NO" id="SB8-1S-Tyb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yto-oV-uTD">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4H5-rz-iXa">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-La-IoV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ScrollList" translatesAutoresizingMaskIntoConstraints="NO" id="BFB-KD-pnS">
+                                        <rect key="frame" x="0.0" y="167" width="320" height="1187"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Btnimg1" translatesAutoresizingMaskIntoConstraints="NO" id="jtJ-Qk-L5A">
+                                        <rect key="frame" x="0.0" y="167" width="320" height="213"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Btnimg2" translatesAutoresizingMaskIntoConstraints="NO" id="RBg-ZR-p9r">
+                                        <rect key="frame" x="0.0" y="380" width="320" height="161"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Btnimg3" translatesAutoresizingMaskIntoConstraints="NO" id="tL7-Cs-Css" userLabel="Btnimg3">
+                                        <rect key="frame" x="0.0" y="1192" width="320" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjN-Eq-xJa" userLabel="Btn1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="380"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lJ5-Px-l7I"/>
+                                            <segue destination="xrd-91-1nt" kind="push" id="LMk-nd-B1Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z21-3Y-VJJ" userLabel="Btn2">
+                                        <rect key="frame" x="0.0" y="380" width="320" height="161"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="utT-T0-tEc"/>
+                                            <segue destination="dLB-fP-acW" kind="push" id="8iF-iW-Niu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6US-9o-jXI" userLabel="Btn3">
+                                        <rect key="frame" x="0.0" y="1192" width="320" height="161"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="T70-5f-I4Z"/>
+                                            <segue destination="WGZ-n7-0oX" kind="push" id="rkH-Ft-4WR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="jEF-uC-xrB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blurview" destination="yto-oV-uTD" id="dbw-Et-A2g"/>
+                        <outlet property="btnimg1" destination="jtJ-Qk-L5A" id="txK-97-Qt8"/>
+                        <outlet property="btnimg2" destination="RBg-ZR-p9r" id="rDt-kg-cht"/>
+                        <outlet property="btnimg3" destination="tL7-Cs-Css" id="lCR-Lf-WSP"/>
+                        <outlet property="heroimg" destination="SB8-1S-Tyb" id="M9Q-Ho-RKh"/>
+                        <outlet property="scrollview" destination="Osf-La-IoV" id="b2o-cY-lvs"/>
+                        <outlet property="topview" destination="Zp8-Rj-Rvf" id="0yM-h4-OOu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="414"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ki6-sd-EKe">
+            <objects>
+                <viewController id="dLB-fP-acW" customClass="P2ViewController" customModule="Portofilo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hol-JO-s67"/>
+                        <viewControllerLayoutGuide type="bottom" id="pu5-sq-S7Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="prR-nc-DPD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p2" translatesAutoresizingMaskIntoConstraints="NO" id="iub-m8-PhU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-GG-oIO">
+                                <rect key="frame" x="16" y="16" width="34" height="34"/>
+                                <state key="normal" image="Backbtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x2e-bo-E4S" kind="unwind" unwindAction="unwindToViewController:" id="cvY-rR-2Nk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tqp-oW-uHY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2e-8L-5bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="x2e-bo-E4S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="430"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OiK-lx-yML">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="WPV-Bw-OqY" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r7G-Aq-f7I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="128-yp-A4q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdx-d4-Tg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="414"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eQc-vq-5IN">
+            <objects>
+                <viewController id="WGZ-n7-0oX" customClass="P3ViewController" customModule="Portofilo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z5V-f1-UmR"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZTo-dt-Sdg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lnN-Y7-1bJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p3" translatesAutoresizingMaskIntoConstraints="NO" id="Znw-l1-8FU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCO-Kn-SUb">
+                                <rect key="frame" x="16" y="16" width="34" height="34"/>
+                                <state key="normal" image="Backbtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0QK-Ks-d3m" kind="unwind" unwindAction="unwindToViewController:" id="eT5-Ac-zt8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6UC-U0-qsY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxU-Hc-cFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0QK-Ks-d3m" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="1052"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Nf-bg-Wyg">
+            <objects>
+                <viewController id="xrd-91-1nt" customClass="P1ViewController" customModule="Portofilo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Db1-gg-Utz"/>
+                        <viewControllerLayoutGuide type="bottom" id="L4B-5A-ypN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JbB-gU-heq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p1" translatesAutoresizingMaskIntoConstraints="NO" id="eKB-pX-5uq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZk-KP-1Uu">
+                                <rect key="frame" x="16" y="16" width="34" height="34"/>
+                                <state key="normal" image="Backbtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BVb-oa-kYN" kind="unwind" unwindAction="unwindToViewController:" id="8Nf-nI-WGd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HJX-V0-4p4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjY-cC-dzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BVb-oa-kYN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="874" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Backbtn" width="34" height="34"/>
+        <image name="Btnimg1" width="320" height="213"/>
+        <image name="Btnimg2" width="320" height="161"/>
+        <image name="Btnimg3" width="320" height="161"/>
+        <image name="Hero2" width="800" height="600"/>
+        <image name="ScrollList" width="320" height="1186"/>
+        <image name="p1" width="320" height="568"/>
+        <image name="p2" width="320" height="568"/>
+        <image name="p3" width="320" height="568"/>
+    </resources>
+</document>
