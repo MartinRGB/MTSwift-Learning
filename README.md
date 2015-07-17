@@ -58,7 +58,7 @@ What I Learned(Mainly from MengTo's DesignCode):
 
 4.Dictionary & Data & Loop
 
-#Day5:Dribbble News Digest
+##Day5:Dribbble News Digest
 ![DND](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Portfolio/2.Portfolio.gif?raw=true)
 
 What I Learned:
@@ -66,6 +66,15 @@ What I Learned:
 1.Simple If/Condition
 
 2.How to use simple iOS blur effect
+
+##Day6:Coffee
+![Coffee](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.Coffee/Coffee.gif?raw=true)
+
+What I Learned:
+
+1.Gif sequence
+
+2.Simple 3D-like slidemenu effect
 
 
 To be contiuned...
