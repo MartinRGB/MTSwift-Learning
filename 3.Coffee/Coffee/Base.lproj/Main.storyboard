@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee0" translatesAutoresizingMaskIntoConstraints="NO" id="a92-uN-PKb">
+                                <rect key="frame" x="-231" y="0.0" width="1010" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-aA-g93">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ExO-Xq-Lwx">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="FWS-lP-QnO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intro Text" translatesAutoresizingMaskIntoConstraints="NO" id="zLs-8E-L80">
+                                <rect key="frame" x="27" y="72" width="266" height="386"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSx-Bx-5gU">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <state key="normal" image="Button Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getstartbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZpL-E1-dBn"/>
+                                    <segue destination="RVl-IH-GMB" kind="modal" identifier="introtomain" modalTransitionStyle="crossDissolve" id="951-9V-YKd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95288103818893433" green="0.95298808813095093" blue="0.95281940698623657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vjJ-gd-Hqj"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blackmask" destination="FWS-lP-QnO" id="haH-oB-Hwj"/>
+                        <outlet property="blurview" destination="dZe-aA-g93" id="UPf-uY-XAw"/>
+                        <outlet property="gif" destination="a92-uN-PKb" id="Aop-FK-adJ"/>
+                        <outlet property="introtext" destination="zLs-8E-L80" id="cRi-IL-HJk"/>
+                        <outlet property="mainview" destination="kh9-bI-dsS" id="C8M-1V-0ML"/>
+                        <outlet property="startbutton" destination="NSx-Bx-5gU" id="mm2-jT-knf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="371"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="kWq-E4-Ril">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="RVl-IH-GMB" customClass="NavigationViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z2W-0f-Jwb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JMA-DT-TQ8" kind="relationship" relationship="rootViewController" id="Vlk-JZ-zeA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="web-9d-Bph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479" y="371"/>
+        </scene>
+        <!--Coffee Page View Controller-->
+        <scene sceneID="lym-xI-Imr">
+            <objects>
+                <viewController id="2Bg-VB-w1U" customClass="CoffeePageViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V2B-8H-yeE"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHz-3m-veL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Nn-sS-knF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee Page" translatesAutoresizingMaskIntoConstraints="NO" id="47d-Vi-8Ae">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnN-uw-jnK" userLabel="DetailCoffee">
+                                <rect key="frame" x="164" y="382" width="145" height="192"/>
+                                <state key="normal" image="CoffeeBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="detailbtn:" destination="2Bg-VB-w1U" eventType="touchUpInside" id="Bsk-CB-fyH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZu-hM-7EW" userLabel="Backbtn">
+                                <rect key="frame" x="0.0" y="14" width="46" height="40"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aCN-xO-ybZ" kind="unwind" unwindAction="unwindToViewController:" id="eu2-8i-RQ0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Overlay dark" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-ae-iRm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUN-K7-jM7">
+                                <rect key="frame" x="11" y="-600" width="298" height="548"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Card" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-zM-vYo">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="548"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdH-BD-C7m" userLabel="Carddismiss">
+                                        <rect key="frame" x="8" y="0.0" width="46" height="53"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dissmissbtn:" destination="2Bg-VB-w1U" eventType="touchUpInside" id="Ou8-ZM-Zpw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rF4-vM-2Ug"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cardview" destination="QUN-K7-jM7" id="mTX-RE-7cR"/>
+                        <outlet property="dark" destination="zr3-ae-iRm" id="MuE-w5-xzq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GxT-pT-cba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aCN-xO-ybZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1330" y="371"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="G89-vN-mnk">
+            <objects>
+                <viewController id="JMA-DT-TQ8" customClass="MainPageViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VeK-ag-0iF"/>
+                        <viewControllerLayoutGuide type="bottom" id="kAv-Xi-Qae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hYY-Y4-NBS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="05.03 Sidebar" translatesAutoresizingMaskIntoConstraints="NO" id="7j8-2c-Wxy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sidebartext" translatesAutoresizingMaskIntoConstraints="NO" id="zzN-8s-nFJ">
+                                <rect key="frame" x="46" y="83" width="69" height="445"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Z-vv-guV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MenuBG" translatesAutoresizingMaskIntoConstraints="NO" id="25P-wv-T4f">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top Bar " translatesAutoresizingMaskIntoConstraints="NO" id="yLO-bh-sKD">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hz-qj-oeK">
+                                        <rect key="frame" x="10" y="54" width="300" height="514"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Listview" translatesAutoresizingMaskIntoConstraints="NO" id="Wsq-Zy-sPV">
+                                                <rect key="frame" x="0.0" y="14" width="300" height="942"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS3-wf-yMx" userLabel="Coffepage">
+                                                <rect key="frame" x="0.0" y="15" width="145" height="180"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="2Bg-VB-w1U" kind="push" id="BdZ-tI-gIm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Navigation" translatesAutoresizingMaskIntoConstraints="NO" id="f2A-87-Od2">
+                                        <rect key="frame" x="10" y="29" width="17" height="12"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0U-lr-0Kf" userLabel="NavButton">
+                                        <rect key="frame" x="0.0" y="10" width="44" height="44"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="navbtnpressed:" destination="JMA-DT-TQ8" eventType="touchUpInside" id="FWh-wt-1Wo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bP3-xY-yRr" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backbtn:" destination="JMA-DT-TQ8" eventType="touchUpInside" id="tu9-o6-xQo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95288103818893433" green="0.95298808813095093" blue="0.95281940698623657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95288103818893433" green="0.95298808813095093" blue="0.95281940698623657" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WDm-r3-doh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="backbutton" destination="bP3-xY-yRr" id="wUd-yY-Bxi"/>
+                        <outlet property="cpbutton" destination="FS3-wf-yMx" id="vMY-fe-Y55"/>
+                        <outlet property="mainview" destination="Q3Z-vv-guV" id="KI3-ox-qQK"/>
+                        <outlet property="navbutton" destination="f0U-lr-0Kf" id="1qt-Fj-T5d"/>
+                        <outlet property="navigation" destination="f2A-87-Od2" id="uG5-NP-m9L"/>
+                        <outlet property="scrollview" destination="6hz-qj-oeK" id="cxZ-2B-ORk"/>
+                        <outlet property="sidebartext" destination="zzN-8s-nFJ" id="SnO-SQ-EHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKC-np-beE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="371"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="05.03 Sidebar" width="750" height="1334"/>
+        <image name="Button Login" width="750" height="120"/>
+        <image name="Card" width="700" height="1284"/>
+        <image name="Coffee Page" width="750" height="1334"/>
+        <image name="Coffee0" width="640" height="360"/>
+        <image name="CoffeeBtn" width="340" height="439"/>
+        <image name="Intro Text" width="531" height="772"/>
+        <image name="Listview" width="703" height="2205"/>
+        <image name="MenuBG" width="750" height="1334"/>
+        <image name="Navigation" width="41" height="28"/>
+        <image name="Overlay dark" width="750" height="1334"/>
+        <image name="Rectangle 1" width="320" height="568"/>
+        <image name="Sidebartext" width="156" height="994"/>
+        <image name="Top Bar " width="750" height="128"/>
+    </resources>
+</document>
