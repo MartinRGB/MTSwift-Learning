@@ -76,6 +76,17 @@ What I Learned:
 
 2.Simple 3D-like slidemenu effect
 
+##Day7:Reading "Swift Development with Cocoa"
+
+What I learned:
+
+1.Basic knowledge abt "closure [x]/int [x]/protocol [x]/extension [x]",still needs to review.
+
+2.theory abt "lifecycle/constraints [x]"
+
+3.Make 3 example —— AlertView/DynamicSnap(Used Pan Gesture Recognize & UIDynamicAnimator)/OperationQueue(theory abt OperationQueue & Closure [x])
+
+4.Plan to learn sth from http://mathewsanders.com/ tomorrow
 
 To be contiuned...
 
