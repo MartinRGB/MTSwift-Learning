@@ -68,7 +68,7 @@ What I Learned:
 2.How to use simple iOS blur effect
 
 ##Day6:Coffee
-![Coffee](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.Coffee/Coffee.gif?raw=true)
+![Coffee](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.Coffee/3.Coffee.gif?raw=true)
 
 What I Learned:
 
