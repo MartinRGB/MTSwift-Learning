@@ -8,7 +8,7 @@ A 100 Day Swift Learning Plan.Wanna be learn more about code,not only animation
 
 ##Day1:Ink
 
-![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.ink/ink.gif?raw=true)
+![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/1.ink/ink.gif?raw=true)
 
 What I Learned:
 
@@ -20,7 +20,7 @@ What I Learned:
 
 ##Day2:Ink
 
-![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.ink/ink3.gif?raw=true)
+![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/1.ink/ink3.gif?raw=true)
 
 What I Learned:
 
@@ -32,7 +32,7 @@ What I Learned:
 
 ##Day3:Ink
 
-![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.ink/ink4.gif?raw=true)
+![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/1.ink/ink4.gif?raw=true)
 
 What I Learned:
 
@@ -46,7 +46,7 @@ What I Learned:
 
 ##Day4:Ink
 
-![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.ink/ink2.gif?raw=true)
+![Ink](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/1.ink/ink2.gif?raw=true)
 
 What I Learned(Mainly from MengTo's DesignCode):
 
