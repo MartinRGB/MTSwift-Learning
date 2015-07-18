@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3mW-sc-HyU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3mW-sc-HyU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--ContainerViewTransition-->
+        <!--MSTutorial-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,19 +37,26 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ContainerViewTransition" id="9sT-fq-ykh">
+                    <navigationItem key="navigationItem" title="MSTutorial" id="9sT-fq-ykh">
                         <barButtonItem key="leftBarButtonItem" id="OVD-H6-osZ"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="UdB-Og-DQp" kind="push" identifier="effect1" id="Vcv-o9-n7y"/>
+                        <segue destination="xUa-n6-N4l" kind="push" identifier="effect2" id="RpG-Z8-Vh8"/>
+                        <segue destination="W8i-uz-hLV" kind="push" identifier="effect3" id="Rem-AW-APs"/>
+                        <segue destination="o8J-11-C9v" kind="push" identifier="effect4" id="VIC-NB-szx"/>
+                        <segue destination="zcC-3B-IwJ" kind="push" identifier="effect5" id="32K-vb-hYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="256" y="429"/>
+            <point key="canvasLocation" x="224" y="485"/>
         </scene>
-        <!--ContainerViewTransition-->
+        <!--Animation1-->
         <scene sceneID="RhF-cS-cSh">
             <objects>
-                <viewController id="UdB-Og-DQp" sceneMemberID="viewController">
+                <viewController id="UdB-Og-DQp" customClass="animation1" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wed-db-5UW"/>
                         <viewControllerLayoutGuide type="bottom" id="825-sB-aaz"/>
@@ -57,29 +65,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmJ-oe-nwe">
-                                <rect key="frame" x="154" y="300" width="12" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIe-Ol-z3I">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="UdB-Og-DQp" eventType="touchUpInside" id="Tgz-bz-mdb"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="lEG-U1-tL8">
+                                <rect key="frame" x="46" y="408" width="228" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="lEG-U1-tL8" secondAttribute="trailing" constant="32" id="1Po-5u-v4X"/>
+                            <constraint firstAttribute="centerX" secondItem="lEG-U1-tL8" secondAttribute="centerX" id="393-38-Kdj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIe-Ol-z3I" secondAttribute="trailing" constant="75" id="3aw-Zo-sKT"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="75" id="4xx-Xz-VqE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIe-Ol-z3I" secondAttribute="trailing" constant="110" id="7Qi-wL-JpG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lEG-U1-tL8" secondAttribute="trailing" constant="32" id="7hj-Sb-1uC"/>
+                            <constraint firstItem="lEG-U1-tL8" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="32" id="AIo-Na-r9a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIe-Ol-z3I" secondAttribute="trailing" constant="115" id="DFu-0a-JA4"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="121" id="I7O-P1-pZs"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="top" secondItem="lEG-U1-tL8" secondAttribute="bottom" constant="66" id="IsD-qh-Nwj"/>
+                            <constraint firstAttribute="centerX" secondItem="mIe-Ol-z3I" secondAttribute="centerX" id="L0X-Xz-rtt"/>
+                            <constraint firstItem="825-sB-aaz" firstAttribute="top" secondItem="mIe-Ol-z3I" secondAttribute="bottom" constant="33" id="aiU-7g-aVu"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="top" secondItem="lEG-U1-tL8" secondAttribute="bottom" constant="40" id="cPD-E3-yHj"/>
+                            <constraint firstAttribute="centerX" secondItem="lEG-U1-tL8" secondAttribute="centerX" id="ddX-nc-CCM"/>
+                            <constraint firstItem="lEG-U1-tL8" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="32" id="gfx-rQ-dVQ"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="116" id="o78-WV-PjS"/>
+                            <constraint firstItem="mIe-Ol-z3I" firstAttribute="leading" secondItem="2EF-JQ-t63" secondAttribute="leadingMargin" constant="116" id="oJS-WM-N6k"/>
+                            <constraint firstAttribute="centerX" secondItem="mIe-Ol-z3I" secondAttribute="centerX" id="p3N-Uf-InU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mIe-Ol-z3I" secondAttribute="trailing" constant="115" id="qsj-s8-1U4"/>
+                            <constraint firstItem="825-sB-aaz" firstAttribute="top" secondItem="mIe-Ol-z3I" secondAttribute="bottom" constant="33" id="sO7-zJ-9CB"/>
+                            <constraint firstItem="825-sB-aaz" firstAttribute="top" secondItem="mIe-Ol-z3I" secondAttribute="bottom" constant="34" id="uhX-bf-7wN"/>
+                            <constraint firstAttribute="centerX" secondItem="mIe-Ol-z3I" secondAttribute="centerX" id="vYi-G9-zGs"/>
+                            <constraint firstItem="825-sB-aaz" firstAttribute="top" secondItem="mIe-Ol-z3I" secondAttribute="bottom" constant="32" id="xaZ-2C-Kf1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Po-5u-v4X"/>
+                                <exclude reference="393-38-Kdj"/>
+                                <exclude reference="AIo-Na-r9a"/>
+                                <exclude reference="7Qi-wL-JpG"/>
+                                <exclude reference="DFu-0a-JA4"/>
+                                <exclude reference="I7O-P1-pZs"/>
+                                <exclude reference="L0X-Xz-rtt"/>
+                                <exclude reference="cPD-E3-yHj"/>
+                                <exclude reference="o78-WV-PjS"/>
+                                <exclude reference="oJS-WM-N6k"/>
+                                <exclude reference="qsj-s8-1U4"/>
+                                <exclude reference="vYi-G9-zGs"/>
+                                <exclude reference="aiU-7g-aVu"/>
+                                <exclude reference="sO7-zJ-9CB"/>
+                                <exclude reference="xaZ-2C-Kf1"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="ContainerViewTransition" id="V2M-Yh-o6F">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="KnP-P6-AGE">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <segue destination="f37-h6-awo" kind="unwind" unwindAction="unwindtoViewController:" id="S82-9R-nFW"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Animation1" id="j3m-d0-gJe"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="UIValueSlider" destination="lEG-U1-tL8" id="btr-Jt-992"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISQ-pN-QER" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="f37-h6-awo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="742" y="169"/>
+            <point key="canvasLocation" x="693" y="174"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TL7-gA-gm3">
@@ -96,12 +149,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4X-Dy-5KO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-285" y="429"/>
+            <point key="canvasLocation" x="-269" y="485"/>
         </scene>
-        <!--ContainerViewTransition-->
+        <!--Animation2-->
         <scene sceneID="vYM-Lr-Pis">
             <objects>
-                <viewController id="xUa-n6-N4l" sceneMemberID="viewController">
+                <viewController id="xUa-n6-N4l" customClass="animation2" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZPi-so-ec9"/>
                         <viewControllerLayoutGuide type="bottom" id="5S3-Yv-dJy"/>
@@ -119,19 +172,96 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ContainerViewTransition" id="SC0-xm-LhM">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="ndf-gS-6JG">
-                            <connections>
-                                <segue destination="bJz-bD-OwU" kind="unwind" unwindAction="unwindtoViewController:" id="HhS-ZR-xj6"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Animation2" id="wjo-Ea-b6J"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfJ-so-sQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="bJz-bD-OwU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="742" y="891"/>
+            <point key="canvasLocation" x="693" y="809"/>
+        </scene>
+        <!--Transition1-->
+        <scene sceneID="nsK-VJ-boq">
+            <objects>
+                <viewController id="W8i-uz-hLV" customClass="transition1" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4v-z8-ZSV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3sW-lS-AHv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aE7-Gj-ZHd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-xB-NQu">
+                                <rect key="frame" x="154" y="313" width="13" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition1" id="a6J-yE-f1h"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIO-RL-em1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="687" y="1457"/>
+        </scene>
+        <!--Transition3-->
+        <scene sceneID="zs4-7q-NTb">
+            <objects>
+                <viewController id="zcC-3B-IwJ" customClass="transition3" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TuC-OH-3JI"/>
+                        <viewControllerLayoutGuide type="bottom" id="IWM-tf-aed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ka3-qM-UHe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsh-9s-VQ4">
+                                <rect key="frame" x="154" y="313" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition3" id="MxA-m7-RUD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etL-gc-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="1097"/>
+        </scene>
+        <!--Transition2-->
+        <scene sceneID="0C3-hg-9u1">
+            <objects>
+                <viewController id="o8J-11-C9v" customClass="transition2" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AMx-44-Q3m"/>
+                        <viewControllerLayoutGuide type="bottom" id="5xX-Ao-P0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JpD-5G-hfL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a65-Y6-U6t">
+                                <rect key="frame" x="154" y="313" width="13" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition2" id="S9c-bh-6na"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igP-2w-DZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="448"/>
         </scene>
     </scenes>
 </document>

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "634EA0EC1B59F76C00C964AF"
-               BuildableName = "AnimationPrototype1.app"
-               BlueprintName = "AnimationPrototype1"
-               ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+               BlueprintIdentifier = "638BA4C81B5A556F005B5F7B"
+               BuildableName = "Container ViewTransition.app"
+               BlueprintName = "Container ViewTransition"
+               ReferencedContainer = "container:Container ViewTransition.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "634EA1011B59F76C00C964AF"
-               BuildableName = "AnimationPrototype1Tests.xctest"
-               BlueprintName = "AnimationPrototype1Tests"
-               ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+               BlueprintIdentifier = "638BA4DD1B5A556F005B5F7B"
+               BuildableName = "Container ViewTransitionTests.xctest"
+               BlueprintName = "Container ViewTransitionTests"
+               ReferencedContainer = "container:Container ViewTransition.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "634EA1011B59F76C00C964AF"
-               BuildableName = "AnimationPrototype1Tests.xctest"
-               BlueprintName = "AnimationPrototype1Tests"
-               ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+               BlueprintIdentifier = "638BA4DD1B5A556F005B5F7B"
+               BuildableName = "Container ViewTransitionTests.xctest"
+               BlueprintName = "Container ViewTransitionTests"
+               ReferencedContainer = "container:Container ViewTransition.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "634EA0EC1B59F76C00C964AF"
-            BuildableName = "AnimationPrototype1.app"
-            BlueprintName = "AnimationPrototype1"
-            ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+            BlueprintIdentifier = "638BA4C81B5A556F005B5F7B"
+            BuildableName = "Container ViewTransition.app"
+            BlueprintName = "Container ViewTransition"
+            ReferencedContainer = "container:Container ViewTransition.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "634EA0EC1B59F76C00C964AF"
-            BuildableName = "AnimationPrototype1.app"
-            BlueprintName = "AnimationPrototype1"
-            ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+            BlueprintIdentifier = "638BA4C81B5A556F005B5F7B"
+            BuildableName = "Container ViewTransition.app"
+            BlueprintName = "Container ViewTransition"
+            ReferencedContainer = "container:Container ViewTransition.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "634EA0EC1B59F76C00C964AF"
-            BuildableName = "AnimationPrototype1.app"
-            BlueprintName = "AnimationPrototype1"
-            ReferencedContainer = "container:AnimationPrototype1.xcodeproj">
+            BlueprintIdentifier = "638BA4C81B5A556F005B5F7B"
+            BuildableName = "Container ViewTransition.app"
+            BlueprintName = "Container ViewTransition"
+            ReferencedContainer = "container:Container ViewTransition.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

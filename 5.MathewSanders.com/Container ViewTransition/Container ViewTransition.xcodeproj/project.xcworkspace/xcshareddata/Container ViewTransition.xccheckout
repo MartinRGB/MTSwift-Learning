@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>92CB8E04-D88B-4AE1-A7BE-5F85F8CBE1C4</string>
+	<string>5017CDD4-2CA0-4964-84E0-C92F5FC265B5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>AnimationPrototype1</string>
+	<string>Container ViewTransition</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0</key>
 		<string>https://github.com/MartinRGB/MTSwift-Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>5.MathewSanders.com/Animation Part1/AnimationPrototype1.xcodeproj</string>
+	<string>5.MathewSanders.com/Container ViewTransition/Container ViewTransition.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0</key>
