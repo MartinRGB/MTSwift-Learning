@@ -77,7 +77,8 @@ What I Learned:
 2.Simple 3D-like slidemenu effect
 
 ##Day7:Reading "Swift Development with Cocoa"
-
+![Day7](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Swift%20Development%20with%20Cocoa/Part%201/parti.gif?raw=true
+)
 What I learned:
 
 1.Basic knowledge abt "closure [x]/int [x]/protocol [x]/extension [x]",still needs to review.
@@ -86,7 +87,9 @@ What I learned:
 
 3.Make 3 example —— AlertView/DynamicSnap(Used Pan Gesture Recognize & UIDynamicAnimator)/OperationQueue(theory abt OperationQueue & Closure [x])
 
-4.Plan to learn sth from http://mathewsanders.com/ tomorrow
+4.use "arc4random_uniform()" to generate random Int,"for in" to play more times animation/How to get value from UISlider
+
+5.Plan to learn more from http://mathewsanders.com/ tomorrow
 
 To be contiuned...
 
