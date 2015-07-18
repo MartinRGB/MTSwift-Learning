@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AnimationPrototype1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BA3-Wd-hsL">
+                                <rect key="frame" x="86" y="456" width="148" height="78"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WNX-dG-126"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="YeM-aP-33R">
+                                <rect key="frame" x="29" y="406" width="263" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YeM-aP-33R" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="122" id="4sl-RQ-zk0"/>
+                            <constraint firstAttribute="centerX" secondItem="BA3-Wd-hsL" secondAttribute="centerX" id="6Ks-ST-MN1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BA3-Wd-hsL" secondAttribute="trailing" constant="70" id="BbS-SN-zAU"/>
+                            <constraint firstItem="BA3-Wd-hsL" firstAttribute="top" secondItem="YeM-aP-33R" secondAttribute="bottom" constant="20" id="Orc-P4-scT"/>
+                            <constraint firstItem="BA3-Wd-hsL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="70" id="PdS-Si-Qsf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BA3-Wd-hsL" secondAttribute="bottom" constant="34" id="STc-Gs-ysA"/>
+                            <constraint firstItem="BA3-Wd-hsL" firstAttribute="top" secondItem="YeM-aP-33R" secondAttribute="bottom" constant="21" id="dOm-AM-BPx"/>
+                            <constraint firstAttribute="centerX" secondItem="YeM-aP-33R" secondAttribute="centerX" id="dkp-dA-kxR"/>
+                            <constraint firstAttribute="centerX" secondItem="YeM-aP-33R" secondAttribute="centerX" id="htC-2W-mAU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeM-aP-33R" secondAttribute="trailing" constant="14" id="mgx-zH-Fr1"/>
+                            <constraint firstItem="YeM-aP-33R" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="rCD-0O-iyL"/>
+                            <constraint firstAttribute="centerX" secondItem="BA3-Wd-hsL" secondAttribute="centerX" id="sVn-DQ-6hD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeM-aP-33R" secondAttribute="trailing" constant="121" id="tpW-5b-oVg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BA3-Wd-hsL" secondAttribute="bottom" constant="66" id="ziv-CD-tuP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4sl-RQ-zk0"/>
+                                <exclude reference="htC-2W-mAU"/>
+                                <exclude reference="tpW-5b-oVg"/>
+                                <exclude reference="6Ks-ST-MN1"/>
+                                <exclude reference="dOm-AM-BPx"/>
+                                <exclude reference="ziv-CD-tuP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="UIValueSlider" destination="YeM-aP-33R" id="g66-TT-JUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>195384EA-68B9-453C-86C0-46A3CE1C6575</string>
+	<string>71CC6120-A36B-4D10-996D-77556400011C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Swift DWC－1</string>
+	<string>DynamicSnap</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0</key>
 		<string>https://github.com/MartinRGB/MTSwift-Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>4.Swift Development with Cocoa/Part 1/AlertView/Swift DWC－1.xcodeproj</string>
+	<string>4.Swift Development with Cocoa/Part 1/DynamicSnap/DynamicSnap.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0</key>
