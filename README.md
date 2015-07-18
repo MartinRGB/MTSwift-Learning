@@ -79,6 +79,7 @@ What I Learned:
 ##Day7:Reading "Swift Development with Cocoa"
 ![Day7](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Swift%20Development%20with%20Cocoa/Part%201/parti.gif?raw=true
 )
+
 What I learned:
 
 1.Basic knowledge abt "closure [x]/int [x]/protocol [x]/extension [x]",still needs to review.
