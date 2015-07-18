@@ -108,4 +108,6 @@ What I learned(From MathewSanders.com):
 
 5.(Animation 4)Learned stroke Animation/set ovalpath's anchorpoint、clockwise、radius/How to use SystemAnimation
 
+6.Plan to Learn Progress concept tomorrow,try to design these demo with funny idea.
+
 To be contiuned...
