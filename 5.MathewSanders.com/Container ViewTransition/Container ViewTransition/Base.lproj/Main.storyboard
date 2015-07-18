@@ -46,7 +46,9 @@
                         <segue destination="xUa-n6-N4l" kind="push" identifier="effect2" id="RpG-Z8-Vh8"/>
                         <segue destination="W8i-uz-hLV" kind="push" identifier="effect3" id="Rem-AW-APs"/>
                         <segue destination="o8J-11-C9v" kind="push" identifier="effect4" id="VIC-NB-szx"/>
-                        <segue destination="zcC-3B-IwJ" kind="push" identifier="effect5" id="32K-vb-hYk"/>
+                        <segue destination="3bg-Ue-Z8O" kind="push" identifier="effect6" id="AMb-Jc-ZJs"/>
+                        <segue destination="o9c-Lh-5a5" kind="push" identifier="effect7" id="B3q-2q-Nq2"/>
+                        <segue destination="X0A-vy-RIs" kind="push" identifier="effect5" id="wYJ-qH-lhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -132,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISQ-pN-QER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="174"/>
+            <point key="canvasLocation" x="663" y="-284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TL7-gA-gm3">
@@ -163,26 +165,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBg-ml-6qk">
-                                <rect key="frame" x="154" y="313" width="12" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGr-Xt-lLb">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonpressed:" destination="xUa-n6-N4l" eventType="touchUpInside" id="Mz7-af-jA4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5S3-Yv-dJy" firstAttribute="top" secondItem="LGr-Xt-lLb" secondAttribute="bottom" constant="34" id="6Hq-aZ-3QL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LGr-Xt-lLb" secondAttribute="trailing" constant="75" id="Hwj-td-HQF"/>
+                            <constraint firstAttribute="centerX" secondItem="LGr-Xt-lLb" secondAttribute="centerX" id="OaX-1U-Q9R"/>
+                            <constraint firstItem="LGr-Xt-lLb" firstAttribute="leading" secondItem="bwy-9a-nR8" secondAttribute="leadingMargin" constant="75" id="mF8-9L-FrZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Animation2" id="wjo-Ea-b6J"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfJ-so-sQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="693" y="809"/>
+            <point key="canvasLocation" x="663" y="343"/>
         </scene>
-        <!--Transition1-->
+        <!--Animation3-->
         <scene sceneID="nsK-VJ-boq">
             <objects>
-                <viewController id="W8i-uz-hLV" customClass="transition1" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W8i-uz-hLV" customClass="animation3" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t4v-z8-ZSV"/>
                         <viewControllerLayoutGuide type="bottom" id="3sW-lS-AHv"/>
@@ -191,54 +202,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-xB-NQu">
-                                <rect key="frame" x="154" y="313" width="13" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgY-Mr-amS">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnpressed:" destination="W8i-uz-hLV" eventType="touchUpInside" id="7L8-uA-trM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Skateboard" translatesAutoresizingMaskIntoConstraints="NO" id="Sd9-xE-qIR">
+                                <rect key="frame" x="136" y="99" width="48" height="12"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MgY-Mr-amS" secondAttribute="trailing" constant="75" id="3Fh-El-hve"/>
+                            <constraint firstItem="3sW-lS-AHv" firstAttribute="top" secondItem="MgY-Mr-amS" secondAttribute="bottom" constant="34" id="Ekg-En-CZP"/>
+                            <constraint firstItem="MgY-Mr-amS" firstAttribute="leading" secondItem="aE7-Gj-ZHd" secondAttribute="leadingMargin" constant="75" id="WJ3-Fo-Bfs"/>
+                            <constraint firstAttribute="centerX" secondItem="MgY-Mr-amS" secondAttribute="centerX" id="ry8-hJ-3vb"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Transition1" id="a6J-yE-f1h"/>
+                    <navigationItem key="navigationItem" title="Animation3" id="a6J-yE-f1h"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="topskate" destination="Sd9-xE-qIR" id="N5N-UW-gxF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIO-RL-em1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="1457"/>
+            <point key="canvasLocation" x="663" y="961"/>
         </scene>
-        <!--Transition3-->
-        <scene sceneID="zs4-7q-NTb">
-            <objects>
-                <viewController id="zcC-3B-IwJ" customClass="transition3" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="TuC-OH-3JI"/>
-                        <viewControllerLayoutGuide type="bottom" id="IWM-tf-aed"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ka3-qM-UHe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsh-9s-VQ4">
-                                <rect key="frame" x="154" y="313" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Transition3" id="MxA-m7-RUD"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="etL-gc-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1105" y="1097"/>
-        </scene>
-        <!--Transition2-->
+        <!--Animation4-->
         <scene sceneID="0C3-hg-9u1">
             <objects>
-                <viewController id="o8J-11-C9v" customClass="transition2" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o8J-11-C9v" customClass="animation4" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AMx-44-Q3m"/>
                         <viewControllerLayoutGuide type="bottom" id="5xX-Ao-P0a"/>
@@ -247,7 +245,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a65-Y6-U6t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skateboard" translatesAutoresizingMaskIntoConstraints="NO" id="UGe-RM-EPL">
+                                <rect key="frame" x="136" y="101" width="48" height="12"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-GY-UqU">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonpressed:" destination="o8J-11-C9v" eventType="touchUpInside" id="wKg-qu-Y8Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6cp-GY-UqU" secondAttribute="centerX" id="f9U-hi-7E3"/>
+                            <constraint firstItem="6cp-GY-UqU" firstAttribute="leading" secondItem="JpD-5G-hfL" secondAttribute="leadingMargin" constant="75" id="iYa-sp-LID"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6cp-GY-UqU" secondAttribute="trailing" constant="75" id="jdm-m5-Dtd"/>
+                            <constraint firstItem="5xX-Ao-P0a" firstAttribute="top" secondItem="6cp-GY-UqU" secondAttribute="bottom" constant="34" id="q2f-B8-dIu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UGe-RM-EPL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animation4" id="S9c-bh-6na"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igP-2w-DZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="1590"/>
+        </scene>
+        <!--Transition2-->
+        <scene sceneID="YcJ-ch-BgW">
+            <objects>
+                <viewController id="3bg-Ue-Z8O" customClass="transition2" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Av-a2-6ty"/>
+                        <viewControllerLayoutGuide type="bottom" id="MEo-TU-C40"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="asP-mk-vKA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds8-Lk-stN">
+                                <rect key="frame" x="154" y="313" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition2" id="1g5-pw-hxc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5y-l0-Rr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="2861"/>
+        </scene>
+        <!--Transition3-->
+        <scene sceneID="YNU-ib-RKy">
+            <objects>
+                <viewController id="o9c-Lh-5a5" customClass="transition3" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Lb-BN-Ryw"/>
+                        <viewControllerLayoutGuide type="bottom" id="zSd-MG-61g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6RD-Sk-b82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-wM-3LJ">
                                 <rect key="frame" x="154" y="313" width="13" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -256,12 +327,43 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Transition2" id="S9c-bh-6na"/>
+                    <navigationItem key="navigationItem" title="Transition3" id="gKX-Mh-dgZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="igP-2w-DZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peu-Vp-9rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="448"/>
+            <point key="canvasLocation" x="663" y="3519"/>
+        </scene>
+        <!--Transition1-->
+        <scene sceneID="zWs-D6-5Ro">
+            <objects>
+                <viewController id="X0A-vy-RIs" customClass="transition1" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Hj-BH-d1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="DEJ-xJ-1Ws"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRA-xO-z5b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-TK-qP8">
+                                <rect key="frame" x="154" y="313" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Transition1" id="tuV-ys-o0C"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liq-Sj-aRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="2207"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Skateboard" width="36" height="9"/>
+    </resources>
 </document>

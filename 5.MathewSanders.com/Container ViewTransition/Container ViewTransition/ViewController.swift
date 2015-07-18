@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController{
 
-    let Effectname = ["Animation 1","Animation 2","Transition 1","Transition 2","Transition 3"]
+    let Effectname = ["Animation 1","Animation 2","Animation 3","Animation 4","Transition 1","Transition 2","Transition 3"]
     
     let textCellIdentifier = "TextCell"
     
@@ -58,6 +58,13 @@ class ViewController: UIViewController{
             self.performSegueWithIdentifier("effect5", sender: indexPath.row)
         }
         
+        if indexPath.row == 5{
+            self.performSegueWithIdentifier("effect6", sender: indexPath.row)
+        }
+        
+        if indexPath.row == 6{
+            self.performSegueWithIdentifier("effect7", sender: indexPath.row)
+        }
     }
     
     //开启转场
@@ -69,12 +76,20 @@ class ViewController: UIViewController{
             let controller = segue.destinationViewController as! animation2
         }
         if segue.identifier == "effect3"{
-            let controller = segue.destinationViewController as! transition1
+            let controller = segue.destinationViewController as! animation3
         }
         if segue.identifier == "effect4"{
-            let controller = segue.destinationViewController as! transition2
+            let controller = segue.destinationViewController as! animation4
         }
         if segue.identifier == "effect5"{
+            let controller = segue.destinationViewController as! transition1
+        }
+        
+        if segue.identifier == "effect6"{
+            let controller = segue.destinationViewController as! transition2
+        }
+        
+        if segue.identifier == "effect7"{
             let controller = segue.destinationViewController as! transition3
         }
     }
