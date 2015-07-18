@@ -2,6 +2,8 @@
 
 As a Designer,I begin to learn swift,try to make some simple project here
 
+_I'm newbie,but I'm forwarding._
+
 # Goal
 
 A 100 Day Swift Learning Plan.Wanna be learn more about code,not only animation
@@ -88,9 +90,22 @@ What I learned:
 
 3.Make 3 example —— AlertView/DynamicSnap(Used Pan Gesture Recognize & UIDynamicAnimator)/OperationQueue(theory abt OperationQueue & Closure [x])
 
-4.use "arc4random_uniform()" to generate random Int,"for in" to play more times animation/How to get value from UISlider
+4.Plan to learn more from http://mathewsanders.com/ tomorrow
 
-5.Plan to learn more from http://mathewsanders.com/ tomorrow
+##Day8:Example from MathewSanders.com
+![Day8](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/part1.gif?raw=true
+)
+
+What I learned(From MathewSanders.com):
+
+1.(Animation 1)use "arc4random_uniform()" to generate random Int,"for in" to play more times animation/How to get value from UISlider
+
+2.(Animation 2)UIView.TransitionWithView,now I can use modal transiton in ViewController
+
+3.(The whole demo)put all animation into one demo,review the theory abt "prepareForSegue"/get selectedRowAtIndexPath to make segue transition[?]/tableView[?]
+
+4.(Animation 3)Learned add keyframe into animation to make effect better/Reviewed Path + Keyframeanimation
+
+5.(Animation 4)Learned stroke Animation/set ovalpath's anchorpoint、clockwise、radius/How to use SystemAnimation
 
 To be contiuned...
-
