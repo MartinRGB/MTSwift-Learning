@@ -26,6 +26,10 @@ class ButtonExp: UIViewController {
     let btn3 = UIImageView()
     let btn4 = UIImageView()
     
+   
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -60,40 +64,45 @@ class ButtonExp: UIViewController {
     @IBAction func longpressed(sender: AnyObject) {
         let lpress = sender as! UILongPressGestureRecognizer
         var point = lpress.locationInView(self.view)
-        
-        nr1 = UIDynamicItemBehavior(items: [self.btn1])
-        nr1.allowsRotation = false
-        nr2 = UIDynamicItemBehavior(items: [self.btn2])
-        nr2.allowsRotation = false
-        nr3 = UIDynamicItemBehavior(items: [self.btn3])
-        nr3.allowsRotation = false
-        nr4 = UIDynamicItemBehavior(items: [self.btn4])
-        nr4.allowsRotation = false
-        
         var point1 = CGPointMake(point.x-126, point.y-70)
         var point2 = CGPointMake(point.x-66, point.y-121)
         var point3 = CGPointMake(point.x+22, point.y-121)
         var point4 = CGPointMake(point.x+87, point.y-70)
         
-        btn1.frame = CGRectMake(point.x, point.y, 48, 48)
-        btn2.frame = CGRectMake(point.x, point.y, 48, 48)
-        btn3.frame = CGRectMake(point.x, point.y, 48, 48)
-        btn4.frame = CGRectMake(point.x, point.y, 48, 48)
-        
+    
         
         if sender.state == UIGestureRecognizerState.Began{
-            UIView.animateWithDuration(0.25, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+            
+            
+            nr1 = UIDynamicItemBehavior(items: [self.btn1])
+            nr1.allowsRotation = false
+            nr2 = UIDynamicItemBehavior(items: [self.btn2])
+            nr2.allowsRotation = false
+            nr3 = UIDynamicItemBehavior(items: [self.btn3])
+            nr3.allowsRotation = false
+            nr4 = UIDynamicItemBehavior(items: [self.btn4])
+            nr4.allowsRotation = false
+            
+            btn1.frame = CGRectMake(point.x, point.y, 48, 48)
+            btn2.frame = CGRectMake(point.x, point.y, 48, 48)
+            btn3.frame = CGRectMake(point.x, point.y, 48, 48)
+            btn4.frame = CGRectMake(point.x, point.y, 48, 48)
+            
+            UIView.animateWithDuration(0.15, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.btn1.alpha = 1
                 self.btn2.alpha = 1
                 self.btn3.alpha = 1
                 self.btn4.alpha = 1
             }, completion: {finished in})
            
-            self.dynamicAnimator?.addBehavior(nr1)
-            self.dynamicAnimator?.addBehavior(nr2)
-            self.dynamicAnimator?.addBehavior(nr3)
-            self.dynamicAnimator?.addBehavior(nr4)
             self.dynamicAnimator?.removeAllBehaviors()
+            
+            UIView.animateWithDuration(0.15, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+                self.btn1.alpha = 1
+                self.btn2.alpha = 1
+                self.btn3.alpha = 1
+                self.btn4.alpha = 1
+                }, completion: {finished in})
             
             self.snap1 = UISnapBehavior(item:self.btn1 ,snapToPoint:point1)
             self.snap2 = UISnapBehavior(item:self.btn2 ,snapToPoint:point2)
@@ -101,29 +110,39 @@ class ButtonExp: UIViewController {
             self.snap4 = UISnapBehavior(item:self.btn4 ,snapToPoint:point4)
             
             
+            
             self.dynamicAnimator?.addBehavior(self.snap1)
             self.dynamicAnimator?.addBehavior(self.snap2)
             self.dynamicAnimator?.addBehavior(self.snap3)
             self.dynamicAnimator?.addBehavior(self.snap4)
+            
         }
-        else{
-            UIView.animateWithDuration(0.25, delay: 0.1, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+         if sender.state == UIGestureRecognizerState.Ended{
+            
+            
+            
+            
+            
+            UIView.animateWithDuration(0.25, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
                 self.btn1.alpha = 0
                 self.btn2.alpha = 0
                 self.btn3.alpha = 0
                 self.btn4.alpha = 0
                 }, completion: {finished in})
             
+            self.dynamicAnimator?.removeAllBehaviors()
+            
+            self.dynamicAnimator?.addBehavior(nr1)
+            self.dynamicAnimator?.addBehavior(nr2)
+            self.dynamicAnimator?.addBehavior(nr3)
+            self.dynamicAnimator?.addBehavior(nr4)
             
             self.snap1 = UISnapBehavior(item:self.btn1 ,snapToPoint:point)
             self.snap2 = UISnapBehavior(item:self.btn2 ,snapToPoint:point)
             self.snap3 = UISnapBehavior(item:self.btn3 ,snapToPoint:point)
             self.snap4 = UISnapBehavior(item:self.btn4 ,snapToPoint:point)
             
-            self.dynamicAnimator?.addBehavior(nr1)
-            self.dynamicAnimator?.addBehavior(nr2)
-            self.dynamicAnimator?.addBehavior(nr3)
-            self.dynamicAnimator?.addBehavior(nr4)
+            
             self.dynamicAnimator?.addBehavior(self.snap1)
             self.dynamicAnimator?.addBehavior(self.snap2)
             self.dynamicAnimator?.addBehavior(self.snap3)
