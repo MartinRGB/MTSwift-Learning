@@ -110,4 +110,12 @@ What I learned(From MathewSanders.com):
 
 6.Plan to Learn Progress concept tomorrow,try to design these demo with funny idea.
 
+##Day9:Add a Pinterest-like Longpress effect(but has bugs)
+![Day9](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Swift%20Development%20with%20Cocoa/Part%201/DynamicSnap/DynamicSnap.gif?raw=true
+)
+
+What I learned(From MathewSanders.com):
+
+1.We can use UIDynamicItemBehavior & allowsRotation to remove SnapBehavior's 3D Strench.
+
 To be contiuned...
