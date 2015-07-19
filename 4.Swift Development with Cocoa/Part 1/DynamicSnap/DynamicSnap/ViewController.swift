@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         self.snap = UISnapBehavior(item:self.naomisorz ,snapToPoint:point)
         self.dynamicAnimator?.addBehavior(self.snap)
     }
+    
+    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
+        
+    }
 
 }
 

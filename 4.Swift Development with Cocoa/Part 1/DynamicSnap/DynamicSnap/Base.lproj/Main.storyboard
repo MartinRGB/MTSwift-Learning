@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H6s-dx-7Kg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Exp1-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="DynamicSnap" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,8 +17,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GF" translatesAutoresizingMaskIntoConstraints="NO" id="LpP-sk-xRI">
-                                <rect key="frame" x="110" y="45" width="100" height="100"/>
+                                <rect key="frame" x="110" y="105" width="100" height="100"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3H5-Mc-LJv">
+                                <rect key="frame" x="203" y="506" width="73" height="22"/>
+                                <state key="normal" image="Right Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xIT-bL-ZQc" kind="push" id="Bg7-e4-wIV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -26,6 +35,7 @@
                             <outletCollection property="gestureRecognizers" destination="hPv-sE-Lov" appends="YES" id="k9z-Ov-xZL"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" title="Exp1" id="xut-ma-Sk4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="naomisorz" destination="LpP-sk-xRI" id="tbJ-Y9-ReN"/>
@@ -38,9 +48,70 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="372" y="426"/>
+        </scene>
+        <!--Exp2-->
+        <scene sceneID="wZJ-A9-zQQ">
+            <objects>
+                <viewController id="xIT-bL-ZQc" customClass="ButtonExp" customModule="DynamicSnap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xXu-F4-lZj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tL7-Cd-6oa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WrM-Bh-WIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGL-Un-AS9">
+                                <rect key="frame" x="31" y="506" width="73" height="22"/>
+                                <state key="normal" image="Left Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QMD-91-MgE" kind="unwind" unwindAction="unwindToViewController:" id="eu2-DX-Xdi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2cK-2O-khN" appends="YES" id="0ot-Ap-Pcj"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exp2" id="U4l-Jh-bE4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Paf-a3-XVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QMD-91-MgE" userLabel="Exit" sceneMemberID="exit"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="2cK-2O-khN">
+                    <connections>
+                        <action selector="longpressed:" destination="xIT-bL-ZQc" id="dQf-UG-Jhi"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="778" y="426"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GzN-q0-1pV">
+            <objects>
+                <navigationController id="H6s-dx-7Kg" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="by1-HZ-OG8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="klN-JF-IcA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ1-ot-8fP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-34" y="426"/>
         </scene>
     </scenes>
     <resources>
         <image name="GF" width="104" height="104"/>
+        <image name="Left Arrow" width="73" height="12"/>
+        <image name="Right Arrow" width="73" height="12"/>
     </resources>
 </document>

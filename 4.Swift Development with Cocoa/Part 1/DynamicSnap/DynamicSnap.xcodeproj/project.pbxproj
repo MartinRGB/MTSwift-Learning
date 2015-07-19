@@ -13,6 +13,7 @@
 		2E017E471B594E5D002E461D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E017E461B594E5D002E461D /* Images.xcassets */; };
 		2E017E4A1B594E5D002E461D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E017E481B594E5D002E461D /* LaunchScreen.xib */; };
 		2E017E561B594E5D002E461D /* DynamicSnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E017E551B594E5D002E461D /* DynamicSnapTests.swift */; };
+		2E17636A1B5BCBBE00E2CF8F /* ButtonExp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1763691B5BCBBE00E2CF8F /* ButtonExp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2E017E4F1B594E5D002E461D /* DynamicSnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicSnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E017E541B594E5D002E461D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E017E551B594E5D002E461D /* DynamicSnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicSnapTests.swift; sourceTree = "<group>"; };
+		2E1763691B5BCBBE00E2CF8F /* ButtonExp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2E017E3F1B594E5D002E461D /* AppDelegate.swift */,
 				2E017E411B594E5D002E461D /* ViewController.swift */,
 				2E017E431B594E5D002E461D /* Main.storyboard */,
+				2E1763691B5BCBBE00E2CF8F /* ButtonExp.swift */,
 				2E017E461B594E5D002E461D /* Images.xcassets */,
 				2E017E481B594E5D002E461D /* LaunchScreen.xib */,
 				2E017E3D1B594E5D002E461D /* Supporting Files */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E017E421B594E5D002E461D /* ViewController.swift in Sources */,
+				2E17636A1B5BCBBE00E2CF8F /* ButtonExp.swift in Sources */,
 				2E017E401B594E5D002E461D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				2E017E5B1B594E5D002E461D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E017E5C1B594E5D002E461D /* Build configuration list for PBXNativeTarget "DynamicSnapTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				2E017E5E1B594E5D002E461D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
