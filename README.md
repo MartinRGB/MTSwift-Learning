@@ -118,4 +118,6 @@ What I learned
 
 1.We can use UIDynamicItemBehavior & allowsRotation to remove SnapBehavior's 3D Strench.
 
+2.Try to learn UIcollisionBehavior[x],but failed,I should learn swift from basic knowledge
+
 To be contiuned...
