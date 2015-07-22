@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H6s-dx-7Kg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="H6s-dx-7Kg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -71,15 +71,21 @@
                                     <segue destination="QMD-91-MgE" kind="unwind" unwindAction="unwindToViewController:" id="eu2-DX-Xdi"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="v_dribbble" translatesAutoresizingMaskIntoConstraints="NO" id="aPB-83-GNI">
+                                <rect key="frame" x="20" y="88" width="280" height="210"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="2cK-2O-khN" appends="YES" id="0ot-Ap-Pcj"/>
+                            <outletCollection property="gestureRecognizers" destination="2cK-2O-khN" appends="YES" id="aUc-Ly-LRv"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Exp2" id="U4l-Jh-bE4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dribbbleview" destination="aPB-83-GNI" id="sfz-6i-ZLu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Paf-a3-XVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="QMD-91-MgE" userLabel="Exit" sceneMemberID="exit"/>
@@ -113,5 +119,6 @@
         <image name="GF" width="104" height="104"/>
         <image name="Left Arrow" width="73" height="12"/>
         <image name="Right Arrow" width="73" height="12"/>
+        <image name="v_dribbble" width="800" height="600"/>
     </resources>
 </document>
