@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3mW-sc-HyU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3mW-sc-HyU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -146,7 +146,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="qyh-su-a1j"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ukg-xP-C0Q"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z4X-Dy-5KO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,14 +346,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-TK-qP8">
-                                <rect key="frame" x="154" y="313" width="11" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFE-50-1oW">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Check it">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="prX-Ir-Jcs" kind="modal" modalTransitionStyle="coverVertical" id="zcf-F2-avb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hFE-50-1oW" secondAttribute="trailing" constant="75" id="6zN-WO-S7f"/>
+                            <constraint firstItem="hFE-50-1oW" firstAttribute="leading" secondItem="zRA-xO-z5b" secondAttribute="leadingMargin" constant="75" id="dgd-Ex-IyZ"/>
+                            <constraint firstAttribute="centerX" secondItem="hFE-50-1oW" secondAttribute="centerX" id="tGL-CK-InR"/>
+                            <constraint firstItem="DEJ-xJ-1Ws" firstAttribute="top" secondItem="hFE-50-1oW" secondAttribute="bottom" constant="34" id="yN7-JE-GqW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transition1" id="tuV-ys-o0C"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -361,6 +370,69 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liq-Sj-aRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663" y="2207"/>
+        </scene>
+        <!--TransitionMain-->
+        <scene sceneID="zaQ-FT-67f">
+            <objects>
+                <viewController id="prX-Ir-Jcs" customClass="Transition1Main" customModule="Container_ViewTransition" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="510-ZW-ifP"/>
+                        <viewControllerLayoutGuide type="bottom" id="cne-Je-Z5P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dpc-Bt-qIt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7K-Bb-q08">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Animate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ras-cY-md0" kind="custom" id="OFI-GQ-V5Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="TransitionMain" id="oq3-B3-iM9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygw-yM-8q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="2207"/>
+        </scene>
+        <!--Transition1 Main-->
+        <scene sceneID="qfJ-g6-bEg">
+            <objects>
+                <viewController id="Ras-cY-md0" customClass="Transition1Main" customModule="Container_ViewTransition" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KcP-WW-RaY"/>
+                        <viewControllerLayoutGuide type="bottom" id="IMQ-yr-NfG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JHG-0G-z1q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjq-YZ-NgC">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XQC-Ig-Nmj" kind="unwind" unwindAction="unwindToViewController3:" id="yWS-Db-p2n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HAm-ZK-Sll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="XQC-Ig-Nmj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1497" y="2207"/>
         </scene>
     </scenes>
     <resources>

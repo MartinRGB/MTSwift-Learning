@@ -10,9 +10,9 @@ import UIKit
 
 class animation4: UIViewController {
 
-    
-let Doge = UIImageView()
+    let Doge = UIImageView()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

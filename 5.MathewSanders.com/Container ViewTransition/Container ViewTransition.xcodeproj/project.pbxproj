@@ -20,6 +20,8 @@
 		638BA4D61B5A556F005B5F7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638BA4D51B5A556F005B5F7B /* Images.xcassets */; };
 		638BA4D91B5A556F005B5F7B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638BA4D71B5A556F005B5F7B /* LaunchScreen.xib */; };
 		638BA4E51B5A556F005B5F7B /* Container_ViewTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638BA4E41B5A556F005B5F7B /* Container_ViewTransitionTests.swift */; };
+		63C60E421B5F5F6B00E67546 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C60E411B5F5F6B00E67546 /* TransitionManager.swift */; };
+		63C60E461B5F72E200E67546 /* Transition1Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C60E451B5F72E200E67546 /* Transition1Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		638BA4DE1B5A556F005B5F7B /* Container ViewTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Container ViewTransitionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638BA4E31B5A556F005B5F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		638BA4E41B5A556F005B5F7B /* Container_ViewTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container_ViewTransitionTests.swift; sourceTree = "<group>"; };
+		63C60E411B5F5F6B00E67546 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		63C60E451B5F72E200E67546 /* Transition1Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition1Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				2EC0EC5C1B5A921E00A65107 /* animation2.swift */,
 				2EC0EC5E1B5A922D00A65107 /* animation3.swift */,
 				2EC0EC601B5A923200A65107 /* animation4.swift */,
+				63C60E411B5F5F6B00E67546 /* TransitionManager.swift */,
+				63C60E451B5F72E200E67546 /* Transition1Main.swift */,
 				2E121A3A1B5AB05D008A710F /* transition1.swift */,
 				2E121A361B5AAE5A008A710F /* transition2.swift */,
 				2E121A381B5AAE65008A710F /* transition3.swift */,
@@ -246,7 +252,9 @@
 				2EC0EC651B5A923E00A65107 /* animation1.swift in Sources */,
 				638BA4D11B5A556F005B5F7B /* ViewController.swift in Sources */,
 				638BA4CF1B5A556F005B5F7B /* AppDelegate.swift in Sources */,
+				63C60E461B5F72E200E67546 /* Transition1Main.swift in Sources */,
 				2EC0EC5D1B5A921E00A65107 /* animation2.swift in Sources */,
+				63C60E421B5F5F6B00E67546 /* TransitionManager.swift in Sources */,
 				2E121A3B1B5AB05D008A710F /* transition1.swift in Sources */,
 				2E121A391B5AAE65008A710F /* transition3.swift in Sources */,
 				2EC0EC5F1B5A922D00A65107 /* animation3.swift in Sources */,
