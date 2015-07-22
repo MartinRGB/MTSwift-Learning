@@ -28,6 +28,7 @@ class ButtonExp: UIViewController {
     let btn3 = UIImageView()
     let btn4 = UIImageView()
     var center = UIImageView()
+    var blackalpha = UIImageView()
     
    
     
@@ -42,20 +43,23 @@ class ButtonExp: UIViewController {
         btn3.image = UIImage(named: "Btn3.png")
         btn4.image = UIImage(named: "Btn4.png")
         center.image = UIImage(named:"Center.png")
+        blackalpha.image = UIImage(named:"Blackalpha.png")
         
         btn1.alpha = 0
         btn2.alpha = 0
         btn3.alpha = 0
         btn4.alpha = 0
         center.alpha = 0
+        blackalpha.alpha = 0
         center.transform = CGAffineTransformMakeScale(2, 2)
         
-        
+        self.view.addSubview(blackalpha)
         self.view.addSubview(btn1)
         self.view.addSubview(btn2)
         self.view.addSubview(btn3)
         self.view.addSubview(btn4)
         self.view.addSubview(center)
+        
         //add DynamicAnimator
         self.dynamicAnimator = UIDynamicAnimator(referenceView: self.view);
         
@@ -100,10 +104,12 @@ class ButtonExp: UIViewController {
             nr4 = UIDynamicItemBehavior(items: [self.btn4])
             nr4.allowsRotation = false
             
+            blackalpha.frame = CGRectMake(0, 0, 320, 568)
             btn1.frame = CGRectMake(point.x, point.y, 48, 48)
             btn2.frame = CGRectMake(point.x, point.y, 48, 48)
             btn3.frame = CGRectMake(point.x, point.y, 48, 48)
             btn4.frame = CGRectMake(point.x, point.y, 48, 48)
+            
             
             //alpha fade in
             UIView.animateWithDuration(0.15, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
@@ -112,6 +118,7 @@ class ButtonExp: UIViewController {
                 self.btn3.alpha = 1
                 self.btn4.alpha = 1
                 self.center.alpha = 1
+                self.blackalpha.alpha = 0.2
             }, completion: {finished in})
            
             self.dynamicAnimator?.removeAllBehaviors()
@@ -142,6 +149,7 @@ class ButtonExp: UIViewController {
                 self.btn3.alpha = 0
                 self.btn4.alpha = 0
                 self.center.alpha = 0
+                self.blackalpha.alpha = 0
                 }, completion: {finished in})
             
             self.dynamicAnimator?.removeAllBehaviors()
