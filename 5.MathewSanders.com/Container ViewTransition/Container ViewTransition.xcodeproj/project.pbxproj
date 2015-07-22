@@ -81,9 +81,7 @@
 				2EC0EC5C1B5A921E00A65107 /* animation2.swift */,
 				2EC0EC5E1B5A922D00A65107 /* animation3.swift */,
 				2EC0EC601B5A923200A65107 /* animation4.swift */,
-				63C60E411B5F5F6B00E67546 /* TransitionManager.swift */,
-				63C60E451B5F72E200E67546 /* Transition1Main.swift */,
-				2E121A3A1B5AB05D008A710F /* transition1.swift */,
+				63C60E471B5F7C8F00E67546 /* Transition1 */,
 				2E121A361B5AAE5A008A710F /* transition2.swift */,
 				2E121A381B5AAE65008A710F /* transition3.swift */,
 			);
@@ -145,6 +143,16 @@
 				638BA4E31B5A556F005B5F7B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63C60E471B5F7C8F00E67546 /* Transition1 */ = {
+			isa = PBXGroup;
+			children = (
+				63C60E411B5F5F6B00E67546 /* TransitionManager.swift */,
+				63C60E451B5F72E200E67546 /* Transition1Main.swift */,
+				2E121A3A1B5AB05D008A710F /* transition1.swift */,
+			);
+			name = Transition1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

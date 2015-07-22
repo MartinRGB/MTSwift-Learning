@@ -33,9 +33,8 @@ let transitionManager = TransitionManager()
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
             let controller = segue.destinationViewController as! UIViewController
-            
-            // instead of using the default transition animation, we'll ask
-            // the segue to use our custom TransitionManager object to manage the transition animation
+        
+            // 使用TransitionManager管理动画，不使用默认效果
             controller.transitioningDelegate = self.transitionManager
     }
     
