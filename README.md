@@ -130,6 +130,6 @@ What I learned
 
 1.Keep reviewing Transionmanager & how to use cotainer & segue to customize animation
 
-2.Add an prototype made with Form ,plan to implement it
+2.Add an prototype named "惬读" made with Form ,plan to implement it
 
 3.I have learned Swift for 10Day(or even more).It's not good to learn new knowledge everyday,I need sometime to review what I learned,also I wanna make all these project better & designer-like.So,I paused this plan.
