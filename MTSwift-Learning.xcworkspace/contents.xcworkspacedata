@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:3.Coffee/Coffee.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:1.Design+Code/1.ink/Ink.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:2.Portfolio/Portofilo.xcodeproj">
+   </FileRef>
+</Workspace>
