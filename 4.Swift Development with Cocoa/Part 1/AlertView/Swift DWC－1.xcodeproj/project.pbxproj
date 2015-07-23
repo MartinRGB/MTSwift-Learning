@@ -409,6 +409,7 @@
 				632783281B58E5DF00E1076C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		632783291B58E5DF00E1076C /* Build configuration list for PBXNativeTarget "Swift DWC－1Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				6327832B1B58E5DF00E1076C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

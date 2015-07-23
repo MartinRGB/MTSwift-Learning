@@ -10,4 +10,24 @@
    <FileRef
       location = "container:2.Portfolio/Portofilo.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "5.MathewSanders.com">
+      <FileRef
+         location = "group:5.MathewSanders.com/Container ViewTransition/Container ViewTransition.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "4.Swift Development with Cocoa">
+      <FileRef
+         location = "group:4.Swift Development with Cocoa/Part 1/OperationQueues(Favicon)/OperationQueues.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:4.Swift Development with Cocoa/Part 1/DynamicSnap/DynamicSnap.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:4.Swift Development with Cocoa/Part 1/AlertView/Swift DWC&#xff0d;1.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>
