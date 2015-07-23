@@ -124,8 +124,12 @@ To be contiuned...
 
 ##Day10:Transition from MathewSanders.com 
 ![Day10](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/transition1.gif?raw=true)
+![Day10-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/6.Read(WIP)/0.gif?raw=true)
 
 What I learned
 
 1.Keep reviewing Transionmanager & how to use cotainer & segue to customize animation
 
+2.Add an prototype made with Form ,plan to implement it
+
+3.I have learned Swift for 10Day(or even more).It's not good to learn new knowledge everyday,I need sometime to review what I learned,also I wanna make all these project better & designer-like.So,I paused this plan.
