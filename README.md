@@ -142,4 +142,6 @@ What I learned
 
 1.Keep reviewing Transionmanager ,which made some animation a pattern to re-use anyway in app
 
-2.try to use "present modally" in segue
+2.try to use "present modally" & "over full screen"(try other options,effect will be different) in segue.Now I can part show previous ViewController(Just change second ViewControler's property like opacity/scale/rotation)
+
+3.set a variable(like presenting) in transitionmanager,I can use self.presenting+if/else make switch.I can also use self.presenting before animation block to init propertys of view
