@@ -136,7 +136,7 @@ What I learned
 
 ##Day11:Transitionmanager(Make your transition code tidy) 
 ![Day11](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m1m2.gif?raw=true)
-![Day11-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m3.giff?raw=true)
+![Day11-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m3.gif?raw=true)
 
 What I learned
 
