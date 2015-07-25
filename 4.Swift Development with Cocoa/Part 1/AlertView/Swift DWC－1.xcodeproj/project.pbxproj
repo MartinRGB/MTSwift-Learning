@@ -6,15 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6327830D1B58E5DF00E1076C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327830C1B58E5DF00E1076C /* AppDelegate.swift */; };
-		6327830F1B58E5DF00E1076C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327830E1B58E5DF00E1076C /* ViewController.swift */; };
-		632783121B58E5DF00E1076C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632783101B58E5DF00E1076C /* Main.storyboard */; };
-		632783141B58E5DF00E1076C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632783131B58E5DF00E1076C /* Images.xcassets */; };
-		632783171B58E5DF00E1076C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632783151B58E5DF00E1076C /* LaunchScreen.xib */; };
-		632783231B58E5DF00E1076C /* Swift_DWC_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632783221B58E5DF00E1076C /* Swift_DWC_1Tests.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		6327831D1B58E5DF00E1076C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -26,16 +17,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		632783071B58E5DF00E1076C /* Swift DWC－1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift DWC－1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6327830B1B58E5DF00E1076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6327830C1B58E5DF00E1076C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6327830E1B58E5DF00E1076C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		632783111B58E5DF00E1076C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		632783131B58E5DF00E1076C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		632783161B58E5DF00E1076C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6327831C1B58E5DF00E1076C /* Swift DWC－1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift DWC－1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		632783211B58E5DF00E1076C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		632783221B58E5DF00E1076C /* Swift_DWC_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_DWC_1Tests.swift; sourceTree = "<group>"; };
+		632783071B58E5DF00E1076C /* Swift DWC－1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Swift DWC－1.app"; path = "/Users/a1/Desktop/Github/MTSwift-Learning/4.Swift Development with Cocoa/Part 1/AlertView/build/Debug-iphoneos/Swift DWC－1.app"; sourceTree = "<absolute>"; };
+		6327831C1B58E5DF00E1076C /* Swift DWC－1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Swift DWC－1Tests.xctest"; path = "/Users/a1/Desktop/Github/MTSwift-Learning/4.Swift Development with Cocoa/Part 1/AlertView/build/Debug-iphoneos/Swift DWC－1Tests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,57 +42,7 @@
 		632782FE1B58E5DF00E1076C = {
 			isa = PBXGroup;
 			children = (
-				632783091B58E5DF00E1076C /* Swift DWC－1 */,
-				6327831F1B58E5DF00E1076C /* Swift DWC－1Tests */,
-				632783081B58E5DF00E1076C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		632783081B58E5DF00E1076C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				632783071B58E5DF00E1076C /* Swift DWC－1.app */,
-				6327831C1B58E5DF00E1076C /* Swift DWC－1Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		632783091B58E5DF00E1076C /* Swift DWC－1 */ = {
-			isa = PBXGroup;
-			children = (
-				6327830C1B58E5DF00E1076C /* AppDelegate.swift */,
-				6327830E1B58E5DF00E1076C /* ViewController.swift */,
-				632783101B58E5DF00E1076C /* Main.storyboard */,
-				632783131B58E5DF00E1076C /* Images.xcassets */,
-				632783151B58E5DF00E1076C /* LaunchScreen.xib */,
-				6327830A1B58E5DF00E1076C /* Supporting Files */,
-			);
-			path = "Swift DWC－1";
-			sourceTree = "<group>";
-		};
-		6327830A1B58E5DF00E1076C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6327830B1B58E5DF00E1076C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6327831F1B58E5DF00E1076C /* Swift DWC－1Tests */ = {
-			isa = PBXGroup;
-			children = (
-				632783221B58E5DF00E1076C /* Swift_DWC_1Tests.swift */,
-				632783201B58E5DF00E1076C /* Supporting Files */,
-			);
-			path = "Swift DWC－1Tests";
-			sourceTree = "<group>";
-		};
-		632783201B58E5DF00E1076C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				632783211B58E5DF00E1076C /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +110,7 @@
 				Base,
 			);
 			mainGroup = 632782FE1B58E5DF00E1076C;
-			productRefGroup = 632783081B58E5DF00E1076C /* Products */;
+			productRefGroup = 632782FE1B58E5DF00E1076C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -192,9 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632783121B58E5DF00E1076C /* Main.storyboard in Resources */,
-				632783171B58E5DF00E1076C /* LaunchScreen.xib in Resources */,
-				632783141B58E5DF00E1076C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6327830F1B58E5DF00E1076C /* ViewController.swift in Sources */,
-				6327830D1B58E5DF00E1076C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +149,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632783231B58E5DF00E1076C /* Swift_DWC_1Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +161,6 @@
 			targetProxy = 6327831D1B58E5DF00E1076C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		632783101B58E5DF00E1076C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				632783111B58E5DF00E1076C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		632783151B58E5DF00E1076C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				632783161B58E5DF00E1076C /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		632783241B58E5DF00E1076C /* Debug */ = {

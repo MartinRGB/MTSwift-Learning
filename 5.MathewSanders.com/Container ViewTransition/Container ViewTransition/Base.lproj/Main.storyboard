@@ -296,8 +296,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKt-Fy-Rq0">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Check it">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MIK-o9-IML" kind="push" id="NH6-ax-T65"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fKt-Fy-Rq0" secondAttribute="trailing" constant="75" id="5QQ-WI-ajT"/>
+                            <constraint firstItem="MEo-TU-C40" firstAttribute="top" secondItem="fKt-Fy-Rq0" secondAttribute="bottom" constant="34" id="QeI-tS-zlg"/>
+                            <constraint firstItem="fKt-Fy-Rq0" firstAttribute="leading" secondItem="asP-mk-vKA" secondAttribute="leadingMargin" constant="75" id="jEd-Bs-h4e"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transition2" id="1g5-pw-hxc"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -305,6 +319,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5y-l0-Rr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663" y="2861"/>
+        </scene>
+        <!--Transitionmenuonedetail-->
+        <scene sceneID="aRU-Fn-ui0">
+            <objects>
+                <viewController id="MIK-o9-IML" customClass="Transitionmenuonedetail" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="plP-Gn-oYd"/>
+                        <viewControllerLayoutGuide type="bottom" id="3bE-Ob-jPF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjZ-7O-5hE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainPage" translatesAutoresizingMaskIntoConstraints="NO" id="0mi-cJ-18q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGp-BX-5uH">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="ytR-yS-GPG">
+                                        <connections>
+                                            <segue destination="8B2-2u-WUB" kind="presentation" modalPresentationStyle="overFullScreen" id="dZl-57-1sx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="r7R-rN-PRf"/>
+                                    <barButtonItem systemItem="add" id="cFn-V0-X0P">
+                                        <connections>
+                                            <segue destination="wLO-Vi-hDq" kind="presentation" modalPresentationStyle="overFullScreen" id="YEh-Dq-0eG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t7J-f9-lhV"/>
+                                    <barButtonItem systemItem="add" id="rdN-Dg-Khu">
+                                        <connections>
+                                            <segue destination="fr9-x3-bng" kind="presentation" modalPresentationStyle="overFullScreen" id="7D5-7D-05f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.096963677210000002" green="0.31843755000000001" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="MgZ-35-e9L"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9M-Wd-heU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="2861"/>
         </scene>
         <!--Transition3-->
         <scene sceneID="YNU-ib-RKy">
@@ -434,8 +497,190 @@
             </objects>
             <point key="canvasLocation" x="1497" y="2207"/>
         </scene>
+        <!--Transitionmenuonebottom-->
+        <scene sceneID="eJo-e5-3GJ">
+            <objects>
+                <viewController id="wLO-Vi-hDq" customClass="Transitionmenuonebottom" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fjd-y4-cWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3j-Z9-6YE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ALJ-zH-nF1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blur Side Page" translatesAutoresizingMaskIntoConstraints="NO" id="nOb-ah-BZY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJB-pi-C5C">
+                                <rect key="frame" x="112" y="492" width="107" height="51"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3wg-fX-pAV" kind="unwind" unwindAction="unwindToViewController3:" id="5d4-Xf-zj1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Obu-rb-MOQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7H-rv-4E3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3wg-fX-pAV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="2861"/>
+        </scene>
+        <!--Transitionmenuonebottom2-->
+        <scene sceneID="fPo-QC-ObO">
+            <objects>
+                <viewController id="8B2-2u-WUB" customClass="Transitionmenuonebottom2" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S59-OB-3eS"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQ7-fN-pW1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L0Z-Fp-iKU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Gr-Ay-57c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M4Z-aW-Wip">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YhJ-Pc-Xie">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hbD-cR-5HY">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blur Side Page" translatesAutoresizingMaskIntoConstraints="NO" id="O0e-9X-UL6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPn-Ol-mcc">
+                                <rect key="frame" x="112" y="492" width="107" height="51"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="D9l-OW-ims" kind="unwind" unwindAction="unwindToViewController3:" id="tEZ-bS-wqS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="jCG-GD-goB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blurview" destination="2Gr-Ay-57c" id="x9l-nk-6ar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2d3-E9-z3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="D9l-OW-ims" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="3493"/>
+        </scene>
+        <!--Transitionmenuonebottom3-->
+        <scene sceneID="Mf7-k2-dNe">
+            <objects>
+                <viewController id="fr9-x3-bng" customClass="Transitionmenuonebottom3" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Can-Ho-XCc"/>
+                        <viewControllerLayoutGuide type="bottom" id="MqM-ir-cYb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UDQ-zd-PGY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c19-FQ-TnK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ae2-VP-bNh">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0d-vU-xyh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9qM-ar-V6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="1Nm-uS-kdr">
+                                <rect key="frame" x="53" y="50" width="84" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="6ss-k0-TpX">
+                                <rect key="frame" x="182" y="50" width="84" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Emoji" translatesAutoresizingMaskIntoConstraints="NO" id="Jc7-Zu-fof">
+                                <rect key="frame" x="53" y="195" width="84" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="mLn-ew-Pgo">
+                                <rect key="frame" x="182" y="195" width="84" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chat" translatesAutoresizingMaskIntoConstraints="NO" id="Hsa-xA-41B">
+                                <rect key="frame" x="53" y="341" width="84" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Audio" translatesAutoresizingMaskIntoConstraints="NO" id="L65-Kl-WQj">
+                                <rect key="frame" x="182" y="341" width="84" height="115"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDH-zf-Cde">
+                                <rect key="frame" x="107" y="493" width="107" height="51"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="nr7-sb-TlK" kind="unwind" unwindAction="unwindToViewController3:" id="FKu-i3-jFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="xep-yT-P4f"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="blurview" destination="c19-FQ-TnK" id="duo-7m-PTJ"/>
+                        <outlet property="l1" destination="1Nm-uS-kdr" id="WWF-pw-nfE"/>
+                        <outlet property="l2" destination="6ss-k0-TpX" id="9eJ-mk-vxO"/>
+                        <outlet property="l3" destination="Jc7-Zu-fof" id="Eyo-zp-WpY"/>
+                        <outlet property="l4" destination="mLn-ew-Pgo" id="Yoq-d4-Mb8"/>
+                        <outlet property="l5" destination="Hsa-xA-41B" id="E0z-Df-yXt"/>
+                        <outlet property="l6" destination="L65-Kl-WQj" id="VFn-Sl-I8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXC-UP-9ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="nr7-sb-TlK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="4153"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Audio" width="84" height="115"/>
+        <image name="Blur Side Page" width="320" height="568"/>
+        <image name="Chat" width="83" height="115"/>
+        <image name="Emoji" width="82" height="120"/>
+        <image name="Location" width="84" height="115"/>
+        <image name="MainPage" width="320" height="568"/>
+        <image name="Photo" width="84" height="115"/>
         <image name="Skateboard" width="36" height="9"/>
+        <image name="Text" width="82" height="114"/>
     </resources>
 </document>
