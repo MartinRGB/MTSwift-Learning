@@ -133,3 +133,13 @@ What I learned
 2.Add an prototype named "惬读" made with Form ,plan to implement it
 
 3.I have learned Swift for 10Day(or even more).It's not good to learn new knowledge everyday,I need sometime to review what I learned,also I wanna make all these project better & designer-like.So,I paused this plan.
+
+##Day11:Transitionmanager(Make your transition code tidy) 
+![Day11](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m1m2.gif?raw=true)
+![Day11-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m3.giff?raw=true)
+
+What I learned
+
+1.Keep reviewing Transionmanager ,which made some animation a pattern to re-use anyway in app
+
+2.try to use "present modally" in segue
