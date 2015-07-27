@@ -1,8 +1,8 @@
 //
-//  Transitionmenutwobottom.swift
+//  menuViewController.swift
 //  Container ViewTransition
 //
-//  Created by Martin on 15/7/25.
+//  Created by 1 on 15/7/26.
 //  Copyright (c) 2015年 1. All rights reserved.
 //
 
@@ -10,20 +10,19 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    @IBOutlet var l1: UIImageView!
-    @IBOutlet var l2: UIImageView!
-    @IBOutlet var l3: UIImageView!
-    @IBOutlet var l4: UIImageView!
-    @IBOutlet var l5: UIImageView!
-    @IBOutlet var l6: UIImageView!
+    @IBOutlet weak var icon1: UIImageView!
+    @IBOutlet weak var icon2: UIImageView!
+    @IBOutlet weak var icon3: UIImageView!
+    @IBOutlet weak var icon4: UIImageView!
+    @IBOutlet weak var icon5: UIImageView!
+    @IBOutlet weak var icon6: UIImageView!
     
     
     
-    let transitionManager2 = MenuTransitionManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.transitioningDelegate = transitionManager2
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +31,18 @@ class MenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
     
 
 }
