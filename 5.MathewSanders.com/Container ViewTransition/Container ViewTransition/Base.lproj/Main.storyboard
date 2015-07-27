@@ -375,6 +375,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF2-aM-WaL">
                                 <rect key="frame" x="91" y="504" width="138" height="30"/>
                                 <state key="normal" title="Check it">
@@ -382,15 +383,37 @@
                                 </state>
                                 <connections>
                                     <segue destination="pXY-yQ-MEK" kind="modal" id="4HA-Vb-hXE"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ic-wM-3LJ">
+                                <rect key="frame" x="154" y="313" width="13" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9s-Sq-lKQ">
+                                <rect key="frame" x="91" y="504" width="138" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uzc-Rp-ByJ" kind="push" id="Uh8-ea-NDa"/>
+>>>>>>> origin/master
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstAttribute="trailingMargin" secondItem="sF2-aM-WaL" secondAttribute="trailing" constant="75" id="4iO-4n-XcK"/>
                             <constraint firstItem="zSd-MG-61g" firstAttribute="top" secondItem="sF2-aM-WaL" secondAttribute="bottom" constant="34" id="7c4-ga-sv0"/>
                             <constraint firstItem="sF2-aM-WaL" firstAttribute="leading" secondItem="6RD-Sk-b82" secondAttribute="leadingMargin" constant="75" id="TvZ-2h-NtW"/>
                             <constraint firstAttribute="centerX" secondItem="sF2-aM-WaL" secondAttribute="centerX" id="nOM-oE-DHQ"/>
+=======
+                            <constraint firstItem="L9s-Sq-lKQ" firstAttribute="leading" secondItem="6RD-Sk-b82" secondAttribute="leadingMargin" constant="75" id="9Yb-jY-SUi"/>
+                            <constraint firstItem="zSd-MG-61g" firstAttribute="top" secondItem="L9s-Sq-lKQ" secondAttribute="bottom" constant="34" id="HnR-1S-iOn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L9s-Sq-lKQ" secondAttribute="trailing" constant="75" id="ZsB-iy-FBe"/>
+                            <constraint firstAttribute="centerX" secondItem="L9s-Sq-lKQ" secondAttribute="centerX" id="mKz-cU-C5L"/>
+>>>>>>> origin/master
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transition3" id="gKX-Mh-dgZ"/>
@@ -399,6 +422,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peu-Vp-9rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="663" y="3519"/>
+        </scene>
+        <!--Slidemenu View Controller-->
+        <scene sceneID="SZH-JH-j4H">
+            <objects>
+                <viewController id="GkW-VB-HHQ" customClass="slidemenuViewController" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0VI-g9-XcG"/>
+                        <viewControllerLayoutGuide type="bottom" id="l4U-Je-fU8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cJn-wi-1nr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Text" translatesAutoresizingMaskIntoConstraints="NO" id="ffF-Lq-sGt">
+                                <rect key="frame" x="64" y="40" width="40" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="VmC-R1-yvs">
+                                <rect key="frame" x="64" y="116" width="40" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Emoji" translatesAutoresizingMaskIntoConstraints="NO" id="8Ks-rL-CEp">
+                                <rect key="frame" x="64" y="192" width="40" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="2JH-cc-EXX">
+                                <rect key="frame" x="64" y="268" width="40" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chat" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-8E-P1w">
+                                <rect key="frame" x="64" y="344" width="40" height="56"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Audio" translatesAutoresizingMaskIntoConstraints="NO" id="Hav-sT-vv9">
+                                <rect key="frame" x="64" y="420" width="40" height="56"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlj-eu-Fb9">
+                                <rect key="frame" x="5" y="509" width="158" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6SY-db-dx1" kind="unwind" unwindAction="unwindtomenuViewController:" id="bEg-MX-P4C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="icon1" destination="ffF-Lq-sGt" id="u2g-ov-1yR"/>
+                        <outlet property="icon2" destination="VmC-R1-yvs" id="ar2-9f-vsY"/>
+                        <outlet property="icon3" destination="8Ks-rL-CEp" id="rwU-Ve-doS"/>
+                        <outlet property="icon4" destination="2JH-cc-EXX" id="7gz-Cs-Lvs"/>
+                        <outlet property="icon5" destination="Rqd-8E-P1w" id="Unu-iO-0Mk"/>
+                        <outlet property="icon6" destination="Hav-sT-vv9" id="MCl-DF-Kg3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MG-pt-R4N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6SY-db-dx1" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-269" y="3519"/>
+        </scene>
+        <!--Topmain View Controller-->
+        <scene sceneID="SSU-DH-qNq">
+            <objects>
+                <viewController id="uzc-Rp-ByJ" customClass="topmainViewController" customModule="Container_ViewTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X1d-Vd-2rO"/>
+                        <viewControllerLayoutGuide type="bottom" id="1CI-ob-x7P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uva-S2-e9n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainPage" translatesAutoresizingMaskIntoConstraints="NO" id="wIG-Kh-7E6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqu-mG-d1L">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem id="pri-Vs-akX"/>
+                                    <barButtonItem systemItem="search" id="B25-Wv-ZMO"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mYc-DV-cv7"/>
+                                    <barButtonItem systemItem="add" id="pzO-ME-2km">
+                                        <connections>
+                                            <segue destination="GkW-VB-HHQ" kind="presentation" modalPresentationStyle="overFullScreen" id="9G2-Lg-uka"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9QM-ha-3pB"/>
+                                    <barButtonItem systemItem="refresh" id="c6f-eh-3fX"/>
+                                </items>
+                                <color key="barTintColor" red="0.12941176470588237" green="0.28627450980392155" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n4B-z9-zFm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pno-ey-MaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="3519"/>
         </scene>
         <!--Transition1-->
         <scene sceneID="zWs-D6-5Ro">
