@@ -21,7 +21,7 @@ class Transitionmenuonedetail: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindToViewController3 (sender: UIStoryboardSegue){
+    @IBAction func unwindToViewController4 (sender: UIStoryboardSegue){
         
         //manually dismiss the screen ，手动取消
         self.dismissViewControllerAnimated(true, completion: nil)
