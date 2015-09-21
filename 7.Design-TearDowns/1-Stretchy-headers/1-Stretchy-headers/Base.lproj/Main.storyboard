@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aiB-xA-ehF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="eqs-Xq-V0f">
+            <objects>
+                <tableViewController id="aiB-xA-ehF" customClass="ViewController" customModule="__Stretchy_headers" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="maG-9a-Rdj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Zyb-ds-0gf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="Ufo-aj-lq8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="September 21th" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cu-80-dP4">
+                                    <rect key="frame" x="16" y="18" width="337" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="9cu-80-dP4" firstAttribute="leading" secondItem="Zyb-ds-0gf" secondAttribute="leading" constant="16" id="3ST-io-cMz"/>
+                                <constraint firstAttribute="trailing" secondItem="Ufo-aj-lq8" secondAttribute="trailing" id="4Ee-kw-fTs"/>
+                                <constraint firstItem="Ufo-aj-lq8" firstAttribute="top" secondItem="Zyb-ds-0gf" secondAttribute="top" id="LE5-nU-3PT"/>
+                                <constraint firstAttribute="bottom" secondItem="Ufo-aj-lq8" secondAttribute="bottom" id="enN-Sv-LzB"/>
+                                <constraint firstItem="Ufo-aj-lq8" firstAttribute="leading" secondItem="Zyb-ds-0gf" secondAttribute="leading" id="pfP-qK-buc"/>
+                                <constraint firstItem="9cu-80-dP4" firstAttribute="top" secondItem="Zyb-ds-0gf" secondAttribute="top" constant="18" id="wgN-gB-C0i"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="128" id="kAd-wn-IhT" customClass="newsitemcell" customModule="__Stretchy_headers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="292" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kAd-wn-IhT" id="oMt-78-lKx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Designer News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm9-Vo-SO6">
+                                            <rect key="frame" x="16" y="16" width="334" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSS Frontend Frameworks: The Best 10 for Modern Web Design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-IZ-blJ">
+                                            <rect key="frame" x="16" y="50" width="351" height="57"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Pm9-Vo-SO6" secondAttribute="trailing" constant="25" id="5PB-hh-h8k"/>
+                                        <constraint firstItem="Pm9-Vo-SO6" firstAttribute="leading" secondItem="oMt-78-lKx" secondAttribute="leading" constant="16" id="6b8-dm-bqt"/>
+                                        <constraint firstItem="5Vl-IZ-blJ" firstAttribute="top" secondItem="oMt-78-lKx" secondAttribute="topMargin" constant="42" id="HrI-V8-dbr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="5Vl-IZ-blJ" secondAttribute="trailing" id="WEv-U2-jO0"/>
+                                        <constraint firstItem="5Vl-IZ-blJ" firstAttribute="top" secondItem="Pm9-Vo-SO6" secondAttribute="bottom" constant="13" id="Xhx-1O-Ght"/>
+                                        <constraint firstItem="Pm9-Vo-SO6" firstAttribute="top" secondItem="oMt-78-lKx" secondAttribute="top" constant="16" id="mg4-0k-RMM"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5Vl-IZ-blJ" secondAttribute="bottom" constant="12" id="prP-j0-O4v"/>
+                                        <constraint firstItem="5Vl-IZ-blJ" firstAttribute="leading" secondItem="oMt-78-lKx" secondAttribute="leadingMargin" constant="8" id="vfB-Es-wr6"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categorylabels" destination="Pm9-Vo-SO6" id="xQa-2L-Bak"/>
+                                    <outlet property="summarylabels" destination="5Vl-IZ-blJ" id="GjA-hq-j8d"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aiB-xA-ehF" id="No0-7Q-qxu"/>
+                            <outlet property="delegate" destination="aiB-xA-ehF" id="yO9-hj-GnA"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3c-AP-Oxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.5" y="514.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo" width="3084" height="2056"/>
+    </resources>
+</document>
