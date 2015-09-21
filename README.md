@@ -145,3 +145,16 @@ What I learned
 2.try to use "present modally" & "over full screen"(try other options,effect will be different) in segue.Now I can part show previous ViewController(Just change second ViewControler's property like opacity/scale/rotation)
 
 3.set a variable(like presenting) in transitionmanager,I can use self.presenting+if/else make switch.I can also use self.presenting before animation block to init propertys of view
+
+##Day12:Recreate Yahoo News Digest by using UITableView(From Designer TearDown)
+![Day12](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/1.gif?raw=true)
+
+What I learned
+
+1.in sometime,the constraints can be used for stick a view to another scrollview
+
+2.I had learned Matthew Cheok's brillant way of making cut off
+
+3.To make code tidy,we must note delegate&datesource,separate modal、view&viewcontroller
+
+4.use some global variable
