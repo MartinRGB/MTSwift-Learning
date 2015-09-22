@@ -147,7 +147,7 @@ What I learned
 3.set a variable(like presenting) in transitionmanager,I can use self.presenting+if/else make switch.I can also use self.presenting before animation block to init propertys of view
 
 ##Day12:Recreate Yahoo News Digest by using UITableView(From Designer TearDown)
-![Day12](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/1.gif?raw=true)
+![Day12](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/1-Stretchy-headers/1.gif?raw=true)
 
 What I learned
 
@@ -158,3 +158,16 @@ What I learned
 3.To make code tidy,we must note delegate&datesource,separate modal、view&viewcontroller
 
 4.use some global variable
+
+##Day13:Recreate Elastic Drawer(From Designer TearDown)
+![Day13](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/2.Elasticdrawer/drawer2.gif?raw=true)
+
+What I learned
+
+1.Use Simple state in iOS
+
+2."private let" for global using 
+
+3.Also use "var tracking: Bool = false"(Or true) to animate by gesture or just animate automaticly
+
+4.This is a good example of UIBezierPath,I try to sketch some path on my note,learned a lot,but not enough
