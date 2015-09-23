@@ -171,3 +171,18 @@ What I learned
 3.Also use "var tracking: Bool = false"(Or true) to animate by gesture or just animate automaticly
 
 4.This is a good example of UIBezierPath,I try to sketch some path on my note,learned a lot,but not enough
+
+##Day14:Zooming Icons(From Design TearDown)
+![Day14](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/3.ZommingIcons/1.gif?raw=true)
+
+What I learned
+
+1.use constraint to aniamte element's Position 
+
+2.use snapshotViewAfterScreenUpdates to snape some key element,then fromView->animate snapshotview->toView(Another way of making TransitionManger fromVC->animate->animate->TOVC)
+
+3.try to pass date(modal) between VC
+
+4.try to make a protocol
+
+5.still have bugs in constraint animation,try to fix it later.
