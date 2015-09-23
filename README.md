@@ -185,4 +185,6 @@ What I learned
 
 4.try to make a protocol
 
-5.still have bugs in constraint animation,try to fix it later.
+5.learn some right way of making constraint
+
+6.still have bugs in constraint animation,try to fix it later.
