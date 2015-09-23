@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate, UIViewControllerInteractiveTransitioning {
+class MenuTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate{
     
     private var presenting = false
     private var interactive = false
@@ -138,14 +138,14 @@ class MenuTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControl
         
         // add the both views to our view controller
         
-        container.addSubview(menuView)
-        container.addSubview(topView)
-        container.addSubview(self.statusBarBackground)
+        container!.addSubview(menuView)
+        container!.addSubview(topView)
+        container!.addSubview(self.statusBarBackground)
         
         let duration = self.transitionDuration(transitionContext)
         
         // perform the animation!
-        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: [], animations: {
             
             if (self.presenting){
                 self.onStageMenuController(menuViewController) // onstage items: slide in
@@ -222,7 +222,7 @@ class MenuTransitionManager: UIPercentDrivenInteractiveTransition, UIViewControl
     }
     
     // return how many seconds the transiton animation will take
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
     

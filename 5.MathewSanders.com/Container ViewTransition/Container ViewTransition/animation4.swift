@@ -66,7 +66,7 @@ class animation4: UIViewController {
         // create an array of views to animate (in this case just one)
         let viewsToAnimate = [Doge]
         
-        UIView.performSystemAnimation(UISystemAnimation.Delete, onViews: [Doge], options: nil, animations: {
+        UIView.performSystemAnimation(UISystemAnimation.Delete, onViews: [Doge], options: [], animations: {
             
             }, completion: { finished in
                 

@@ -39,13 +39,13 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
         fromView.layer.position = CGPoint(x:0, y:0)
         
         //2 view加载入容器
-        container.addSubview(toView)
-        container.addSubview(fromView)
+        container!.addSubview(toView)
+        container!.addSubview(fromView)
         
         // 设置动画世纪
         let duration = self.transitionDuration(transitionContext)
         
-        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: [], animations: {
             
             //判断是触发还是返回
             fromView.transform = self.presenting ? offScreenLeft : offScreenRight
@@ -61,7 +61,7 @@ class TransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIView
     }
     
     //动画世纪
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.75
     }
     

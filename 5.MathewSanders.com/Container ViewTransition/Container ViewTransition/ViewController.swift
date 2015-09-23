@@ -30,7 +30,7 @@ class ViewController: UIViewController{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         //同一形式的单元格重复使用
-        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) 
         //每一行的名字
         let row = indexPath.row
         cell.textLabel?.text = Effectname[row]
@@ -41,7 +41,7 @@ class ViewController: UIViewController{
     // UITableViewDelegate 方法，处理列表项的选中事件
     func tableView(tableView:UITableView!,didSelectRowAtIndexPath indexPath:NSIndexPath!)
     {
-        println("You selected cell #\(indexPath.row)!")
+        print("You selected cell #\(indexPath.row)!")
         if indexPath.row == 0{
             self.performSegueWithIdentifier("effect1", sender: indexPath.row)
         }

@@ -33,14 +33,14 @@ class Transition2Menu2TransitionManager: NSObject, UIViewControllerAnimatedTrans
         }
 
         //加入容器
-        container.addSubview(bottomView)
-        container.addSubview(menuView)
+        container!.addSubview(bottomView)
+        container!.addSubview(menuView)
         
         //设置时间
         let duration = self.transitionDuration(transitionContext)
         
         //设置动画
-        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: nil, animations: {
+        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 1, initialSpringVelocity: 0.8, options: [], animations: {
             
             // either fade in or fade out
             menuView.alpha = self.presenting ? 1 : 0
@@ -59,7 +59,7 @@ class Transition2Menu2TransitionManager: NSObject, UIViewControllerAnimatedTrans
         
     }
     //时间设置
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 0.5
     }
     //去 present

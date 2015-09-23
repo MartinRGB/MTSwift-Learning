@@ -32,7 +32,7 @@ let transitionManager = TransitionManager()
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-            let controller = segue.destinationViewController as! UIViewController
+            let controller = segue.destinationViewController 
         
             // 使用TransitionManager管理动画，不使用默认效果
             controller.transitioningDelegate = self.transitionManager
