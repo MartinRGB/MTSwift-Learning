@@ -407,10 +407,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "1-Stretchy-headers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Stretchy-headers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
 			};
 			name = Debug;
 		};
@@ -418,10 +420,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "1-Stretchy-headers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Stretchy-headers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
 			};
 			name = Release;
 		};
@@ -492,6 +496,7 @@
 				2EE7B1791BB03902003C8214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EE7B17A1BB03902003C8214 /* Build configuration list for PBXNativeTarget "1-Stretchy-headersTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				2EE7B17C1BB03902003C8214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EE7B17D1BB03902003C8214 /* Build configuration list for PBXNativeTarget "1-Stretchy-headersUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				2EE7B17F1BB03902003C8214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
