@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController:UIViewController,TransitionManagerViewController{
+class DetailViewController:UIViewController,ZoomingIconViewController{
     
     @IBOutlet weak var coloredView:UIView!
     @IBOutlet weak var imageView: UIImageView!
@@ -30,17 +30,17 @@ class DetailViewController:UIViewController,TransitionManagerViewController{
     func setupState(initial: Bool) {
         if initial {
             backtop.constant = -64
-            summar.constant = -200
+            summar.constant = -300
         }
         else {
             backtop.constant = 0
-            summar.constant = 111
+            summar.constant = 40
         }
         self.view.layoutIfNeeded()
         print("\(summar.constant)")
     }
     
-    func zoomingIconTransition(transition: TransitionManager, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool){
+    func zoomingIconTransition(transition: ZoomingIconTransition, willAnimateTransitionWithOperation operation: UINavigationControllerOperation, isForegroundViewController isForeground: Bool){
         setupState(operation == .Push)
         
         UIView.animateWithDuration(0.6, delay: operation == .Push ? 0.2 : 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: { () -> Void in
@@ -83,11 +83,11 @@ class DetailViewController:UIViewController,TransitionManagerViewController{
         
     }
     
-    func zoomingIconColoredViewForTransition(transition: TransitionManager) -> UIView! {
+    func zoomingIconColoredViewForTransition(transition: ZoomingIconTransition) -> UIView! {
         return coloredView
     }
     
-    func zoomingIconImageViewForTransition(transition: TransitionManager) -> UIImageView! {
+    func zoomingIconImageViewForTransition(transition: ZoomingIconTransition) -> UIImageView! {
         return imageView
     }
     

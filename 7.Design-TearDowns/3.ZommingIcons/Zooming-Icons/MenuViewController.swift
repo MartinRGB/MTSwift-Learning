@@ -10,7 +10,7 @@ import UIKit
 
 let reuseIdentifier = "Cell"
 
-class MenuViewController:UICollectionViewController,TransitionManagerViewController{
+class MenuViewController:UICollectionViewController,ZoomingIconViewController{
     
     //know which indexpath we selected
     var selectedIndexPath: NSIndexPath?
@@ -113,7 +113,7 @@ class MenuViewController:UICollectionViewController,TransitionManagerViewControl
     
     
     //根据Protocol提供color
-    func zoomingIconColoredViewForTransition(transition: TransitionManager) -> UIView! {
+    func zoomingIconColoredViewForTransition(transition: ZoomingIconTransition) -> UIView! {
         if let indexPath = selectedIndexPath {
             let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! SocialItemCell
             return cell.coloredView
@@ -125,7 +125,7 @@ class MenuViewController:UICollectionViewController,TransitionManagerViewControl
     }
     
     //根据Protocol提供imageview
-    func zoomingIconImageViewForTransition(transition: TransitionManager) -> UIImageView! {
+    func zoomingIconImageViewForTransition(transition: ZoomingIconTransition) -> UIImageView! {
         if let indexPath = selectedIndexPath {
             let cell = collectionView!.cellForItemAtIndexPath(indexPath) as! SocialItemCell
             return cell.imageview

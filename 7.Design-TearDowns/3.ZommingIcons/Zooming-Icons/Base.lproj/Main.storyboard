@@ -18,7 +18,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dxi-JE-fv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="e7N-lS-auj" userLabel="TransitionManager" customClass="TransitionManager" customModule="Zooming_Icons" customModuleProvider="target"/>
+                <customObject id="e7N-lS-auj" userLabel="TransitionManager" customClass="ZoomingIconTransition" customModule="Zooming_Icons" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="-356" y="363"/>
         </scene>
