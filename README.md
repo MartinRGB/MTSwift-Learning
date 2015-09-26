@@ -198,3 +198,5 @@ What I learned
 
 2.Keep going with protocol/pass date/ TransitionManager
 
+3.the meaning of "let duration = NSTimeInterval(progress) * ContentViewAnimationDuration"
+
