@@ -188,3 +188,13 @@ What I learned
 5.learn some right way of making constraint
 
 6.still have bugs in constraint animation,try to fix it later.
+
+##Day15:Rooms(From Design TearDown)
+![Day14](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/4.Rooms/1.gif?raw=true)
+
+What I learned
+
+1.In Swift, everything is public by default. Define your variables outside the classes.(Can use everywhere)
+
+2.Keep going with protocol/pass date/ TransitionManager
+
