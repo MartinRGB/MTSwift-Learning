@@ -70,7 +70,7 @@ class FourthViewController: UIViewController,UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         
-        println(scrollview.contentOffset.y)
+        print(scrollview.contentOffset.y)
         if(scrollview.contentOffset.y > 100 && scrollView.contentOffset.y < 210){
             if(scrollview.contentOffset.y < previousTableViewYOffset)
             {

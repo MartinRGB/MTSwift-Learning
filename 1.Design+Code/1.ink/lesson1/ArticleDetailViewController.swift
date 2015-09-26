@@ -72,11 +72,11 @@ class ArticleDetailViewController: UIViewController,UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         
-        println(scrollview.contentOffset.y)
+        print(scrollview.contentOffset.y)
         if(scrollview.contentOffset.y > 100){
             if(scrollview.contentOffset.y < previousTableViewYOffset)
             {
-                println("0")
+                print("0")
                 UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseOut, animations: {
                     self.nav.frame.origin.y = 0
                     self.btn.frame.origin.y = 15
@@ -86,7 +86,7 @@ class ArticleDetailViewController: UIViewController,UIScrollViewDelegate {
                 
             }
             else{
-                println("1")
+                print("1")
                 UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseOut, animations: {
                     self.nav.frame.origin.y = -53
                     self.btn.frame.origin.y = -38

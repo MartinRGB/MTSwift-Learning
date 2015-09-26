@@ -81,7 +81,7 @@ class ProductDetailViewController: UIViewController,UIWebViewDelegate,UIScrollVi
         if(webview.scrollView.contentOffset.y > 100){
             if(webview.scrollView.contentOffset.y < previousTableViewYOffset)
             {
-                println("0")
+                print("0")
                 UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseOut, animations: {
                     self.nav.frame.origin.y = 0
                     self.btn.frame.origin.y = 15
@@ -92,7 +92,7 @@ class ProductDetailViewController: UIViewController,UIWebViewDelegate,UIScrollVi
                 
             }
             else{
-                println("1")
+                print("1")
                 UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseOut, animations: {
                     self.nav.frame.origin.y = -53
                     self.btn.frame.origin.y = -38

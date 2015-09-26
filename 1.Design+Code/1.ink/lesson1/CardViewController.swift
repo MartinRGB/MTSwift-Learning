@@ -294,7 +294,7 @@ class CardViewController: UIViewController {
     
     @IBAction func HandleGesture(sender: AnyObject) {
         //捕捉sender信号
-        println(sender)
+        print(sender)
         //定义sender赋予的location位置
         let location = sender.locationInView(view)
         let cardlocation = sender.locationInView(Cardview)

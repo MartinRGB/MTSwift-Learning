@@ -53,7 +53,7 @@ class IntroViewController: UIViewController,UIScrollViewDelegate {
     
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        println(scrollView.contentOffset.x)
+        print(scrollView.contentOffset.x)
         if(scrollView.contentOffset.x>=600)
         {
             UIView.animateWithDuration(0.5, delay: 0,usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options: .CurveEaseOut, animations: {
