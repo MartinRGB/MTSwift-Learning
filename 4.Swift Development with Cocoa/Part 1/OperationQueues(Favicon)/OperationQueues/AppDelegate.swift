@@ -29,30 +29,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //知道我们告诉系统，任务已经完成
 
     func applicationDidEnterBackground(application: UIApplication) {
+        
         self.backgroundTask = application.beginBackgroundTaskWithExpirationHandler{
             () -> Void in
             //清理，然后运行endBackgrounTask
             application.endBackgroundTask(self.backgroundTask!)
-            var backgroundQueue = NSOperationQueue()
+            let backgroundQueue = NSOperationQueue()
+            
             backgroundQueue.addOperationWithBlock(){
              //向服务器发送请求，准备URL
-                var notificationURL = NSURL(string:"http://www.oreilly.com/")
+                let notificationURL = NSURL(string:"http://www.oreilly.com/")
                 
                 //准备URL请求
-                var notificationURLRequest = NSURLRequest(URL:notificationURL!)
+                let notificationURLRequest = NSURLRequest(URL:notificationURL!)
+                let response: NSURLResponse?
+                let error: NSError?
+                let data:NSData?
                 //发送请求，记录回复
-                var loadedData = NSURLConnection.sendSynchronousRequest(notificationURLRequest, returningResponse: nil, error: nil)
+
+                
+                let loadedData = NSURLSession.sharedSession()
+                
+                loadedData.dataTaskWithRequest(notificationURLRequest) { (data, response, error) -> Void in
+                    
+                    let theData = loadedData
+                    let loadedString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    print("Loaded:\(loadedString)")
+                }
+                
+                
+                
+                /*
+                //发送请求，记录回复
+                var loadedData = NSURLConnection.sendSynchronousRequest(notificationURLRequest, returningResponse: response , error: error)
                 //将数据转换为字符串
                 if let theData = loadedData{
                     var loadedString = NSString(data:theData,encoding:NSUTF8StringEncoding)
                     println("Loaded:\(loadedString)")
-                }
+                }*/
                 //发出信号，说明我们已经完成后台
                 application.endBackgroundTask(self.backgroundTask!)
                 
             }
         }
     }
+    
+    
+    
 
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.

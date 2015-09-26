@@ -34,9 +34,9 @@ class ViewController: UIViewController {
     }
     //让FaviconTableViewCell作为表格视图单元格，对应正确网站，使用dequeueReusableCellWithIdentifier方法提取单元格，然后用hosts数组创建NSURL提供给它
     func tableView(tableView:UITableView, cellForRowAtIndexPath indexPath:NSIndexPath)-> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("FaviconCell") as! FaviconTableViewCell
-        var host = hosts[indexPath.row]
-        var url = NSURL(string:"http://\(host)/favicon.ico")
+        let cell = tableView.dequeueReusableCellWithIdentifier("FaviconCell") as! FaviconTableViewCell
+        let host = hosts[indexPath.row]
+        let url = NSURL(string:"http://\(host)/favicon.ico")
         cell.operationQueue = queue
         cell.url = url
         return cell
