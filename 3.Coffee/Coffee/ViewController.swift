@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         }
         
         gif.image = UIImage(named:"Coffee\(counter)")
-        println(counter)
+        print(counter)
     }
     
     

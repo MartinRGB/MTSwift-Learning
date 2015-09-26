@@ -83,7 +83,7 @@ class ButtonExp: UIViewController {
         var point4 = CGPointMake(point.x+67, point.y-17)
         
         center.frame = CGRectMake(point.x-28, point.y-28, 54, 56)
-        println(point)
+        print(point)
         
         
         UIView.animateWithDuration(0.15, delay: 0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
@@ -130,10 +130,10 @@ class ButtonExp: UIViewController {
             
             
             
-            self.dynamicAnimator?.addBehavior(self.snap1)
-            self.dynamicAnimator?.addBehavior(self.snap2)
-            self.dynamicAnimator?.addBehavior(self.snap3)
-            self.dynamicAnimator?.addBehavior(self.snap4)
+            self.dynamicAnimator?.addBehavior(self.snap1!)
+            self.dynamicAnimator?.addBehavior(self.snap2!)
+            self.dynamicAnimator?.addBehavior(self.snap3!)
+            self.dynamicAnimator?.addBehavior(self.snap4!)
             
         }
 
@@ -165,10 +165,10 @@ class ButtonExp: UIViewController {
             self.snap4 = UISnapBehavior(item:self.btn4 ,snapToPoint:point)
             
             
-            self.dynamicAnimator?.addBehavior(self.snap1)
-            self.dynamicAnimator?.addBehavior(self.snap2)
-            self.dynamicAnimator?.addBehavior(self.snap3)
-            self.dynamicAnimator?.addBehavior(self.snap4)
+            self.dynamicAnimator?.addBehavior(self.snap1!)
+            self.dynamicAnimator?.addBehavior(self.snap2!)
+            self.dynamicAnimator?.addBehavior(self.snap3!)
+            self.dynamicAnimator?.addBehavior(self.snap4!)
         }
         
         

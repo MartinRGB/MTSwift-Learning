@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        println(scrollview.contentOffset.y)
+        print(scrollview.contentOffset.y)
         let scrolly = scrollview.contentOffset.y
         
         if scrolly < 0 {

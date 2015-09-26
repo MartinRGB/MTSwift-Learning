@@ -159,11 +159,13 @@
 		2E017E921B596647002E461D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Martin;
 				TargetAttributes = {
 					2E017E991B596647002E461D = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8377DUVBBA;
 					};
 					2E017EAE1B596647002E461D = {
 						CreatedOnToolsVersion = 6.4;
@@ -344,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OperationQueues/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = OperationQueues/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +417,7 @@
 				2E017EBB1B596647002E461D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E017EBC1B596647002E461D /* Build configuration list for PBXNativeTarget "OperationQueuesTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				2E017EBE1B596647002E461D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
