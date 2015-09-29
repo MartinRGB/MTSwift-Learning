@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="lbY-ZZ-pYD" userLabel="TIp View" customClass="TipView" customModule="Intruduction_Tips" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cic-za-jaG">
+                    <rect key="frame" x="8" y="20" width="584" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUS-yn-fR1">
+                    <rect key="frame" x="8" y="52" width="584" height="365"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABc-Ql-ROY" userLabel="Summary Label">
+                    <rect key="frame" x="8" y="425" width="584" height="122"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="GKn-x4-NeZ">
+                    <rect key="frame" x="281" y="555" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GKn-x4-NeZ" firstAttribute="centerX" secondItem="lbY-ZZ-pYD" secondAttribute="centerX" id="281-hK-ElH"/>
+                <constraint firstAttribute="trailing" secondItem="ABc-Ql-ROY" secondAttribute="trailing" constant="8" id="7EN-kg-xB4"/>
+                <constraint firstAttribute="trailing" secondItem="cic-za-jaG" secondAttribute="trailing" constant="8" id="ASR-St-zAr"/>
+                <constraint firstItem="cic-za-jaG" firstAttribute="leading" secondItem="lbY-ZZ-pYD" secondAttribute="leading" constant="8" id="EDG-DS-HGk"/>
+                <constraint firstItem="SUS-yn-fR1" firstAttribute="leading" secondItem="lbY-ZZ-pYD" secondAttribute="leading" constant="8" id="FAL-lk-N6Y"/>
+                <constraint firstItem="GKn-x4-NeZ" firstAttribute="top" secondItem="ABc-Ql-ROY" secondAttribute="top" id="LiL-eL-opY"/>
+                <constraint firstItem="cic-za-jaG" firstAttribute="top" secondItem="lbY-ZZ-pYD" secondAttribute="top" constant="20" id="NDR-f8-qvS"/>
+                <constraint firstItem="ABc-Ql-ROY" firstAttribute="top" secondItem="SUS-yn-fR1" secondAttribute="top" id="Ujr-Ia-DMA"/>
+                <constraint firstAttribute="trailing" secondItem="SUS-yn-fR1" secondAttribute="trailing" constant="8" id="b6U-dm-N8z"/>
+                <constraint firstAttribute="bottom" secondItem="GKn-x4-NeZ" secondAttribute="bottom" constant="8" id="dlU-qa-Cu3"/>
+                <constraint firstItem="GKn-x4-NeZ" firstAttribute="top" secondItem="ABc-Ql-ROY" secondAttribute="bottom" constant="8" id="jwL-ZM-11d"/>
+                <constraint firstItem="SUS-yn-fR1" firstAttribute="top" secondItem="cic-za-jaG" secondAttribute="bottom" constant="11" id="tlC-QH-pd2"/>
+                <constraint firstItem="ABc-Ql-ROY" firstAttribute="top" secondItem="SUS-yn-fR1" secondAttribute="bottom" constant="8" id="ucc-wi-tiQ"/>
+                <constraint firstItem="ABc-Ql-ROY" firstAttribute="leading" secondItem="lbY-ZZ-pYD" secondAttribute="leading" constant="8" id="vLI-B3-huv"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ujr-Ia-DMA"/>
+                    <exclude reference="LiL-eL-opY"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageview" destination="SUS-yn-fR1" id="Rgp-5U-o7f"/>
+                <outlet property="pagecontrol" destination="GKn-x4-NeZ" id="Cj3-RX-8Fd"/>
+                <outlet property="summarylabel" destination="ABc-Ql-ROY" id="NT5-qY-mNl"/>
+                <outlet property="titlelabel" destination="cic-za-jaG" id="UQ0-V4-flk"/>
+            </connections>
+        </view>
+    </objects>
+</document>
