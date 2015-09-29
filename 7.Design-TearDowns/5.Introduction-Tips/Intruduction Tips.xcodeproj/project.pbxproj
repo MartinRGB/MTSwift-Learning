@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EA3770C1BB7D2AC00C6B4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3770B1BB7D2AC00C6B4E4 /* AppDelegate.swift */; };
+		2EA3770E1BB7D2AC00C6B4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3770D1BB7D2AC00C6B4E4 /* ViewController.swift */; };
+		2EA377111BB7D2AC00C6B4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA3770F1BB7D2AC00C6B4E4 /* Main.storyboard */; };
+		2EA377131BB7D2AC00C6B4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA377121BB7D2AC00C6B4E4 /* Assets.xcassets */; };
+		2EA377161BB7D2AC00C6B4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA377141BB7D2AC00C6B4E4 /* LaunchScreen.storyboard */; };
+		2EA377211BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA377201BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift */; };
+		2EA3772C1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3772B1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift */; };
+		2EA3773A1BB7D2D900C6B4E4 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA377391BB7D2D900C6B4E4 /* Tip.swift */; settings = {ASSET_TAGS = (); }; };
+		2EA3773C1BB7D3A300C6B4E4 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA3773B1BB7D3A300C6B4E4 /* TipView.xib */; settings = {ASSET_TAGS = (); }; };
+		2EA3773E1BB7D72A00C6B4E4 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773D1BB7D72A00C6B4E4 /* TipView.swift */; settings = {ASSET_TAGS = (); }; };
+		2EA377401BB7DA0900C6B4E4 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773F1BB7DA0900C6B4E4 /* TipViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EA3771D1BB7D2AC00C6B4E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA377001BB7D2AC00C6B4E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA377071BB7D2AC00C6B4E4;
+			remoteInfo = "Intruduction Tips";
+		};
+		2EA377281BB7D2AC00C6B4E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA377001BB7D2AC00C6B4E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA377071BB7D2AC00C6B4E4;
+			remoteInfo = "Intruduction Tips";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2EA377081BB7D2AC00C6B4E4 /* Intruduction Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intruduction Tips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA3770B1BB7D2AC00C6B4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EA3770D1BB7D2AC00C6B4E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EA377101BB7D2AC00C6B4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EA377121BB7D2AC00C6B4E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA377151BB7D2AC00C6B4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EA377171BB7D2AC00C6B4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA3771C1BB7D2AC00C6B4E4 /* Intruduction TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intruduction TipsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA377201BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intruduction_TipsTests.swift; sourceTree = "<group>"; };
+		2EA377221BB7D2AC00C6B4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA377271BB7D2AC00C6B4E4 /* Intruduction TipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intruduction TipsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA3772B1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intruduction_TipsUITests.swift; sourceTree = "<group>"; };
+		2EA3772D1BB7D2AC00C6B4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA377391BB7D2D900C6B4E4 /* Tip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		2EA3773B1BB7D3A300C6B4E4 /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
+		2EA3773D1BB7D72A00C6B4E4 /* TipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		2EA3773F1BB7DA0900C6B4E4 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EA377051BB7D2AC00C6B4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA377191BB7D2AC00C6B4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA377241BB7D2AC00C6B4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EA376FF1BB7D2AC00C6B4E4 = {
+			isa = PBXGroup;
+			children = (
+				2EA3770A1BB7D2AC00C6B4E4 /* Intruduction Tips */,
+				2EA3771F1BB7D2AC00C6B4E4 /* Intruduction TipsTests */,
+				2EA3772A1BB7D2AC00C6B4E4 /* Intruduction TipsUITests */,
+				2EA377091BB7D2AC00C6B4E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EA377091BB7D2AC00C6B4E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EA377081BB7D2AC00C6B4E4 /* Intruduction Tips.app */,
+				2EA3771C1BB7D2AC00C6B4E4 /* Intruduction TipsTests.xctest */,
+				2EA377271BB7D2AC00C6B4E4 /* Intruduction TipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EA3770A1BB7D2AC00C6B4E4 /* Intruduction Tips */ = {
+			isa = PBXGroup;
+			children = (
+				2EA3770B1BB7D2AC00C6B4E4 /* AppDelegate.swift */,
+				2EA3770D1BB7D2AC00C6B4E4 /* ViewController.swift */,
+				2EA3773F1BB7DA0900C6B4E4 /* TipViewController.swift */,
+				2EA377391BB7D2D900C6B4E4 /* Tip.swift */,
+				2EA3770F1BB7D2AC00C6B4E4 /* Main.storyboard */,
+				2EA3773B1BB7D3A300C6B4E4 /* TipView.xib */,
+				2EA3773D1BB7D72A00C6B4E4 /* TipView.swift */,
+				2EA377121BB7D2AC00C6B4E4 /* Assets.xcassets */,
+				2EA377141BB7D2AC00C6B4E4 /* LaunchScreen.storyboard */,
+				2EA377171BB7D2AC00C6B4E4 /* Info.plist */,
+			);
+			path = "Intruduction Tips";
+			sourceTree = "<group>";
+		};
+		2EA3771F1BB7D2AC00C6B4E4 /* Intruduction TipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2EA377201BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift */,
+				2EA377221BB7D2AC00C6B4E4 /* Info.plist */,
+			);
+			path = "Intruduction TipsTests";
+			sourceTree = "<group>";
+		};
+		2EA3772A1BB7D2AC00C6B4E4 /* Intruduction TipsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2EA3772B1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift */,
+				2EA3772D1BB7D2AC00C6B4E4 /* Info.plist */,
+			);
+			path = "Intruduction TipsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EA377071BB7D2AC00C6B4E4 /* Intruduction Tips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA377301BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction Tips" */;
+			buildPhases = (
+				2EA377041BB7D2AC00C6B4E4 /* Sources */,
+				2EA377051BB7D2AC00C6B4E4 /* Frameworks */,
+				2EA377061BB7D2AC00C6B4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intruduction Tips";
+			productName = "Intruduction Tips";
+			productReference = 2EA377081BB7D2AC00C6B4E4 /* Intruduction Tips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EA3771B1BB7D2AC00C6B4E4 /* Intruduction TipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA377331BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsTests" */;
+			buildPhases = (
+				2EA377181BB7D2AC00C6B4E4 /* Sources */,
+				2EA377191BB7D2AC00C6B4E4 /* Frameworks */,
+				2EA3771A1BB7D2AC00C6B4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EA3771E1BB7D2AC00C6B4E4 /* PBXTargetDependency */,
+			);
+			name = "Intruduction TipsTests";
+			productName = "Intruduction TipsTests";
+			productReference = 2EA3771C1BB7D2AC00C6B4E4 /* Intruduction TipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2EA377261BB7D2AC00C6B4E4 /* Intruduction TipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA377361BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsUITests" */;
+			buildPhases = (
+				2EA377231BB7D2AC00C6B4E4 /* Sources */,
+				2EA377241BB7D2AC00C6B4E4 /* Frameworks */,
+				2EA377251BB7D2AC00C6B4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EA377291BB7D2AC00C6B4E4 /* PBXTargetDependency */,
+			);
+			name = "Intruduction TipsUITests";
+			productName = "Intruduction TipsUITests";
+			productReference = 2EA377271BB7D2AC00C6B4E4 /* Intruduction TipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EA377001BB7D2AC00C6B4E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = KingMartin;
+				TargetAttributes = {
+					2EA377071BB7D2AC00C6B4E4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8377DUVBBA;
+					};
+					2EA3771B1BB7D2AC00C6B4E4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8377DUVBBA;
+						TestTargetID = 2EA377071BB7D2AC00C6B4E4;
+					};
+					2EA377261BB7D2AC00C6B4E4 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 8377DUVBBA;
+						TestTargetID = 2EA377071BB7D2AC00C6B4E4;
+					};
+				};
+			};
+			buildConfigurationList = 2EA377031BB7D2AC00C6B4E4 /* Build configuration list for PBXProject "Intruduction Tips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EA376FF1BB7D2AC00C6B4E4;
+			productRefGroup = 2EA377091BB7D2AC00C6B4E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EA377071BB7D2AC00C6B4E4 /* Intruduction Tips */,
+				2EA3771B1BB7D2AC00C6B4E4 /* Intruduction TipsTests */,
+				2EA377261BB7D2AC00C6B4E4 /* Intruduction TipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EA377061BB7D2AC00C6B4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA3773C1BB7D3A300C6B4E4 /* TipView.xib in Resources */,
+				2EA377161BB7D2AC00C6B4E4 /* LaunchScreen.storyboard in Resources */,
+				2EA377131BB7D2AC00C6B4E4 /* Assets.xcassets in Resources */,
+				2EA377111BB7D2AC00C6B4E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA3771A1BB7D2AC00C6B4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA377251BB7D2AC00C6B4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EA377041BB7D2AC00C6B4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA3773E1BB7D72A00C6B4E4 /* TipView.swift in Sources */,
+				2EA3773A1BB7D2D900C6B4E4 /* Tip.swift in Sources */,
+				2EA3770E1BB7D2AC00C6B4E4 /* ViewController.swift in Sources */,
+				2EA377401BB7DA0900C6B4E4 /* TipViewController.swift in Sources */,
+				2EA3770C1BB7D2AC00C6B4E4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA377181BB7D2AC00C6B4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA377211BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA377231BB7D2AC00C6B4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA3772C1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EA3771E1BB7D2AC00C6B4E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA377071BB7D2AC00C6B4E4 /* Intruduction Tips */;
+			targetProxy = 2EA3771D1BB7D2AC00C6B4E4 /* PBXContainerItemProxy */;
+		};
+		2EA377291BB7D2AC00C6B4E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA377071BB7D2AC00C6B4E4 /* Intruduction Tips */;
+			targetProxy = 2EA377281BB7D2AC00C6B4E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EA3770F1BB7D2AC00C6B4E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA377101BB7D2AC00C6B4E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EA377141BB7D2AC00C6B4E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA377151BB7D2AC00C6B4E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EA3772E1BB7D2AC00C6B4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EA3772F1BB7D2AC00C6B4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EA377311BB7D2AC00C6B4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EA377321BB7D2AC00C6B4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2EA377341BB7D2AC00C6B4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Intruduction TipsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-TipsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intruduction Tips.app/Intruduction Tips";
+			};
+			name = Debug;
+		};
+		2EA377351BB7D2AC00C6B4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Intruduction TipsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-TipsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intruduction Tips.app/Intruduction Tips";
+			};
+			name = Release;
+		};
+		2EA377371BB7D2AC00C6B4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Intruduction TipsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-TipsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Intruduction Tips";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		2EA377381BB7D2AC00C6B4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Intruduction TipsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-TipsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Intruduction Tips";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA377031BB7D2AC00C6B4E4 /* Build configuration list for PBXProject "Intruduction Tips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA3772E1BB7D2AC00C6B4E4 /* Debug */,
+				2EA3772F1BB7D2AC00C6B4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA377301BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction Tips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA377311BB7D2AC00C6B4E4 /* Debug */,
+				2EA377321BB7D2AC00C6B4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2EA377331BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA377341BB7D2AC00C6B4E4 /* Debug */,
+				2EA377351BB7D2AC00C6B4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2EA377361BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA377371BB7D2AC00C6B4E4 /* Debug */,
+				2EA377381BB7D2AC00C6B4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EA377001BB7D2AC00C6B4E4 /* Project object */;
+}
