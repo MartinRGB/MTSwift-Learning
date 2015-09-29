@@ -190,7 +190,7 @@ What I learned
 6.still have bugs in constraint animation,try to fix it later.
 
 ##Day15:Rooms(From Design TearDown)
-![Day14](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/4.Rooms/1.gif?raw=true)
+![Day15](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/4.Rooms/1.gif?raw=true)
 
 What I learned
 
@@ -200,3 +200,12 @@ What I learned
 
 3.the meaning of "let duration = NSTimeInterval(progress) * ContentViewAnimationDuration"
 
+
+##Day16:IntroductionTips(From Design TearDown)
+![Day16](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/5.Introduction-Tips/333.gif?raw=true)
+
+1.MVC
+
+2.UIDynamic
+
+3.Dispatch for delay
