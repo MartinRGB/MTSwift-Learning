@@ -46,7 +46,7 @@ class FloatingMenuController: UIViewController {
     
     ///**开始3view
     let fromView:UIView
-    let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .Light))
+    let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .Dark))
     let closebtn = FloatingButton(image: UIImage(named:"icon-close"), backgroundColor: UIColor.flatRedColor)
     
     ///**BUTTON
