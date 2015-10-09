@@ -415,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
 			};
 			name = Debug;
 		};
@@ -426,10 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
 			};
 			name = Release;
 		};
@@ -500,6 +504,7 @@
 				2EA377321BB7D2AC00C6B4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EA377331BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				2EA377351BB7D2AC00C6B4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EA377361BB7D2AC00C6B4E4 /* Build configuration list for PBXNativeTarget "Intruduction TipsUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				2EA377381BB7D2AC00C6B4E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

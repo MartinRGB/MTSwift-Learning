@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E01E2381BC786F7003075D7 /* FloatingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01E2371BC786F7003075D7 /* FloatingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1B83C41BBCDC0700137A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83C31BBCDC0700137A45 /* AppDelegate.swift */; };
 		2E1B83C61BBCDC0700137A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83C51BBCDC0700137A45 /* ViewController.swift */; };
 		2E1B83C91BBCDC0700137A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B83C71BBCDC0700137A45 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		2E1B83F21BBCDEA500137A45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F11BBCDEA500137A45 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1B83F41BBCE61400137A45 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F31BBCE61400137A45 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E1B83F61BBD0AFA00137A45 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F51BBD0AFA00137A45 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
+		2E53DCAA1BC76C97003B0D53 /* UIColors+FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCA91BC76C97003B0D53 /* UIColors+FloatingMenu.swift */; settings = {ASSET_TAGS = (); }; };
+		2E53DCAC1BC76D48003B0D53 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCAB1BC76D48003B0D53 /* FloatingButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E01E2371BC786F7003075D7 /* FloatingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuController.swift; sourceTree = "<group>"; };
 		2E1B83C01BBCDC0700137A45 /* 6.Expanding-Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "6.Expanding-Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E1B83C31BBCDC0700137A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E1B83C51BBCDC0700137A45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		2E1B83F11BBCDEA500137A45 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E1B83F31BBCE61400137A45 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2E1B83F51BBD0AFA00137A45 /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		2E53DCA91BC76C97003B0D53 /* UIColors+FloatingMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColors+FloatingMenu.swift"; sourceTree = "<group>"; };
+		2E53DCAB1BC76D48003B0D53 /* FloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E01E2321BC78693003075D7 /* FAB */ = {
+			isa = PBXGroup;
+			children = (
+				2E01E2371BC786F7003075D7 /* FloatingMenuController.swift */,
+				2E53DCA91BC76C97003B0D53 /* UIColors+FloatingMenu.swift */,
+				2E53DCAB1BC76D48003B0D53 /* FloatingButton.swift */,
+			);
+			name = FAB;
+			sourceTree = "<group>";
+		};
 		2E1B83B71BBCDC0700137A45 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +122,7 @@
 				2E1B83C31BBCDC0700137A45 /* AppDelegate.swift */,
 				2E1B83C51BBCDC0700137A45 /* ViewController.swift */,
 				2E1B83C71BBCDC0700137A45 /* Main.storyboard */,
+				2E01E2321BC78693003075D7 /* FAB */,
 				2E1B83F31BBCE61400137A45 /* DetailViewController.swift */,
 				2E1B83F11BBCDEA500137A45 /* MainViewController.swift */,
 				2E1B83F51BBD0AFA00137A45 /* TransitionManager.swift */,
@@ -267,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E53DCAA1BC76C97003B0D53 /* UIColors+FloatingMenu.swift in Sources */,
 				2E1B83F21BBCDEA500137A45 /* MainViewController.swift in Sources */,
+				2E53DCAC1BC76D48003B0D53 /* FloatingButton.swift in Sources */,
 				2E1B83F61BBD0AFA00137A45 /* TransitionManager.swift in Sources */,
+				2E01E2381BC786F7003075D7 /* FloatingMenuController.swift in Sources */,
 				2E1B83C61BBCDC0700137A45 /* ViewController.swift in Sources */,
 				2E1B83C41BBCDC0700137A45 /* AppDelegate.swift in Sources */,
 				2E1B83F41BBCE61400137A45 /* DetailViewController.swift in Sources */,
@@ -411,10 +431,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "6.Expanding-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Expanding-Cells";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,10 +444,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "6.Expanding-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Expanding-Cells";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +520,7 @@
 				2E1B83EA1BBCDC0800137A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E1B83EB1BBCDC0800137A45 /* Build configuration list for PBXNativeTarget "6.Expanding-CellsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				2E1B83ED1BBCDC0800137A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E1B83EE1BBCDC0800137A45 /* Build configuration list for PBXNativeTarget "6.Expanding-CellsUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +538,7 @@
 				2E1B83F01BBCDC0800137A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

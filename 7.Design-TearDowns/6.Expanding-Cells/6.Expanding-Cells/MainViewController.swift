@@ -12,13 +12,26 @@ import UIKit
 //global variable
 var passindex : Int!
 
-class MainViewController: UITableViewController,TransitionManagerPresentingVC {
+//需要获取FloatingmenuController的Delegate
+class MainViewController: UITableViewController,TransitionManagerPresentingVC,FloatingMenuControllerDelegate {
     var selectedIndexPath: NSIndexPath?
-    
+    let fab = FloatingButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //MARK:add the FAB
+        if let image = UIImage(named: "icon-add.png"){
+            fab.setImage(image, forState: .Normal)
+        }
+        fab.setTitleColor(UIColor.blueColor(), forState: .Normal)
+        fab.frame = CGRectMake(0.9*self.view.bounds.width - 50, 0.94*self.view.bounds.height-50, 50, 50)
+        //Way to add target for btn
+        fab.addTarget(self, action: "FABonclick:", forControlEvents: UIControlEvents.TouchUpInside)
+        //Pin The Fab,disable the FAB scroll effect
+        self.navigationController!.view.addSubview(fab)
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -62,6 +75,9 @@ class MainViewController: UITableViewController,TransitionManagerPresentingVC {
         
     }
     
+
+    
+    
     //MARK: Know which row happened the transition
     func transitionManagerTargetViewForTransition(transition:TransitionManager)-> UIView!{
         if let indexPath = selectedIndexPath{
@@ -71,4 +87,40 @@ class MainViewController: UITableViewController,TransitionManagerPresentingVC {
             return nil
         }
     }
+    
+    //FAB + On Click
+    func FABonclick(sender:AnyObject){
+        let controller = FloatingMenuController(fromView: sender as! UIButton)
+        
+        controller.delegate = self
+        
+        //button image
+        controller.buttonItems = [
+            FloatingButton(image:UIImage(named: "icon-add")),
+            FloatingButton(image:UIImage(named: "model-008")),
+            FloatingButton(image:UIImage(named: "model-007")),
+            FloatingButton(image:UIImage(named: "model-006")),
+            FloatingButton(image:UIImage(named: "model-005")),
+            FloatingButton(image:UIImage(named: "model-004"))
+        ]
+        //titlte
+        controller.labelTitles = [
+            "New Contact",
+            "Heidi Hernandez",
+            "Neil Ross",
+            "Elijah Woods",
+            "Bella Douglas",
+            "Tommy Cloucy"
+        ]
+        
+        presentViewController(controller, animated: true, completion: nil)
+        
+    }
+    
+    //Menu On click
+    func floatingMenuController(controller: FloatingMenuController, didTapOnButton button: UIButton, atIndex index: Int) {
+        print("tapped index \(index)")
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
