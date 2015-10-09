@@ -224,3 +224,5 @@ What I learned
 5.WillDisappear &Appear + true & false to animate(I just need to animate two state,define two state first)
 
 6.SnapShot For TransitionManager
+
+7. Use For in Control flow & Delay animation,animate cell step by step(knowledge about animate tableviewcell)
