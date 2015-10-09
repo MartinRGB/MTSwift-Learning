@@ -12,6 +12,8 @@ import UIKit
 //global variable
 var passindex : Int!
 
+
+
 //需要获取FloatingmenuController的Delegate
 class MainViewController: UITableViewController,TransitionManagerPresentingVC,FloatingMenuControllerDelegate {
     var selectedIndexPath: NSIndexPath?
@@ -33,7 +35,41 @@ class MainViewController: UITableViewController,TransitionManagerPresentingVC,Fl
         
         
         // Do any additional setup after loading the view.
+        
+        //Init animation
+        self.tableView.alpha = 0
+        self.tableView.reloadData()
+        
+        let diff:Double = 0.05
+        let tableHeight:CGFloat = self.tableView.bounds.size.height
+        let cells:NSArray = self.tableView.visibleCells
+        
+        for var a = 0;a < cells.count; a++ {
+            let cell:UITableViewCell = cells.objectAtIndex(a) as! UITableViewCell
+            if(cell.isKindOfClass(UITableViewCell)){
+                cell.transform = CGAffineTransformMakeTranslation(0, tableHeight)
+                
+            }
+        }
+        
+        //Now Animation(Chained Delay)
+        self.tableView.alpha = 1.0
+        self.fab.transform = CGAffineTransformMakeScale(0, 0)
+        
+        var index = 0
+        
+        for b in cells{
+            let cell: UITableViewCell = b as! UITableViewCell
+            UIView.animateWithDuration(1.5, delay: 0.05 * Double(index), usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: [], animations: {
+                cell.transform = CGAffineTransformMakeTranslation(0, 0);
+                self.fab.transform = CGAffineTransformMakeScale(1, 1)
+                }, completion: nil)
+            
+            index += 1
+        }
+                
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
