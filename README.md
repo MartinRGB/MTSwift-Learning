@@ -209,3 +209,18 @@ What I learned
 2.UIDynamic
 
 3.Dispatch for delay
+
+##Day17:Expanding Cells(From Design TearDown)
+![Day17](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/6.Expanding-Cells/333.gif?raw=true)
+
+1.Extension Class(UIColor)
+
+2.Learning Protocol to pass date between VC
+
+3.Keep Learning Button
+
+4.Use for in & index to layout button 
+
+5.WillDisappear &Appear + true & false to animate(I just need to animate two state,define two state first)
+
+6.SnapShot For TransitionManager
