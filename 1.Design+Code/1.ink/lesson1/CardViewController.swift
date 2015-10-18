@@ -302,7 +302,7 @@ class CardViewController: UIViewController {
         //3 state of gesture
         
         if sender.state == UIGestureRecognizerState.Began {
-            animator.removeBehavior(snapBehavior)
+            animator.removeAllBehaviors()
             
             let centerOffset = UIOffsetMake(cardlocation.x - CGRectGetMidX(Cardview.bounds), cardlocation.y - CGRectGetMidY(Cardview.bounds));
             
