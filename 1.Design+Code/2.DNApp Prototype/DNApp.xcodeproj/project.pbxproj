@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E75463D1BD4D70700A52095 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75463C1BD4D70700A52095 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2E75463F1BD4DDAA00A52095 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75463E1BD4DDAA00A52095 /* LearnViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		2E9798061BD4A592005BA955 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9797E81BD4A592005BA955 /* AsyncButton.swift */; settings = {ASSET_TAGS = (); }; };
 		2E9798071BD4A592005BA955 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9797E91BD4A592005BA955 /* AsyncImageView.swift */; settings = {ASSET_TAGS = (); }; };
 		2E9798081BD4A592005BA955 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9797EA1BD4A592005BA955 /* AutoTextView.swift */; settings = {ASSET_TAGS = (); }; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		2E75463C1BD4D70700A52095 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2E75463E1BD4DDAA00A52095 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		2E9797E81BD4A592005BA955 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		2E9797E91BD4A592005BA955 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		2E9797EA1BD4A592005BA955 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				961CC5D11A7B949800954999 /* ViewController.swift */,
 				2E75463C1BD4D70700A52095 /* LoginViewController.swift */,
 				961CC5D31A7B949800954999 /* Main.storyboard */,
+				2E75463E1BD4DDAA00A52095 /* LearnViewController.swift */,
 				961CC5D61A7B949800954999 /* Images.xcassets */,
 				961CC5D81A7B949800954999 /* LaunchScreen.xib */,
 				961CC5CA1A7B949800954999 /* Supporting Files */,
@@ -341,6 +344,7 @@
 				2E97980F1BD4A592005BA955 /* DesignableTextView.swift in Sources */,
 				2E97980C1BD4A592005BA955 /* DesignableLabel.swift in Sources */,
 				2E9798221BD4A592005BA955 /* UnwindSegue.swift in Sources */,
+				2E75463F1BD4DDAA00A52095 /* LearnViewController.swift in Sources */,
 				2E9798201BD4A592005BA955 /* TransitionManager.swift in Sources */,
 				2E9798091BD4A592005BA955 /* BlurView.swift in Sources */,
 				2E97981F1BD4A592005BA955 /* SpringView.swift in Sources */,
