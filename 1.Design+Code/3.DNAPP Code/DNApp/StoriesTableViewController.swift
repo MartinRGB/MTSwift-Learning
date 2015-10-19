@@ -10,40 +10,31 @@ import UIKit
 
 class StoriesTableViewController: UITableViewController,StoryTableViewCellDelegate {
 
-    @IBAction func menuButtonDidTouch(sender: AnyObject) {
-        performSegueWithIdentifier("MenuSegue", sender: self)
-    }
-    
-    @IBAction func loginButtonDidTouch(sender: AnyObject) {
-        performSegueWithIdentifier("LoginSegue", sender: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-           }
-
-
+        
+    }
+    
+    @IBAction func menuButtonDidTouch(sender: AnyObject) {
+        performSegueWithIdentifier("MenuSegue", sender: self)
+    }
+    @IBAction func loginButtonDidTouch(sender: AnyObject) {
+        performSegueWithIdentifier("LoginSegue", sender: self)
+    }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 1
+        return data.count
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell") as! StoryTableViewCell
-        
-        cell.titleLabel.text = "Learn iOS Design and Xcode"
-        cell.badgeImageView.image = UIImage(named: "badge-apple")
-        cell.avatarImageView.image = UIImage(named: "content-avatar-default")
-        cell.authorLabel.text = "Meng To, designer and coder"
-        cell.timeLabel.text = "5m"
-        cell.upvotebutton.setTitle("59", forState: UIControlState.Normal)
-        cell.commentbutton.setTitle("32", forState: UIControlState.Normal)
-
+        let story = data[indexPath.row]
+        cell.configureWithStory(story)
         cell.delegate = self
         
         return cell
@@ -55,12 +46,21 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
-    func storyTableViewCellDIdTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
-        performSegueWithIdentifier("CommentsSegue", sender: self)
+    func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
+        //sender must be cell
+        performSegueWithIdentifier("CommentsSegue", sender: cell)
     }
     
-    func storyTableViewCellDIdTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
+    func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
         //
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "CommentsSegue" {
+            let toView = segue.destinationViewController as! CommentsTableViewController
+            let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
+            toView.story = data[indexPath.row]
+        }
     }
 
 }

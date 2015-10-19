@@ -42,6 +42,8 @@
 		2E9798211BD4A592005BA955 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9798041BD4A592005BA955 /* TransitionZoom.swift */; settings = {ASSET_TAGS = (); }; };
 		2E9798221BD4A592005BA955 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9798051BD4A592005BA955 /* UnwindSegue.swift */; settings = {ASSET_TAGS = (); }; };
 		2EFE94BA1BD52E1400AE4A28 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94B91BD52E1400AE4A28 /* StoryTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		2EFE94BC1BD54AF300AE4A28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94BB1BD54AF300AE4A28 /* Data.swift */; settings = {ASSET_TAGS = (); }; };
+		2EFE94BE1BD55B8F00AE4A28 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94BD1BD55B8F00AE4A28 /* CommentsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		961CC5CD1A7B949800954999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CC5CC1A7B949800954999 /* AppDelegate.swift */; };
 		961CC5D51A7B949800954999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961CC5D31A7B949800954999 /* Main.storyboard */; };
 		961CC5D71A7B949800954999 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961CC5D61A7B949800954999 /* Images.xcassets */; };
@@ -96,6 +98,8 @@
 		2E9798041BD4A592005BA955 /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
 		2E9798051BD4A592005BA955 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		2EFE94B91BD52E1400AE4A28 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		2EFE94BB1BD54AF300AE4A28 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2EFE94BD1BD55B8F00AE4A28 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		961CC5C71A7B949800954999 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		961CC5CB1A7B949800954999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		961CC5CC1A7B949800954999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				961CC5CC1A7B949800954999 /* AppDelegate.swift */,
 				2E3A5E541BD4F80C002EF565 /* StoriesTableViewController.swift */,
 				2EFE94B91BD52E1400AE4A28 /* StoryTableViewCell.swift */,
+				2EFE94BB1BD54AF300AE4A28 /* Data.swift */,
+				2EFE94BD1BD55B8F00AE4A28 /* CommentsTableViewController.swift */,
 				2E75463C1BD4D70700A52095 /* LoginViewController.swift */,
 				2E3A5E581BD4F833002EF565 /* MenuViewController.swift */,
 				2E3A5E561BD4F827002EF565 /* WebViewController.swift */,
@@ -348,6 +354,7 @@
 				2E9798061BD4A592005BA955 /* AsyncButton.swift in Sources */,
 				2E9798131BD4A592005BA955 /* KeyboardLayoutConstraint.swift in Sources */,
 				2E3A5E551BD4F80C002EF565 /* StoriesTableViewController.swift in Sources */,
+				2EFE94BC1BD54AF300AE4A28 /* Data.swift in Sources */,
 				2E75463D1BD4D70700A52095 /* LoginViewController.swift in Sources */,
 				2E97981A1BD4A592005BA955 /* SpringButton.swift in Sources */,
 				2E9798071BD4A592005BA955 /* AsyncImageView.swift in Sources */,
@@ -361,6 +368,7 @@
 				2E9798091BD4A592005BA955 /* BlurView.swift in Sources */,
 				2E97981F1BD4A592005BA955 /* SpringView.swift in Sources */,
 				2E9798211BD4A592005BA955 /* TransitionZoom.swift in Sources */,
+				2EFE94BE1BD55B8F00AE4A28 /* CommentsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
