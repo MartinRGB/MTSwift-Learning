@@ -61,7 +61,7 @@ What I Learned(Mainly from MengTo's DesignCode):
 4.Dictionary & Data & Loop
 
 ##Day5:Dribbble News Digest
-![DND](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Portfolio/2.Portfolio.gif?raw=true)
+![DND](https://github.com/MartinRGB/MTSwift-Learning/blob/master/0.Simple%20Prototype/2.Portfolio/2.Portfolio.gif?raw=true)
 
 What I Learned:
 
@@ -70,7 +70,7 @@ What I Learned:
 2.How to use simple iOS blur effect
 
 ##Day6:Coffee
-![Coffee](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.Coffee/3.Coffee.gif?raw=true)
+![Coffee](https://github.com/MartinRGB/MTSwift-Learning/blob/master/0.Simple%20Prototype/3.Coffee/3.Coffee.gif?raw=true)
 
 What I Learned:
 
@@ -79,7 +79,7 @@ What I Learned:
 2.Simple 3D-like slidemenu effect
 
 ##Day7:Reading "Swift Development with Cocoa"
-![Day7](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Swift%20Development%20with%20Cocoa/Part%201/parti.gif?raw=true
+![Day7](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Swift%20Development%20with%20Cocoa/Part%201/parti.gif?raw=true
 )
 
 What I learned:
@@ -93,7 +93,7 @@ What I learned:
 4.Plan to learn more from http://mathewsanders.com/ tomorrow
 
 ##Day8:Animation from MathewSanders.com
-![Day8](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/part1.gif?raw=true
+![Day8](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.MathewSanders.com/part1.gif?raw=true
 )
 
 What I learned(From MathewSanders.com):
@@ -111,7 +111,7 @@ What I learned(From MathewSanders.com):
 6.Plan to Learn Progress concept tomorrow,try to design these demo with funny idea.
 
 ##Day9:Add a Pinterest-like Longpress effect(but has bugs)
-![Day9](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Swift%20Development%20with%20Cocoa/Part%201/DynamicSnap/DynamicSnap.gif?raw=true
+![Day9](https://github.com/MartinRGB/MTSwift-Learning/blob/master/2.Swift%20Development%20with%20Cocoa/Part%201/DynamicSnap/DynamicSnap.gif?raw=true
 )
 
 What I learned
@@ -123,8 +123,8 @@ What I learned
 To be contiuned...
 
 ##Day10:Transition from MathewSanders.com 
-![Day10](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/transition1.gif?raw=true)
-![Day10-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/6.Read(WIP)/0.gif?raw=true)
+![Day10](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.MathewSanders.com/transition1.gif?raw=true)
+![Day10-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/0.Simple%20Prototype/1.Read(WIP)/0.gif?raw=true)
 
 What I learned
 
@@ -135,8 +135,8 @@ What I learned
 3.I have learned Swift for 10Day(or even more).It's not good to learn new knowledge everyday,I need sometime to review what I learned,also I wanna make all these project better & designer-like.So,I paused this plan.
 
 ##Day11:Transitionmanager(Make your transition code tidy) 
-![Day11](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m1m2.gif?raw=true)
-![Day11-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/5.MathewSanders.com/t2m3.gif?raw=true)
+![Day11](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.MathewSanders.com/t2m1m2.gif?raw=true)
+![Day11-1](https://github.com/MartinRGB/MTSwift-Learning/blob/master/3.MathewSanders.com/t2m3.gif?raw=true)
 
 What I learned
 
@@ -147,7 +147,7 @@ What I learned
 3.set a variable(like presenting) in transitionmanager,I can use self.presenting+if/else make switch.I can also use self.presenting before animation block to init propertys of view
 
 ##Day12:Recreate Yahoo News Digest by using UITableView(From Designer TearDown)
-![Day12](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/1-Stretchy-headers/1.gif?raw=true)
+![Day12](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/1-Stretchy-headers/1.gif?raw=true)
 
 What I learned
 
@@ -160,7 +160,7 @@ What I learned
 4.use some global variable
 
 ##Day13:Recreate Elastic Drawer(From Designer TearDown)
-![Day13](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/2.Elasticdrawer/drawer2.gif?raw=true)
+![Day13](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/2.Elasticdrawer/drawer2.gif?raw=true)
 
 What I learned
 
@@ -173,7 +173,7 @@ What I learned
 4.This is a good example of UIBezierPath,I try to sketch some path on my note,learned a lot,but not enough
 
 ##Day14:Zooming Icons(From Design TearDown)
-![Day14](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/3.ZommingIcons/1.gif?raw=true)
+![Day14](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/3.ZommingIcons/1.gif?raw=true)
 
 What I learned
 
@@ -190,7 +190,7 @@ What I learned
 6.still have bugs in constraint animation,try to fix it later.
 
 ##Day15:Rooms(From Design TearDown)
-![Day15](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/4.Rooms/1.gif?raw=true)
+![Day15](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/4.Rooms/1.gif?raw=true)
 
 What I learned
 
@@ -202,7 +202,7 @@ What I learned
 
 
 ##Day16:IntroductionTips(From Design TearDown)
-![Day16](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/5.Introduction-Tips/333.gif?raw=true)
+![Day16](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/5.Introduction-Tips/333.gif?raw=true)
 
 1.MVC
 
@@ -211,7 +211,7 @@ What I learned
 3.Dispatch for delay
 
 ##Day17:Expanding Cells(From Design TearDown)
-![Day17](https://github.com/MartinRGB/MTSwift-Learning/blob/master/7.Design-TearDowns/6.Expanding-Cells/333.gif?raw=true)
+![Day17](https://github.com/MartinRGB/MTSwift-Learning/blob/master/4.Design-TearDowns/6.Expanding-Cells/333.gif?raw=true)
 
 1.Extension Class(UIColor)
 
