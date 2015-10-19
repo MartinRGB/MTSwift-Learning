@@ -228,7 +228,7 @@ What I learned
 7. Use For in Control flow & Delay animation,animate cell step by step(knowledge about animate tableviewcell)
 
 ##Day18:DNAPP(From Design+Code)
-![Day17](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/1.gif?raw=true)
+![Day18](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/1.gif?raw=true)
 
 1.Relationship between protocol & delegate
 
