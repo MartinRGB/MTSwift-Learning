@@ -39,7 +39,20 @@ class LearnViewController: UIViewController {
     @IBAction func learnbtn(sender: AnyObject) {
         thebook.animation = "pop"
         thebook.animate()
+        openURL("http://designcode.io")
     }
+    
+    @IBAction func twitterbtn(sender: AnyObject) {
+         openURL("http://twitter.com/mengto")
+    }
+    
+    //safrai function
+    
+    func openURL(url:String){
+        let targetURL = NSURL(string:url)
+        UIApplication.sharedApplication().openURL(targetURL!)
+    }
+    
     
     
 }

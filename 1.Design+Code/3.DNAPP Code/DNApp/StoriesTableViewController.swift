@@ -8,8 +8,39 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController,StoryTableViewCellDelegate {
-
+class StoriesTableViewController: UITableViewController,StoryTableViewCellDelegate,MenuViewControllerDelegate {
+    
+    var stories:JSON! = []
+    func refreshStories() {
+        loadStories(section, page: 1)
+    }
+    var isFirstTime = true
+    var section = ""
+    
+    //将获取到的JSON数据填充到指定页的方法
+    func loadStories(section: String, page: Int) {
+        // When you’re inside a nested function (storiesForSection is considered a function), you have to add the self to avoid conflicts with local and global variables
+        DNService.storiesForSection(section, page: page) { (JSON) -> () in
+            self.stories = JSON["stories"]
+            self.tableView.reloadData()
+            self.tableView.hideLoading()
+            self.refreshControl?.endRefreshing()
+        }
+    }
+    
+    //first time loading the page
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        
+        if isFirstTime {
+            view.showLoading()
+            isFirstTime = false
+        }
+    }
+    
+    
+    
+    let transitionManager = TransitionManager()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -17,6 +48,9 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
         tableView.rowHeight = UITableViewAutomaticDimension
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
+        loadStories("", page: 1)
+        //refresh control
+        refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     @IBAction func menuButtonDidTouch(sender: AnyObject) {
@@ -27,13 +61,13 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return stories.count
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell") as! StoryTableViewCell
-        let story = data[indexPath.row]
+        let story = stories[indexPath.row]
         cell.configureWithStory(story)
         cell.delegate = self
         
@@ -42,9 +76,12 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
     
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("WebSegue", sender: self)
+        //sender must be indexPath
+        performSegueWithIdentifier("WebSegue", sender: indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    
+    // Mark:Storycell Delegate
     
     func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
         //sender must be cell
@@ -55,11 +92,46 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
         //
     }
     
+    
+    // MARK: MenuViewControllerDelegate
+    
+    func menuViewControllerDidTouchTop(controller: MenuViewController) {
+        view.showLoading()
+        loadStories("", page: 1)
+        navigationItem.title = "Top Stories"
+        section = ""
+    }
+    
+    func menuViewControllerDidTouchRecent(controller: MenuViewController) {
+        view.showLoading()
+        loadStories("recent", page: 1)
+        navigationItem.title = "Recent Stories"
+        section = "recent"
+    }
+    
+    // MARK:Data Prepare before transition
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "CommentsSegue" {
             let toView = segue.destinationViewController as! CommentsTableViewController
             let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)!
-            toView.story = data[indexPath.row]
+            toView.story = stories[indexPath.row]
+        }
+        
+        if segue.identifier == "WebSegue"{
+            let toView = segue.destinationViewController as! WebViewController
+            let indexPath = sender as! NSIndexPath
+            let url = stories[indexPath.row]["url"].string!
+            toView.url = url
+            
+            UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
+            
+            toView.transitioningDelegate = transitionManager
+        }
+        
+        //we can set the delegate to self.
+        if segue.identifier == "MenuSegue" {
+            let toView = segue.destinationViewController as! MenuViewController
+            toView.delegate = self
         }
     }
 
