@@ -228,7 +228,7 @@ What I learned
 7. Use For in Control flow & Delay animation,animate cell step by step(knowledge about animate tableviewcell)
 
 ##Day18:DNAPP(From Design+Code)
-![Day18](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/1.gif?raw=true)
+![Day18](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/2.DNApp%20Prototype/1.gif?raw=true)
 
 1.Relationship between protocol & delegate
 
@@ -239,3 +239,22 @@ What I learned
 4.Relearn knowledge abt autolayout
 
 5.Simple Read and Use JSON(make Data) & releran pass data via segue
+
+##Day19:DNAPP(From Design+Code)
+![Day19](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/1.gif?raw=true)
+![Day19－2](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/2.gif?raw=true)
+
+1.Simple Learn Almorfire to get dynamic data
+
+2.simple use progress view and control it by updateprogress,write simple function to control it's progress animation
+
+3.openURL to call Safari to read website
+
+4.Use TableView's refresh
+
+5.Also SwiftJson to deal with static data 
+
+6.[TPKeyboardAvoiding](https://github.com/michaeltyson/TPKeyboardAvoiding) to deal with when in input case the textfield's position
+
+7.review TransitionManager
+
