@@ -258,3 +258,4 @@ What I learned
 
 7.review TransitionManager
 
+8.To make Login/Logout with Localstore token's save get delete & delegate
