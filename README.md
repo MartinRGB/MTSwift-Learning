@@ -259,3 +259,14 @@ What I learned
 7.review TransitionManager
 
 8.To make Login/Logout with Localstore token's save get delete & delegate
+
+##Day20:DNAPP(From Design+Code)
+![Day20](https://github.com/MartinRGB/MTSwift-Learning/blob/master/1.Design%2BCode/3.DNAPP%20Code/3.gif?raw=true)
+
+1.Knowledge about UITableview's refresh control
+
+2.add sound effect
+
+3.pass upvote and comment data between storyVC & commentVC
+
+4.click share to open AlertView
