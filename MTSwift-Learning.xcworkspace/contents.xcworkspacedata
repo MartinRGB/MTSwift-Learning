@@ -50,6 +50,9 @@
          location = "group:1.Design+Code/1.ink/Ink.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:1.Design+Code/2.DNApp Prototype/DNApp.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:1.Design+Code/3.DNAPP Code/DNApp.xcodeproj">
       </FileRef>
    </Group>
