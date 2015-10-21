@@ -52,8 +52,8 @@
 		2EBD94CD1BD6873C001686B6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBD94C31BD6872E001686B6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2EBD94D71BD6A4A8001686B6 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD94D61BD6A4A8001686B6 /* LocalStore.swift */; settings = {ASSET_TAGS = (); }; };
 		2EBD94E01BD74272001686B6 /* ReplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBD94DF1BD74272001686B6 /* ReplayViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2EBD94E41BD76067001686B6 /* refresh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD94E21BD76067001686B6 /* refresh.wav */; settings = {ASSET_TAGS = (); }; };
-		2EBD94E51BD76067001686B6 /* upvote.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EBD94E31BD76067001686B6 /* upvote.wav */; settings = {ASSET_TAGS = (); }; };
+		2EEBC6551BD7D1CB0058CDEE /* refresh.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBC6541BD7D1CB0058CDEE /* refresh.wav */; settings = {ASSET_TAGS = (); }; };
+		2EEBC65B1BD7D1D50058CDEE /* upvote.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2EEBC65A1BD7D1D50058CDEE /* upvote.wav */; settings = {ASSET_TAGS = (); }; };
 		2EFE94BA1BD52E1400AE4A28 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94B91BD52E1400AE4A28 /* StoryTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		2EFE94BC1BD54AF300AE4A28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94BB1BD54AF300AE4A28 /* Data.swift */; settings = {ASSET_TAGS = (); }; };
 		2EFE94BE1BD55B8F00AE4A28 /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFE94BD1BD55B8F00AE4A28 /* CommentsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -180,8 +180,8 @@
 		2EBD94BA1BD6872E001686B6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-swift-2.0/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		2EBD94D61BD6A4A8001686B6 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		2EBD94DF1BD74272001686B6 /* ReplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayViewController.swift; sourceTree = "<group>"; };
-		2EBD94E21BD76067001686B6 /* refresh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = refresh.wav; sourceTree = "<group>"; };
-		2EBD94E31BD76067001686B6 /* upvote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = upvote.wav; sourceTree = "<group>"; };
+		2EEBC6541BD7D1CB0058CDEE /* refresh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = refresh.wav; path = DNApp/Sounds/refresh.wav; sourceTree = SOURCE_ROOT; };
+		2EEBC65A1BD7D1D50058CDEE /* upvote.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = upvote.wav; path = DNApp/Sounds/upvote.wav; sourceTree = SOURCE_ROOT; };
 		2EFE94B91BD52E1400AE4A28 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		2EFE94BB1BD54AF300AE4A28 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		2EFE94BD1BD55B8F00AE4A28 /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
@@ -282,8 +282,8 @@
 		2EBD94E11BD76067001686B6 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				2EBD94E21BD76067001686B6 /* refresh.wav */,
-				2EBD94E31BD76067001686B6 /* upvote.wav */,
+				2EEBC6541BD7D1CB0058CDEE /* refresh.wav */,
+				2EEBC65A1BD7D1D50058CDEE /* upvote.wav */,
 			);
 			name = Sounds;
 			path = "../../../../../Code Part/21-CommentingAndFinishing/DNApp/Sounds";
@@ -493,8 +493,8 @@
 				961CC5D51A7B949800954999 /* Main.storyboard in Resources */,
 				961CC5DA1A7B949800954999 /* LaunchScreen.xib in Resources */,
 				961CC5D71A7B949800954999 /* Images.xcassets in Resources */,
-				2EBD94E41BD76067001686B6 /* refresh.wav in Resources */,
-				2EBD94E51BD76067001686B6 /* upvote.wav in Resources */,
+				2EEBC6551BD7D1CB0058CDEE /* refresh.wav in Resources */,
+				2EEBC65B1BD7D1D50058CDEE /* upvote.wav in Resources */,
 				2E9798151BD4A592005BA955 /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,13 +686,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DNApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.DesignerNewsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -700,13 +700,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DNApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.designcode.DesignerNewsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
