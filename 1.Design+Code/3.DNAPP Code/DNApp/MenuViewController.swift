@@ -11,14 +11,17 @@ import UIKit
 protocol MenuViewControllerDelegate:class{
     func menuViewControllerDidTouchTop(controller:MenuViewController)
     func menuViewControllerDidTouchRecent(controller:MenuViewController)
+    func menuViewControllerDidTouchLogout(controller: MenuViewController)
+    func menuViewControllerDidTouchLogin(controller: MenuViewController)
 }
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController,LoginViewControllerDelegate {
+    
+    @IBOutlet weak var loginLabel: UILabel!
 
     @IBOutlet weak var dialogView: DesignableView!
     //Create a Delegate so that we can communicate back to the Stories screen.
     weak var delegate: MenuViewControllerDelegate?
-    
   
     @IBAction func closebtndidtouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
@@ -45,9 +48,47 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func loginbtndidtouch(sender: AnyObject) {
-        performSegueWithIdentifier("LoginSegue2", sender: self)
+       
+        if LocalStore.getToken() == nil {
+            performSegueWithIdentifier("LoginSegue", sender: self)
+            delegate?.menuViewControllerDidTouchLogin(self)
+        } else {
+            LocalStore.deleteToken()
+            self.closebtndidtouch(self)
+            delegate?.menuViewControllerDidTouchLogout(self)
+        }
+    }
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //
+        
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        loginjudge()
+    }
+    
+    
+    //Mark: LoginViewController Delegate
+    func loginViewControllerDidLogin(controller: LoginViewController) {
+        
+        loginjudge()
+    }
+    
+    func loginjudge() {
+        
+        if LocalStore.getToken() == nil {
+            loginLabel.text = "Login"
+            
+        } else {
+            loginLabel.text = "Logout"
+        }
+    }
+    
+
     
     
 }

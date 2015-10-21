@@ -8,11 +8,13 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController,StoryTableViewCellDelegate,MenuViewControllerDelegate {
+class StoriesTableViewController: UITableViewController,StoryTableViewCellDelegate,MenuViewControllerDelegate,LoginViewControllerDelegate {
     
+    @IBOutlet weak var loginButton: UIBarButtonItem!
     var stories:JSON! = []
     func refreshStories() {
         loadStories(section, page: 1)
+        SoundPlayer.play("refresh.wav")
     }
     var isFirstTime = true
     var section = ""
@@ -25,6 +27,14 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
             self.tableView.reloadData()
             self.tableView.hideLoading()
             self.refreshControl?.endRefreshing()
+        }
+        
+        if LocalStore.getToken() == nil {
+            loginButton.title = "Login"
+            loginButton.enabled = true
+        } else {
+            loginButton.title = ""
+            loginButton.enabled = false
         }
     }
     
@@ -49,9 +59,17 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
         
         loadStories("", page: 1)
-        //refresh control
+        //添加refresh control事件
         refreshControl?.addTarget(self, action: "refreshStories", forControlEvents: UIControlEvents.ValueChanged)
+        
+        //Back font
+        navigationItem.leftBarButtonItem?.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: UIControlState.Normal)
+        //Login Font
+        loginButton.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Avenir Next", size: 18)!], forState: UIControlState.Normal)
     }
+    
+    
+    
     
     @IBAction func menuButtonDidTouch(sender: AnyObject) {
         performSegueWithIdentifier("MenuSegue", sender: self)
@@ -89,7 +107,20 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
     }
     
     func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
-        //
+        //确认是否登陆
+        if let token = LocalStore.getToken(){
+            let indexPath = tableView.indexPathForCell(cell)!
+            let story = stories[indexPath.row]
+            let storyId = story["id"].int!
+            DNService.upvoteStoryWithId(storyId,token:token,response:{(successful) -> () in
+                print(successful)
+            })
+            LocalStore.saveUpvotedStory(storyId)
+            cell.configureWithStory(story)
+        //若没有登录，弹出登录选项
+        }else{
+            performSegueWithIdentifier("LoginSegue", sender: self)
+        }
     }
     
     
@@ -107,6 +138,11 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
         loadStories("recent", page: 1)
         navigationItem.title = "Recent Stories"
         section = "recent"
+    }
+    
+    func menuViewControllerDidTouchLogout(controller: MenuViewController) {
+        view.showLoading()
+        loadStories(section, page: 1)
     }
     
     // MARK:Data Prepare before transition
@@ -133,6 +169,31 @@ class StoriesTableViewController: UITableViewController,StoryTableViewCellDelega
             let toView = segue.destinationViewController as! MenuViewController
             toView.delegate = self
         }
+        
+        if segue.identifier == "LoginSegue"{
+            let toView = segue.destinationViewController as! LoginViewController
+            toView.delegate = self
+        }
     }
+    
+    // MARK:LoginViewControllerDelegate
+    
+    func loginViewControllerDidLogin(controller: LoginViewController) {
+        loadStories(section, page:1)
+        view.showLoading()
+        
+
+    }
+    
+    func menuViewControllerDidTouchLogin(controller: MenuViewController) {
+        view.showLoading()
+        loadStories(section, page:1)
+        
+    }
+    
+    
+    
+    
+    
 
 }

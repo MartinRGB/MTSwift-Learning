@@ -34,6 +34,7 @@ class StoryTableViewCell: UITableViewCell {
         upvotebutton.curve = "easeInOut"
         upvotebutton.duration = 0.8
         upvotebutton.animate()
+        SoundPlayer.play("upvote.wav")
         delegate?.storyTableViewCellDidTouchUpvote(self, sender: sender)
     }
     
@@ -72,6 +73,16 @@ class StoryTableViewCell: UITableViewCell {
         let comment = story["comment"].string
         if let commentTextView = commentTextView {
             commentTextView.text = comment
+        }
+        
+        //点赞逻辑处理
+        let storyId = story["id"].int!
+        if LocalStore.isStoryUpvoted(storyId) {
+            upvotebutton.setImage(UIImage(named: "icon-upvote-active"), forState: UIControlState.Normal)
+            upvotebutton.setTitle(String(voteCount + 1), forState: UIControlState.Normal)
+        } else {
+            upvotebutton.setImage(UIImage(named: "icon-upvote"), forState: UIControlState.Normal)
+            upvotebutton.setTitle(String(voteCount), forState: UIControlState.Normal)
         }
 
         

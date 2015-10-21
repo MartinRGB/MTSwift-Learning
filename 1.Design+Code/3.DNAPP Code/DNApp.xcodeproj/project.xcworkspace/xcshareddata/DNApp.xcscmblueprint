@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1AED56F5B94BE9D0A897C599CE09D4DC11FF1D53" : 0,
+    "B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3892D037-94EA-4CCA-AE83-E15049FABC46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1AED56F5B94BE9D0A897C599CE09D4DC11FF1D53" : "..\/Code%20Part\/21-CommentingAndFinishing",
+    "B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0" : "MTSwift-Learning\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DNApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "1.Design+Code\/3.DNAPP Code\/DNApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MengTo\/DNApp-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1AED56F5B94BE9D0A897C599CE09D4DC11FF1D53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MartinRGB\/MTSwift-Learning.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B3B1289E6CA2E5312A4F25A8F6FDE5B79A4C24E0"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 import UIKit
 
 class WebViewController: UIViewController,UIWebViewDelegate {
-
+    var story:JSON!
     var url: String!
     @IBOutlet weak var webView: UIWebView!
     @IBOutlet weak var progressView: UIProgressView!
@@ -77,6 +77,7 @@ class WebViewController: UIViewController,UIWebViewDelegate {
             }
         }
     }
+    
 
 
 }
