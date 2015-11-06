@@ -32,7 +32,7 @@
                                         </state>
                                         <connections>
                                             <action selector="imgbtn:" destination="9pv-A4-QxB" eventType="touchUpInside" id="JGq-vc-Xx4"/>
-                                            <segue destination="5Ce-pR-BXL" kind="push" id="BVM-nA-O7H"/>
+                                            <segue destination="5Ce-pR-BXL" kind="show" id="BVM-nA-O7H"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -164,7 +164,7 @@
                                         </state>
                                         <connections>
                                             <action selector="detailbutton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="IXD-NY-eSH"/>
-                                            <segue destination="fUj-0B-7rJ" kind="push" id="i29-5C-PwY"/>
+                                            <segue destination="fUj-0B-7rJ" kind="show" id="i29-5C-PwY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -340,7 +340,7 @@
                         <outlet property="c1img" destination="6IG-KG-Wdk" id="7EV-x4-REf"/>
                         <outlet property="card1" destination="3Jh-aJ-fGa" id="erm-SX-Hxr"/>
                         <outlet property="ink1bg" destination="lfX-dI-Q6N" id="gDi-wp-WOn"/>
-                        <segue destination="pAI-G8-eo0" kind="modal" identifier="cardtodeatil" animates="NO" modalTransitionStyle="crossDissolve" id="vqa-mb-zbg"/>
+                        <segue destination="pAI-G8-eo0" kind="presentation" identifier="cardtodeatil" animates="NO" modalTransitionStyle="crossDissolve" id="vqa-mb-zbg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuk-fg-Wjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -491,7 +491,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="modal" modalTransitionStyle="crossDissolve" id="smD-y9-8db"/>
+                                    <segue destination="49e-Tb-3d3" kind="presentation" modalTransitionStyle="crossDissolve" id="smD-y9-8db"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -583,7 +583,7 @@
                                         </state>
                                         <connections>
                                             <action selector="detailbtn:" destination="bgS-Cc-i1l" eventType="touchUpInside" id="vmd-Xy-R9R"/>
-                                            <segue destination="Lcf-Rn-PIM" kind="push" id="kcN-OW-2Lt"/>
+                                            <segue destination="Lcf-Rn-PIM" kind="show" id="kcN-OW-2Lt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -700,7 +700,7 @@
                                         </state>
                                         <connections>
                                             <action selector="websitebtn:" destination="nnz-kD-Zr9" eventType="touchUpInside" id="DZ5-SA-nTO"/>
-                                            <segue destination="YIc-sU-8Qx" kind="push" id="gyN-AH-5A0"/>
+                                            <segue destination="YIc-sU-8Qx" kind="show" id="gyN-AH-5A0"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="RRM-ps-94R">
