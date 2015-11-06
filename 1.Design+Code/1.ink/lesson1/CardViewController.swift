@@ -123,8 +123,8 @@ class CardViewController: UIViewController {
         b4.layer.addAnimation(ball4, forKey: "position.y")
      
         
-        var toPoint3: CGPoint = CGPointMake(160, -120)
-        var fromPoint3 : CGPoint = CGPointMake(160, 120)
+        let toPoint3: CGPoint = CGPointMake(160, -120)
+        let fromPoint3 : CGPoint = CGPointMake(160, 120)
         let upthing1 = CABasicAnimation(keyPath: "position")
         upthing1.fromValue = NSValue(CGPoint: fromPoint3)
         upthing1.toValue = NSValue(CGPoint: toPoint3)
@@ -136,8 +136,8 @@ class CardViewController: UIViewController {
         c1img.layer.addAnimation(upthing1, forKey: "position")
         
         
-        var toPoint4: CGPoint = CGPointMake(160, 907.5)
-        var fromPoint4 : CGPoint = CGPointMake(160, 579.5)
+        let toPoint4: CGPoint = CGPointMake(160, 907.5)
+        let fromPoint4 : CGPoint = CGPointMake(160, 579.5)
         let downthing1 = CABasicAnimation(keyPath: "position")
         downthing1.fromValue = NSValue(CGPoint: fromPoint4)
         downthing1.toValue = NSValue(CGPoint: toPoint4)
@@ -164,8 +164,8 @@ class CardViewController: UIViewController {
     func insertBlurView (view: UIView, style: UIBlurEffectStyle) {
         view.backgroundColor = UIColor.clearColor()
         
-        var blurEffect = UIBlurEffect(style: style)
-        var blurEffectView = UIVisualEffectView(effect: blurEffect)
+        let blurEffect = UIBlurEffect(style: style)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         view.insertSubview(blurEffectView, atIndex: 0)
     }
@@ -238,8 +238,8 @@ class CardViewController: UIViewController {
             }, completion: { finished in
         })
         
-        var toPoint: CGPoint = CGPointMake(160, 120)
-        var fromPoint : CGPoint = CGPointMake(160, -120)
+        let toPoint: CGPoint = CGPointMake(160, 120)
+        let fromPoint : CGPoint = CGPointMake(160, -120)
         let upthing = CABasicAnimation(keyPath: "position")
         upthing.fromValue = NSValue(CGPoint: fromPoint)
         upthing.toValue = NSValue(CGPoint: toPoint)
@@ -251,8 +251,8 @@ class CardViewController: UIViewController {
         c1img.layer.addAnimation(upthing, forKey: "position")
         
         
-        var toPoint2: CGPoint = CGPointMake(160, 579.5)
-        var fromPoint2 : CGPoint = CGPointMake(160, 907.5)
+        let toPoint2: CGPoint = CGPointMake(160, 579.5)
+        let fromPoint2 : CGPoint = CGPointMake(160, 907.5)
         let downthing = CABasicAnimation(keyPath: "position")
         downthing.fromValue = NSValue(CGPoint: fromPoint2)
         downthing.toValue = NSValue(CGPoint: toPoint2)
@@ -329,7 +329,7 @@ class CardViewController: UIViewController {
             if translation.x > 180 {
                 animator.removeAllBehaviors()
                 
-                var gravity = UIGravityBehavior(items: [Cardview])
+                let gravity = UIGravityBehavior(items: [Cardview])
                 gravity.gravityDirection = CGVectorMake(10, -1)
                 animator.addBehavior(gravity)
                 
@@ -340,7 +340,7 @@ class CardViewController: UIViewController {
             else if translation.x < -180{
                 animator.removeAllBehaviors()
                 
-                var gravity = UIGravityBehavior(items: [Cardview])
+                let gravity = UIGravityBehavior(items: [Cardview])
                 gravity.gravityDirection = CGVectorMake(-10, -1)
                 animator.addBehavior(gravity)
                 
@@ -354,7 +354,7 @@ class CardViewController: UIViewController {
     @IBAction func unlike(sender: AnyObject) {
         
         animator.removeAllBehaviors()
-        var gravity = UIGravityBehavior(items: [Cardview])
+        let gravity = UIGravityBehavior(items: [Cardview])
         gravity.gravityDirection = CGVectorMake(-10, -1)
         animator.addBehavior(gravity)
         
@@ -365,7 +365,7 @@ class CardViewController: UIViewController {
             }
             self.delay(0.2) {
                 self.animator.removeAllBehaviors()
-                var gravity = UIGravityBehavior(items: [self.Cardview])
+                let gravity = UIGravityBehavior(items: [self.Cardview])
                 gravity.gravityDirection = CGVectorMake(0, 0)
                 self.Cardview.center = CGPointMake(160, 219.5)
                 self.snapBehavior = UISnapBehavior(item: self.Cardview, snapToPoint: CGPointMake(160, 219.5))
@@ -378,7 +378,7 @@ class CardViewController: UIViewController {
     
     @IBAction func like(sender: AnyObject) {
         animator.removeAllBehaviors()
-        var gravity = UIGravityBehavior(items: [Cardview])
+        let gravity = UIGravityBehavior(items: [Cardview])
         gravity.gravityDirection = CGVectorMake(10, -1)
         animator.addBehavior(gravity)
         
@@ -389,7 +389,7 @@ class CardViewController: UIViewController {
             }
             self.delay(0.2) {
                 self.animator.removeAllBehaviors()
-                var gravity = UIGravityBehavior(items: [self.Cardview])
+                let gravity = UIGravityBehavior(items: [self.Cardview])
                 gravity.gravityDirection = CGVectorMake(0, 0)
                 self.Cardview.center = CGPointMake(160, 219.5)
                 self.snapBehavior = UISnapBehavior(item: self.Cardview, snapToPoint: CGPointMake(160, 219.5))
@@ -405,7 +405,7 @@ class CardViewController: UIViewController {
         }
         self.delay(0.2) {
             self.animator.removeAllBehaviors()
-            var gravity = UIGravityBehavior(items: [self.Cardview])
+            let gravity = UIGravityBehavior(items: [self.Cardview])
             gravity.gravityDirection = CGVectorMake(0, 0)
             self.Cardview.center = CGPointMake(160, 219.5)
             self.attachmentBehavior.anchorPoint = CGPointMake(160, 219.5)

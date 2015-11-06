@@ -192,7 +192,7 @@
 				TargetAttributes = {
 					2E8AF6E81BB0F60500598E25 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8377DUVBBA;
+						DevelopmentTeam = LK5TSF8WY2;
 					};
 					2E8AF6FC1BB0F60500598E25 = {
 						CreatedOnToolsVersion = 7.0;
@@ -399,12 +399,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = Drawer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.Drawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,12 +412,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = Drawer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.Drawer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -56,14 +56,14 @@ public enum Type :Int{
 public struct JSON {
     
     /**
-    Creates a JSON using the data.
-    
-    - parameter data:  The NSData used to convert to json.Top level object in data is an NSArray or NSDictionary
-    - parameter opt:   The JSON serialization reading options. `.AllowFragments` by default.
-    - parameter error: error The NSErrorPointer used to return the error. `nil` by default.
-    
-    - returns: The created JSON
-    */
+     Creates a JSON using the data.
+     
+     - parameter data:  The NSData used to convert to json.Top level object in data is an NSArray or NSDictionary
+     - parameter opt:   The JSON serialization reading options. `.AllowFragments` by default.
+     - parameter error: error The NSErrorPointer used to return the error. `nil` by default.
+     
+     - returns: The created JSON
+     */
     public init(data:NSData, options opt: NSJSONReadingOptions = .AllowFragments, error: NSErrorPointer = nil) {
         do {
             let object: AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: opt)
@@ -75,23 +75,23 @@ public struct JSON {
     }
     
     /**
-    Creates a JSON using the object.
-    
-    - parameter object:  The object must have the following properties: All objects are NSString/String, NSNumber/Int/Float/Double/Bool, NSArray/Array, NSDictionary/Dictionary, or NSNull; All dictionary keys are NSStrings/String; NSNumbers are not NaN or infinity.
-    
-    - returns: The created JSON
-    */
+     Creates a JSON using the object.
+     
+     - parameter object:  The object must have the following properties: All objects are NSString/String, NSNumber/Int/Float/Double/Bool, NSArray/Array, NSDictionary/Dictionary, or NSNull; All dictionary keys are NSStrings/String; NSNumbers are not NaN or infinity.
+     
+     - returns: The created JSON
+     */
     public init(_ object: AnyObject) {
         self.object = object
     }
     
     /**
-    Creates a JSON from a [JSON]
-    
-    - parameter jsonArray: A Swift array of JSON objects
-    
-    - returns: The created JSON
-    */
+     Creates a JSON from a [JSON]
+     
+     - parameter jsonArray: A Swift array of JSON objects
+     
+     - returns: The created JSON
+     */
     public init(_ jsonArray:[JSON]) {
         self.init(jsonArray.map { $0.object })
     }
@@ -177,10 +177,10 @@ extension JSON : Swift.SequenceType {
     }
     
     /**
-    If `type` is `.Array` or `.Dictionary`, return a generator over the elements like `Array` or `Dictionary`, otherwise return a generator over empty.
-    
-    - returns: Return a *generator* over the elements of this *sequence*.
-    */
+     If `type` is `.Array` or `.Dictionary`, return a generator over the elements like `Array` or `Dictionary`, otherwise return a generator over empty.
+     
+     - returns: Return a *generator* over the elements of this *sequence*.
+     */
     public func generate() -> AnyGenerator<(String, JSON)> {
         switch self.type {
         case .Array:
@@ -300,18 +300,18 @@ extension JSON {
     }
     
     /**
-    Find a json in the complex data structuresby using the Int/String's array.
-    
-    - parameter path: The target json's path. Example:
-    
-    let json = JSON[data]
-    let path = [9,"list","person","name"]
-    let name = json[path]
-    
-    The same as: let name = json[9]["list"]["person"]["name"]
-    
-    - returns: Return a json found by the path or a null json with error
-    */
+     Find a json in the complex data structuresby using the Int/String's array.
+     
+     - parameter path: The target json's path. Example:
+     
+     let json = JSON[data]
+     let path = [9,"list","person","name"]
+     let name = json[path]
+     
+     The same as: let name = json[9]["list"]["person"]["name"]
+     
+     - returns: Return a json found by the path or a null json with error
+     */
     public subscript(path: [SubscriptType]) -> JSON {
         get {
             switch path.count {
@@ -337,16 +337,16 @@ extension JSON {
     }
     
     /**
-    Find a json in the complex data structuresby using the Int/String's array.
-    
-    - parameter path: The target json's path. Example:
-    
-    let name = json[9,"list","person","name"]
-    
-    The same as: let name = json[9]["list"]["person"]["name"]
-    
-    - returns: Return a json found by the path or a null json with error
-    */
+     Find a json in the complex data structuresby using the Int/String's array.
+     
+     - parameter path: The target json's path. Example:
+     
+     let name = json[9,"list","person","name"]
+     
+     The same as: let name = json[9]["list"]["person"]["name"]
+     
+     - returns: Return a json found by the path or a null json with error
+     */
     public subscript(path: SubscriptType...) -> JSON {
         get {
             return self[path]
@@ -1326,14 +1326,14 @@ extension JSON {
     }
     
     @available(*, unavailable, renamed="uInt")
-    public var unsignedInteger: Int? {
+    public var unsignedInteger: UInt? {
         get {
             return self.number?.unsignedIntegerValue
         }
     }
     
     @available(*, unavailable, renamed="uIntValue")
-    public var unsignedIntegerValue: Int {
+    public var unsignedIntegerValue: UInt {
         get {
             return self.numberValue.unsignedIntegerValue
         }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E01E2381BC786F7003075D7 /* FloatingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01E2371BC786F7003075D7 /* FloatingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		2E01E2381BC786F7003075D7 /* FloatingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01E2371BC786F7003075D7 /* FloatingMenuController.swift */; };
 		2E1B83C41BBCDC0700137A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83C31BBCDC0700137A45 /* AppDelegate.swift */; };
 		2E1B83C61BBCDC0700137A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83C51BBCDC0700137A45 /* ViewController.swift */; };
 		2E1B83C91BBCDC0700137A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B83C71BBCDC0700137A45 /* Main.storyboard */; };
@@ -15,11 +15,11 @@
 		2E1B83CE1BBCDC0700137A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1B83CC1BBCDC0700137A45 /* LaunchScreen.storyboard */; };
 		2E1B83D91BBCDC0800137A45 /* __Expanding_CellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83D81BBCDC0800137A45 /* __Expanding_CellsTests.swift */; };
 		2E1B83E41BBCDC0800137A45 /* __Expanding_CellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83E31BBCDC0800137A45 /* __Expanding_CellsUITests.swift */; };
-		2E1B83F21BBCDEA500137A45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F11BBCDEA500137A45 /* MainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E1B83F41BBCE61400137A45 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F31BBCE61400137A45 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E1B83F61BBD0AFA00137A45 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F51BBD0AFA00137A45 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
-		2E53DCAA1BC76C97003B0D53 /* UIColors+FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCA91BC76C97003B0D53 /* UIColors+FloatingMenu.swift */; settings = {ASSET_TAGS = (); }; };
-		2E53DCAC1BC76D48003B0D53 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCAB1BC76D48003B0D53 /* FloatingButton.swift */; settings = {ASSET_TAGS = (); }; };
+		2E1B83F21BBCDEA500137A45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F11BBCDEA500137A45 /* MainViewController.swift */; };
+		2E1B83F41BBCE61400137A45 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F31BBCE61400137A45 /* DetailViewController.swift */; };
+		2E1B83F61BBD0AFA00137A45 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1B83F51BBD0AFA00137A45 /* TransitionManager.swift */; };
+		2E53DCAA1BC76C97003B0D53 /* UIColors+FloatingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCA91BC76C97003B0D53 /* UIColors+FloatingMenu.swift */; };
+		2E53DCAC1BC76D48003B0D53 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E53DCAB1BC76D48003B0D53 /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,7 +218,7 @@
 				TargetAttributes = {
 					2E1B83BF1BBCDC0700137A45 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8377DUVBBA;
+						DevelopmentTeam = LK5TSF8WY2;
 					};
 					2E1B83D31BBCDC0800137A45 = {
 						CreatedOnToolsVersion = 7.0;
@@ -431,8 +431,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "6.Expanding-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Expanding-Cell";
@@ -445,8 +445,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "6.Expanding-Cells/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.--Expanding-Cell";

@@ -11,7 +11,7 @@ import UIKit
 
 func getData() -> Array<Dictionary<String,String>> {
     
-    var data = [
+    let data = [
         [
             "DetailText" : "C1DetailText",
             "Img": "C1Img",

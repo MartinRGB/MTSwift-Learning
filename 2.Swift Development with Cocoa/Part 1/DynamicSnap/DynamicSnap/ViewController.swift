@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let point = tap.locationInView(self.view)
         
         //删除吸附，加入新的
-        self.dynamicAnimator?.removeBehavior(self.snap!)
+        self.dynamicAnimator?.removeAllBehaviors()
         self.snap = UISnapBehavior(item:self.naomisorz ,snapToPoint:point)
         self.dynamicAnimator?.addBehavior(self.snap!)
     }

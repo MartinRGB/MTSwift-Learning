@@ -14,10 +14,10 @@
 		2EA377161BB7D2AC00C6B4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA377141BB7D2AC00C6B4E4 /* LaunchScreen.storyboard */; };
 		2EA377211BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA377201BB7D2AC00C6B4E4 /* Intruduction_TipsTests.swift */; };
 		2EA3772C1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3772B1BB7D2AC00C6B4E4 /* Intruduction_TipsUITests.swift */; };
-		2EA3773A1BB7D2D900C6B4E4 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA377391BB7D2D900C6B4E4 /* Tip.swift */; settings = {ASSET_TAGS = (); }; };
-		2EA3773C1BB7D3A300C6B4E4 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA3773B1BB7D3A300C6B4E4 /* TipView.xib */; settings = {ASSET_TAGS = (); }; };
-		2EA3773E1BB7D72A00C6B4E4 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773D1BB7D72A00C6B4E4 /* TipView.swift */; settings = {ASSET_TAGS = (); }; };
-		2EA377401BB7DA0900C6B4E4 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773F1BB7DA0900C6B4E4 /* TipViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		2EA3773A1BB7D2D900C6B4E4 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA377391BB7D2D900C6B4E4 /* Tip.swift */; };
+		2EA3773C1BB7D3A300C6B4E4 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA3773B1BB7D3A300C6B4E4 /* TipView.xib */; };
+		2EA3773E1BB7D72A00C6B4E4 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773D1BB7D72A00C6B4E4 /* TipView.swift */; };
+		2EA377401BB7DA0900C6B4E4 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3773F1BB7DA0900C6B4E4 /* TipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -204,7 +204,7 @@
 				TargetAttributes = {
 					2EA377071BB7D2AC00C6B4E4 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8377DUVBBA;
+						DevelopmentTeam = LK5TSF8WY2;
 					};
 					2EA3771B1BB7D2AC00C6B4E4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -415,12 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -428,12 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "Intruduction Tips/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Intruduction-Tips";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

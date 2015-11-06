@@ -14,11 +14,11 @@
 		2E65FA141BB1AD8C00AF45B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E65FA121BB1AD8C00AF45B2 /* LaunchScreen.storyboard */; };
 		2E65FA1F1BB1AD8C00AF45B2 /* Zooming_IconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA1E1BB1AD8C00AF45B2 /* Zooming_IconsTests.swift */; };
 		2E65FA2A1BB1AD8D00AF45B2 /* Zooming_IconsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA291BB1AD8D00AF45B2 /* Zooming_IconsUITests.swift */; };
-		2E65FA381BB1B67900AF45B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA371BB1B67900AF45B2 /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E65FA3A1BB2561800AF45B2 /* SocialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA391BB2561800AF45B2 /* SocialItem.swift */; settings = {ASSET_TAGS = (); }; };
-		2E65FA3C1BB2566200AF45B2 /* SocialItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA3B1BB2566200AF45B2 /* SocialItemCell.swift */; settings = {ASSET_TAGS = (); }; };
-		2E65FA7A1BB2899D00AF45B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA791BB2899D00AF45B2 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E65FA7E1BB2A29500AF45B2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA7D1BB2A29500AF45B2 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
+		2E65FA381BB1B67900AF45B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA371BB1B67900AF45B2 /* MenuViewController.swift */; };
+		2E65FA3A1BB2561800AF45B2 /* SocialItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA391BB2561800AF45B2 /* SocialItem.swift */; };
+		2E65FA3C1BB2566200AF45B2 /* SocialItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA3B1BB2566200AF45B2 /* SocialItemCell.swift */; };
+		2E65FA7A1BB2899D00AF45B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA791BB2899D00AF45B2 /* DetailViewController.swift */; };
+		2E65FA7E1BB2A29500AF45B2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E65FA7D1BB2A29500AF45B2 /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,7 +207,7 @@
 				TargetAttributes = {
 					2E65FA051BB1AD8C00AF45B2 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8377DUVBBA;
+						DevelopmentTeam = LK5TSF8WY2;
 					};
 					2E65FA191BB1AD8C00AF45B2 = {
 						CreatedOnToolsVersion = 7.0;
@@ -419,12 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "Zooming-Icons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Zooming-Icons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -432,12 +433,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = "Zooming-Icons/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MartinStudio.Zooming-Icons";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

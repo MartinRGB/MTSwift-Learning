@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E0FAEB51BB594350096BC16 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB41BB594350096BC16 /* DetailView.swift */; settings = {ASSET_TAGS = (); }; };
-		2E0FAEB71BB5943E0096BC16 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB61BB5943E0096BC16 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E0FAEB91BB594450096BC16 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB81BB594450096BC16 /* RoomsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2E0FAEBB1BB5A24B0096BC16 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBA1BB5A24B0096BC16 /* RoomModel.swift */; settings = {ASSET_TAGS = (); }; };
-		2E0FAEBD1BB5AC2C0096BC16 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBC1BB5AC2C0096BC16 /* RoomCell.swift */; settings = {ASSET_TAGS = (); }; };
-		2E0FAEBF1BB5B4D20096BC16 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBE1BB5B4D20096BC16 /* TransitionManager.swift */; settings = {ASSET_TAGS = (); }; };
+		2E0FAEB51BB594350096BC16 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB41BB594350096BC16 /* DetailView.swift */; };
+		2E0FAEB71BB5943E0096BC16 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB61BB5943E0096BC16 /* DetailViewController.swift */; };
+		2E0FAEB91BB594450096BC16 /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEB81BB594450096BC16 /* RoomsViewController.swift */; };
+		2E0FAEBB1BB5A24B0096BC16 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBA1BB5A24B0096BC16 /* RoomModel.swift */; };
+		2E0FAEBD1BB5AC2C0096BC16 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBC1BB5AC2C0096BC16 /* RoomCell.swift */; };
+		2E0FAEBF1BB5B4D20096BC16 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FAEBE1BB5B4D20096BC16 /* TransitionManager.swift */; };
 		2E1ED9E41BB5576F00A488AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ED9E31BB5576F00A488AE /* AppDelegate.swift */; };
 		2E1ED9E91BB5576F00A488AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ED9E71BB5576F00A488AE /* Main.storyboard */; };
 		2E1ED9EB1BB5576F00A488AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ED9EA1BB5576F00A488AE /* Assets.xcassets */; };
@@ -207,7 +207,7 @@
 				TargetAttributes = {
 					2E1ED9DF1BB5576F00A488AE = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 8377DUVBBA;
+						DevelopmentTeam = LK5TSF8WY2;
 					};
 					2E1ED9F31BB5576F00A488AE = {
 						CreatedOnToolsVersion = 7.0;
@@ -419,13 +419,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = Rooms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.Rooms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -433,12 +433,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yinyan Qiu (Z6CGVL437S)";
 				INFOPLIST_FILE = Rooms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MartinStudio.Rooms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "14ead3e1-ae9e-4559-bef5-f7ca746f01a9";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

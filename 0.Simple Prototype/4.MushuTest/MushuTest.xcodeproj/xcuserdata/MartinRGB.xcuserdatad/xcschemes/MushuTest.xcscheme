@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E33EC7F1B443B41004161D1"
-               BuildableName = "Ink.app"
-               BlueprintName = "Ink"
-               ReferencedContainer = "container:Ink.xcodeproj">
+               BlueprintIdentifier = "2E6CD30F1BEC8ECB00975161"
+               BuildableName = "MushuTest.app"
+               BlueprintName = "MushuTest"
+               ReferencedContainer = "container:MushuTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +28,34 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E6CD3231BEC8ECB00975161"
+               BuildableName = "MushuTestTests.xctest"
+               BlueprintName = "MushuTestTests"
+               ReferencedContainer = "container:MushuTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2E6CD32E1BEC8ECB00975161"
+               BuildableName = "MushuTestUITests.xctest"
+               BlueprintName = "MushuTestUITests"
+               ReferencedContainer = "container:MushuTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E33EC7F1B443B41004161D1"
-            BuildableName = "Ink.app"
-            BlueprintName = "Ink"
-            ReferencedContainer = "container:Ink.xcodeproj">
+            BlueprintIdentifier = "2E6CD30F1BEC8ECB00975161"
+            BuildableName = "MushuTest.app"
+            BlueprintName = "MushuTest"
+            ReferencedContainer = "container:MushuTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E33EC7F1B443B41004161D1"
-            BuildableName = "Ink.app"
-            BlueprintName = "Ink"
-            ReferencedContainer = "container:Ink.xcodeproj">
+            BlueprintIdentifier = "2E6CD30F1BEC8ECB00975161"
+            BuildableName = "MushuTest.app"
+            BlueprintName = "MushuTest"
+            ReferencedContainer = "container:MushuTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2E33EC7F1B443B41004161D1"
-            BuildableName = "Ink.app"
-            BlueprintName = "Ink"
-            ReferencedContainer = "container:Ink.xcodeproj">
+            BlueprintIdentifier = "2E6CD30F1BEC8ECB00975161"
+            BuildableName = "MushuTest.app"
+            BlueprintName = "MushuTest"
+            ReferencedContainer = "container:MushuTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
