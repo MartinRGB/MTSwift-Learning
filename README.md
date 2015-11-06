@@ -270,3 +270,11 @@ What I learned
 3.pass upvote and comment data between storyVC & commentVC
 
 4.click share to open AlertView
+
+##Day21:Blur Test
+![Day21](https://github.com/MartinRGB/MTSwift-Learning/blob/master/0.Simple%20Prototype/4.MushuTest/1.gif?raw=true)
+
+1.use bridge-header
+
+2.use ANBlurredImageView to make blur,also try to use iOS visual effect view with blur,try to compare
+
