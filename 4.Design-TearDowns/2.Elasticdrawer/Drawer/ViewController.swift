@@ -60,21 +60,21 @@ class ViewController: UIViewController {
         let offset = width + point.x
         
         let path = UIBezierPath()
-        path.moveToPoint(CGPoint(x: -mtExtenedEdgesOffset, y: -mtExtenedEdgesOffset))
-        path.addLineToPoint(CGPoint(x: width, y: -mtExtenedEdgesOffset))
+        path.move(to: CGPoint(x: -mtExtenedEdgesOffset, y: -mtExtenedEdgesOffset))
+        path.addLine(to: CGPoint(x: width, y: -mtExtenedEdgesOffset))
         
         // add curve
-        path.addCurveToPoint(CGPoint(x: offset, y: point.y),
+        path.addCurve(to: CGPoint(x: offset, y: point.y),
             controlPoint1: CGPoint(x: width, y: point.y * mtControlPointRatio),
             controlPoint2: CGPoint(x: offset, y: point.y - mtControlPointPulledDistance))
         
-        path.addCurveToPoint(CGPoint(x: width, y: height + mtExtenedEdgesOffset),
+        path.addCurve(to: CGPoint(x: width, y: height + mtExtenedEdgesOffset),
             controlPoint1: CGPoint(x: offset, y: point.y + mtControlPointPulledDistance),
             controlPoint2: CGPoint(x: width, y: point.y + (height - point.y) * (1 - mtControlPointRatio)))
         
-        path.addLineToPoint(CGPoint(x: -mtExtenedEdgesOffset, y: height + mtExtenedEdgesOffset))
+        path.addLine(to: CGPoint(x: -mtExtenedEdgesOffset, y: height + mtExtenedEdgesOffset))
         
-        path.closePath()
+        path.close()
         return path
         
         /*
@@ -98,40 +98,40 @@ class ViewController: UIViewController {
         let path = UIBezierPath()
         
         //5 points
-        path.moveToPoint(CGPointZero)
-        path.addLineToPoint(CGPoint(x: width, y: 0))
-        path.addCurveToPoint(CGPoint(x: offset, y: point.y), controlPoint1: CGPoint(x: width, y: 0), controlPoint2: CGPoint(x: offset, y: point.y - mtControlPointRoundedDistance))
-        path.addCurveToPoint(CGPoint(x: width, y: height), controlPoint1: CGPoint(x: offset, y: point.y + mtControlPointRoundedDistance), controlPoint2: CGPoint(x: width, y: height))
-        path.addLineToPoint(CGPoint(x: 0, y: height))
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: width, y: 0))
+        path.addCurve(to: CGPoint(x: offset, y: point.y), controlPoint1: CGPoint(x: width, y: 0), controlPoint2: CGPoint(x: offset, y: point.y - mtControlPointRoundedDistance))
+        path.addCurve(to: CGPoint(x: width, y: height), controlPoint1: CGPoint(x: offset, y: point.y + mtControlPointRoundedDistance), controlPoint2: CGPoint(x: width, y: height))
+        path.addLine(to: CGPoint(x: 0, y: height))
         
-        path.closePath()
+        path.close()
         return path
         
     }
     
     // III. MARK - Method 3 松手后的返回动画方法 for Method 1
-    func animateShapeLayerToPath(path: CGPathRef, duration: NSTimeInterval) {
+    func animateShapeLayerToPath(path: CGPath, duration: TimeInterval) {
         let animation = CABasicAnimation(keyPath: "path")
         animation.toValue = path
         animation.duration = duration
-        animation.fillMode = kCAFillModeForwards
-        animation.removedOnCompletion = false
+        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.isRemovedOnCompletion = false
         animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.5, 1.8, 1, 1)
         
-        shapeLayer.addAnimation(animation, forKey: "morph")
+        shapeLayer.add(animation, forKey: "morph")
     }
     
     // IV. MARK - Method 4 松手后的返回动画方法 for Method 2
     
-    func animateShapeLayerWithKeyFrames(values:[AnyObject],times:[CGFloat],duration:NSTimeInterval){
+    func animateShapeLayerWithKeyFrames(values:[AnyObject],times:[CGFloat],duration:TimeInterval){
         let keyFrameAnimation = CAKeyframeAnimation(keyPath: "path")
-        keyFrameAnimation.fillMode = kCAFillModeForwards
-        keyFrameAnimation.removedOnCompletion = false
+        keyFrameAnimation.fillMode = CAMediaTimingFillMode.forwards
+        keyFrameAnimation.isRemovedOnCompletion = false
         keyFrameAnimation.values = values
-        keyFrameAnimation.keyTimes = times
+        keyFrameAnimation.keyTimes = times as [NSNumber]
         keyFrameAnimation.duration = duration
         
-        shapeLayer.addAnimation(keyFrameAnimation, forKey: "morph")
+        shapeLayer.add(keyFrameAnimation, forKey: "morph")
         
         
     }
@@ -139,10 +139,10 @@ class ViewController: UIViewController {
     
     
     //4.handle Pan Gesture
-    func handlePan(pan:UIPanGestureRecognizer){
-        let location = pan.locationInView(view)
+    @objc func handlePan(pan:UIPanGestureRecognizer){
+        let location = pan.location(in: view)
         switch pan.state{
-        case .Began:
+        case .began:
             //移除所有动画
             shapeLayer.removeAllAnimations()
             
@@ -163,7 +163,7 @@ class ViewController: UIViewController {
             }
             
             if tracking{
-            UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+                UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
                     [overlayview] in
                     overlayview.alpha = 1
                     }, completion: nil)
@@ -172,7 +172,7 @@ class ViewController: UIViewController {
             }
 
             
-        case .Changed:
+        case .changed:
             //(1). 如果停止跟踪，则返送当前数值
             if !tracking {
                 return
@@ -182,11 +182,11 @@ class ViewController: UIViewController {
                 tracking = false
                 
                 let centerY = view.bounds.height/2
-                animateShapeLayerWithKeyFrames([
+                animateShapeLayerWithKeyFrames(values: [
                     shapeLayer.path!,
-                    createRoundedPath(mtDrawerWidth, point: CGPoint(x: 30, y: (location.y+centerY)/2)).CGPath,
-                    createRoundedPath(mtDrawerWidth, point: CGPoint(x: -30, y: centerY)).CGPath,
-                    createRoundedPath(mtDrawerWidth, point: CGPoint(x: 0, y: centerY)).CGPath
+                    createRoundedPath(width: mtDrawerWidth, point: CGPoint(x: 30, y: (location.y+centerY)/2)).cgPath,
+                    createRoundedPath(width: mtDrawerWidth, point: CGPoint(x: -30, y: centerY)).cgPath,
+                    createRoundedPath(width: mtDrawerWidth, point: CGPoint(x: 0, y: centerY)).cgPath
                     ], times: [0, 0.5, 0.8, 1.0], duration: 0.3)
                 
                 state = .Expanded
@@ -199,11 +199,11 @@ class ViewController: UIViewController {
                 tracking = false
                 
                 let centerY = view.bounds.height/2
-                animateShapeLayerWithKeyFrames([
+                animateShapeLayerWithKeyFrames(values: [
                     shapeLayer.path!,
-                    createRoundedPath(0, point: CGPoint(x: 30, y: (location.y+centerY)/2)).CGPath,
-                    createRoundedPath(0, point: CGPoint(x: -30, y: centerY)).CGPath,
-                    createRoundedPath(0, point: CGPoint(x: 0, y: centerY)).CGPath
+                    createRoundedPath(width: 0, point: CGPoint(x: 30, y: (location.y+centerY)/2)).cgPath,
+                    createRoundedPath(width: 0, point: CGPoint(x: -30, y: centerY)).cgPath,
+                    createRoundedPath(width: 0, point: CGPoint(x: 0, y: centerY)).cgPath
                     ], times: [0, 0.5, 0.8, 1.0], duration: 0.3)
                 
                 state = .Collapsed
@@ -211,7 +211,7 @@ class ViewController: UIViewController {
                 print("<-Huge Change")
                 
                 //处理覆盖层
-                UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+                UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
                     [overlayview] in
                     overlayview.alpha = 0
                     }, completion: nil)
@@ -221,14 +221,14 @@ class ViewController: UIViewController {
                 //未触发状态的左滑
                 if state == .Collapsed {
                     let point = CGPoint (x:location.x * 0.5,y:location.y)
-                    shapeLayer.path = createPulledPath(0, point: point).CGPath
+                    shapeLayer.path = createPulledPath(width: 0, point: point).cgPath
                     
                     //print("->>>>>")
                 }
                 //未触发状态的右滑, -max->取最左面的点
                 else{
                     let point = CGPoint (x:-max(0,mtDrawerWidth - location.x) * 0.5,y:location.y)
-                    shapeLayer.path = createPulledPath(mtDrawerWidth, point: point).CGPath
+                    shapeLayer.path = createPulledPath(width: mtDrawerWidth, point: point).cgPath
                     
                     //print("<<<<<<-")
                 }
@@ -238,23 +238,23 @@ class ViewController: UIViewController {
         
             
             
-        case .Ended:
+        case .ended:
             fallthrough
         //*******半路取消的返回
-        case .Cancelled:
+        case .cancelled:
             
             if tracking{
                 //移到右边缘
                 //平移点
                 let point = CGPoint(x:0,y:location.y)
-                animateShapeLayerToPath(createPulledPath(state == .Collapsed ? 0 : mtDrawerWidth, point: point).CGPath, duration: 0.2)
+                animateShapeLayerToPath(path: createPulledPath(width: state == .Collapsed ? 0 : mtDrawerWidth, point: point).cgPath, duration: 0.2)
                 tracking = false
                 
                 
                 
                 if state == .Collapsed{
                     //底部覆盖层根据手势的变化
-                    UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
+                    UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: [], animations: {
                         //***
                         [overlayview] in
                         overlayview.alpha = 0
@@ -280,7 +280,7 @@ class ViewController: UIViewController {
         drawerView.layer.mask = shapeLayer
         overlayview.alpha = 0
         //add gesture
-        let pan = UIPanGestureRecognizer(target: self, action: "handlePan:")
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(ViewController.handlePan(pan:)))
         view.addGestureRecognizer(pan)
     }
     
